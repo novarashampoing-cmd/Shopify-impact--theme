@@ -58,7 +58,7 @@
             "hide_sold_out_variants": false,
             "stack_blocks": true,
             "selector_mode": "block",
-            "color_mode": "variant",
+            "color_mode": "block_swatch",
             "size_chart_page": ""
           }
         },
