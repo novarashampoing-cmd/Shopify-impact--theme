@@ -461,6 +461,37 @@
         "input_text_color": ""
       }
     },
+    "multiple_images_with_text_PMKEiP": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_QMdify": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/essayez_le_shampoing_colorant_novara.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Envie de redonner vie à votre couleur ?",
+            "content": "<p>Testez <strong>Novara Shampoing</strong> dès maintenant et profitez d’une solution douce, rapide et naturelle pour estomper vos cheveux blancs.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_QMdify"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -523,6 +554,7 @@
     "hot-spots",
     "multiple-images-with-text",
     "featured-product",
+    "multiple_images_with_text_PMKEiP",
     "faq"
   ]
 }
