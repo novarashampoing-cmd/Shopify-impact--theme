@@ -48,6 +48,36 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "multiple-images-with-text": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "1664424486a2b084ab-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/pots_de_shampoings_novara.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Pourquoi choisir le shampoing colorant Novara ?",
+            "content": "<p>Redonnez instantanément de l’éclat à vos cheveux grâce à notre shampoing colorant. Dès la première utilisation, la différence se voit. Pas étonnant qu’il soit déjà devenu le favori de nos clients !</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1664424486a2b084ab-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "scattered",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "impact-text": {
       "type": "impact-text",
       "blocks": {
@@ -315,36 +345,6 @@
         "hot_spot_content_blur_radius": 3
       }
     },
-    "multiple-images-with-text": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "1664424486a2b084ab-0": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/pots_de_shampoings_novara.webp",
-            "image_rotation_degrees": 0,
-            "subheading": "",
-            "title": "Pourquoi choisir le shampoing colorant Novara ?",
-            "content": "<p>Redonnez instantanément de l’éclat à vos cheveux grâce à notre shampoing colorant. Dès la première utilisation, la différence se voit. Pas étonnant qu’il soit déjà devenu le favori de nos clients !</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "1664424486a2b084ab-0"
-      ],
-      "settings": {
-        "full_width": true,
-        "images_layout": "scattered",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "featured-product": {
       "type": "featured-product",
       "blocks": {
@@ -526,12 +526,12 @@
   },
   "order": [
     "slideshow",
+    "multiple-images-with-text",
     "impact-text",
     "media-grid",
     "before-after-image",
     "press",
     "hot-spots",
-    "multiple-images-with-text",
     "featured-product",
     "multiple_images_with_text_PMKEiP",
     "faq"
