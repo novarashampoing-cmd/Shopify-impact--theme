@@ -24,12 +24,6 @@
             "liquid": "<div class=\"rating-section\">\n    <span class=\"stars\">★★★★★</span>\n    <span class=\"reviews\">(1126 avis)</span>\n</div>"
           }
         },
-        "liquid_ahaay4": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!-- 🔢 Sélecteur de quantité largeur bouton ATC -->\n<div class=\"nk-qty-wrapper\">\n  <label class=\"nk-qty-label\" for=\"nk-qty-input\">Quantité</label>\n  <div class=\"nk-qty\">\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-minus\" aria-label=\"Réduire\">−</button>\n    <input\n      id=\"nk-qty-input\"\n      type=\"number\"\n      name=\"quantity\"\n      value=\"1\"\n      min=\"1\"\n      class=\"nk-qty-input\"\n    >\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-plus\" aria-label=\"Augmenter\">+</button>\n  </div>\n</div>\n\n<style>\n  .nk-qty-wrapper {\n    margin: 1rem 0;\n    width: 100%;\n  }\n\n  .nk-qty-label {\n    display: block;\n    margin-bottom: 6px;\n    font-size: 14px;\n    color: #222;\n  }\n\n  .nk-qty {\n    display: grid;\n    grid-template-columns: 40px 1fr 40px;\n    align-items: center;\n    background: #e2e6ea; /* gris clair, comme ta capture */\n    border-radius: 8px;\n    overflow: hidden;\n    width: 100%;\n    max-width: var(--button-width, 100%);\n  }\n\n  .nk-qty-btn {\n    height: 44px;\n    border: none;\n    background: transparent;\n    font-size: 20px;\n    font-weight: 500;\n    color: #000;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .nk-qty-input {\n    border: none;\n    background: transparent;\n    text-align: center;\n    font-size: 16px;\n    height: 44px;\n    width: 100%;\n    appearance: textfield;\n  }\n  .nk-qty-input::-webkit-outer-spin-button,\n  .nk-qty-input::-webkit-inner-spin-button {\n    -webkit-appearance: none;\n    margin: 0;\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function(){\n    const minus = document.querySelector(\".nk-qty-minus\");\n    const plus = document.querySelector(\".nk-qty-plus\");\n    const input = document.querySelector(\"#nk-qty-input\");\n\n    minus.addEventListener(\"click\", () => {\n      let val = parseInt(input.value) || 1;\n      if(val > 1) input.value = val - 1;\n    });\n    plus.addEventListener(\"click\", () => {\n      let val = parseInt(input.value) || 1;\n      input.value = val + 1;\n    });\n\n    // ➡️ Synchronisation avec le formulaire d'ajout au panier\n    const form = document.querySelector('form[action*=\"/cart/add\"]');\n    if(form){\n      input.setAttribute(\"form\", form.id || \"product-form-main\");\n    }\n  });\n</script>"
-          }
-        },
         "liquid_Hd4aBb": {
           "type": "liquid",
           "disabled": true,
@@ -75,9 +69,11 @@
           "type": "shopify://apps/globo-color-swatch/blocks/product-swatches-detail/4394f710-096c-4021-bbde-8ebb26057c11",
           "settings": {}
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
+        "liquid_ahaay4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- 🔢 Sélecteur de quantité largeur bouton ATC -->\n<div class=\"nk-qty-wrapper\">\n  <label class=\"nk-qty-label\" for=\"nk-qty-input\">Quantité</label>\n  <div class=\"nk-qty\">\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-minus\" aria-label=\"Réduire\">−</button>\n    <input\n      id=\"nk-qty-input\"\n      type=\"number\"\n      name=\"quantity\"\n      value=\"1\"\n      min=\"1\"\n      class=\"nk-qty-input\"\n    >\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-plus\" aria-label=\"Augmenter\">+</button>\n  </div>\n</div>\n\n<style>\n  .nk-qty-wrapper {\n    margin: 1rem 0;\n    width: 100%;\n  }\n\n  .nk-qty-label {\n    display: block;\n    margin-bottom: 6px;\n    font-size: 14px;\n    color: #222;\n  }\n\n  .nk-qty {\n    display: grid;\n    grid-template-columns: 40px 1fr 40px;\n    align-items: center;\n    background: #e2e6ea; /* gris clair, comme ta capture */\n    border-radius: 8px;\n    overflow: hidden;\n    width: 100%;\n    max-width: var(--button-width, 100%);\n  }\n\n  .nk-qty-btn {\n    height: 44px;\n    border: none;\n    background: transparent;\n    font-size: 20px;\n    font-weight: 500;\n    color: #000;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .nk-qty-input {\n    border: none;\n    background: transparent;\n    text-align: center;\n    font-size: 16px;\n    height: 44px;\n    width: 100%;\n    appearance: textfield;\n  }\n  .nk-qty-input::-webkit-outer-spin-button,\n  .nk-qty-input::-webkit-inner-spin-button {\n    -webkit-appearance: none;\n    margin: 0;\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function(){\n    const minus = document.querySelector(\".nk-qty-minus\");\n    const plus = document.querySelector(\".nk-qty-plus\");\n    const input = document.querySelector(\"#nk-qty-input\");\n\n    minus.addEventListener(\"click\", () => {\n      let val = parseInt(input.value) || 1;\n      if(val > 1) input.value = val - 1;\n    });\n    plus.addEventListener(\"click\", () => {\n      let val = parseInt(input.value) || 1;\n      input.value = val + 1;\n    });\n\n    // ➡️ Synchronisation avec le formulaire d'ajout au panier\n    const form = document.querySelector('form[action*=\"/cart/add\"]');\n    if(form){\n      input.setAttribute(\"form\", form.id || \"product-form-main\");\n    }\n  });\n</script>"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -94,7 +90,6 @@
       "block_order": [
         "title",
         "liquid_NhgpN8",
-        "liquid_ahaay4",
         "liquid_Hd4aBb",
         "badges",
         "price",
@@ -102,7 +97,7 @@
         "description",
         "variant_picker",
         "globo_color_swatch_product_swatches_detail_eyqmDR",
-        "quantity_selector",
+        "liquid_ahaay4",
         "buy_buttons"
       ],
       "settings": {
