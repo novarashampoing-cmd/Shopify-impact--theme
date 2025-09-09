@@ -26,6 +26,7 @@
         },
         "badges": {
           "type": "badges",
+          "disabled": true,
           "settings": {}
         },
         "price": {
@@ -36,10 +37,12 @@
         },
         "payment_terms": {
           "type": "payment_terms",
+          "disabled": true,
           "settings": {}
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "collapse_content": false
           }
