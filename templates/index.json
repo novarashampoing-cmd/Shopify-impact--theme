@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Banniere_destock_novara_shampoing.webp",
             "mobile_image": "shopify://shop_images/Banniere_mobile_novara_shampoing.webp",
             "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
             "title": "",
