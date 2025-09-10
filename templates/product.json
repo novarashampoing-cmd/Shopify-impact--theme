@@ -104,6 +104,20 @@
             "banner_display": "all",
             "banner_id": "0eb077a5-08bc-4187-9cb2-abd93b452f95"
           }
+        },
+        "collapsible_text_Yck8pz": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "🚚 Expédition rapide",
+            "content": "<p>L'équipe de <strong>Novara Shampoing</strong> veille à ce que chaque commande soit traitée et expédiée en 24 à 48h depuis notre entrepôt. Nos délais de livraison sont de 6 à 10 jours ouvrés en France, Belgique et Suisse.</p><p>Un numéro de suivi vous est communiqué dès l’expédition pour suivre votre colis. Et parce qu’un bon service ne s’arrête pas à la commande, notre équipe reste disponible pour répondre à vos questions et vous accompagner si besoin.</p>"
+          }
+        },
+        "collapsible_text_GWC4cM": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Title",
+            "content": "<p>Notre formule a été développée pour allier <strong>confort, efficacité et respect</strong> des cheveux comme de la peau.</p><h3>🌿 Les actifs phares</h3><ul><li>💧 <strong>Eau</strong> : hydrate et facilite l’application<br/></li><li>🍊 <strong>Vitamine C</strong> : antioxydante, elle protège et illumine<br/></li><li>🌱 <strong>Squalane</strong> : restaure la barrière cutanée et hydrate en profondeur<br/></li><li>🌿 <strong>Huile de jojoba</strong> : nourrit, apaise et équilibre<br/></li><li>🥥 <strong>Huile de macadamia</strong> : riche en acides gras, elle régénère et protège<br/></li><li>🍄 <strong>Extrait de Reishi</strong> : puissant antioxydant, il revitalise les cheveux<br/></li><li>🌰 <strong>Huile de sésame noir</strong> : nourrit intensément et soutient la pigmentation naturelle<br/></li><li>🌶 <strong>Extrait de gingembre</strong> : stimule la microcirculation et fortifie les racines<br/></li><li>🌼 <strong>Racine d’angélique</strong> : apaise, renforce et contribue à la croissance capillaire<br/></li></ul><h3>🧪 Sécurité & qualité</h3><p>✔ Testé dermatologiquement pour une tolérance optimale<br/><br/>✔ Ingrédients d’origine naturelle, respectueux de l’environnement<br/><br/>✔ Formule sans compromis : certains composants techniques (parfum, propylène glycol) sont utilisés en quantité maîtrisée pour garantir efficacité et innocuité</p><h3>📦 Informations pratiques</h3><ul><li><strong>Contenance</strong> : 200 ml<br/></li><li><strong>Liste INCI</strong> : Eau, alcool cétylique, Pergaal, huile minérale, extrait de renouée à fleurs, extrait de ginseng Panax, extrait de racine d’angélique, dérivés de glucose, bétaïne de cocamidopropyle, parfum, colorants doux, régulateurs de pH, monoglycéride, activateur doux<br/></li></ul><h3>💬 Une question ?</h3><p>Notre équipe est disponible pour vous conseiller et vous accompagner</p>"
+          }
         }
       },
       "block_order": [
@@ -120,7 +134,9 @@
         "buy_buttons",
         "liquid_MF6By4",
         "liquid_8r73t4",
-        "essential_trust_badges_app_block_WAiNbL"
+        "essential_trust_badges_app_block_WAiNbL",
+        "collapsible_text_Yck8pz",
+        "collapsible_text_GWC4cM"
       ],
       "settings": {
         "full_width": true,
@@ -139,32 +155,9 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "recommendations_count": 6,
-        "products": [],
-        "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "You may also like",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
     }
   },
   "order": [
-    "main",
-    "related-products"
+    "main"
   ]
 }
