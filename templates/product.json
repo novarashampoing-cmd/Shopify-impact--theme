@@ -163,9 +163,61 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "rich_text_V8R7G4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3jh7jX": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3jh7jX"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "video_m7mnir": {
+      "type": "video",
+      "blocks": {
+        "play_U8W6FB": {
+          "type": "play",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "play_U8W6FB"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "video": "shopify://files/videos/Vidéo démonstration Novara Shampoing.mp4",
+        "external_video_url": "",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_V8R7G4",
+    "video_m7mnir"
   ]
 }
