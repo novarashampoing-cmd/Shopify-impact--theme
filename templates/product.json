@@ -85,6 +85,12 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "liquid_MF6By4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"margin-top:14px; margin-bottom:0;\">\n  <style>\n    .nk-offer-banner {\n      background: #E9EBF0;\n      border-radius: 12px;\n      padding: 16px;\n      font-family: inherit;\n      color: #333;\n    }\n    .nk-offer-banner__header {\n      background: #3E4D6B;\n      color: #fff;\n      border-radius: 10px;\n      padding: 10px 16px;\n      font-weight: 700;\n      text-transform: uppercase;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      gap: 8px;\n      letter-spacing: .4px;\n    }\n    .nk-offer-banner__header::before,\n    .nk-offer-banner__header::after {\n      content:\"\"; display:inline-block; width:34px; height:3px; border-radius:3px;\n      background: currentColor; opacity:.9;\n    }\n    .nk-offer-banner__body {\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:16px;\n      padding: 14px 10px 6px;\n    }\n    .nk-offer-banner__left {\n      font-weight: 800;\n    }\n    .nk-offer-banner__divider {\n      width:1px; height:20px; background: rgba(0,0,0,.2);\n    }\n    .nk-offer-banner__right {\n      opacity:.9;\n    }\n  </style>\n\n  <div class=\"nk-offer-banner\">\n    <div class=\"nk-offer-banner__header\">\n      🎁 OFFRE DE RENTRÉE\n    </div>\n    <div class=\"nk-offer-banner__body\">\n      <div class=\"nk-offer-banner__left\">1 ACHETÉ = 2E À -50%</div>\n      <div class=\"nk-offer-banner__divider\"></div>\n      <div class=\"nk-offer-banner__right\">Ajoutez simplement 2 produits à votre panier !</div>\n    </div>\n  </div>\n</div>"
+          }
         }
       },
       "block_order": [
@@ -98,7 +104,8 @@
         "variant_picker",
         "globo_color_swatch_product_swatches_detail_eyqmDR",
         "liquid_ahaay4",
-        "buy_buttons"
+        "buy_buttons",
+        "liquid_MF6By4"
       ],
       "settings": {
         "full_width": true,
