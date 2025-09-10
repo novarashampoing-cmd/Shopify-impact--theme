@@ -79,8 +79,8 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "title": "",
+            "content": "<h3>Inscrivez-vous à notre newsletter pour ne pas rater nos offres exclusives !</h3>"
           }
         },
         "links": {
