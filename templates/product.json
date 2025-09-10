@@ -125,6 +125,12 @@
             "title": "🧴🫧 Comment appliquer notre shampoing ?",
             "content": "<p>1️⃣ <strong>Mousser</strong> : Prélevez une dose dans vos mains et faites mousser le shampoing<br/><br/>2️⃣ <strong>Appliquer</strong> : Répartissez uniformément sur cheveux secs ou barbe, puis laissez agir 10 minutes<br/><br/>3️⃣ <strong>Rincer</strong> : Rincez abondamment et profitez d’une couleur éclatante et naturelle ✨💆‍♂️</p>"
           }
+        },
+        "liquid_yzyJn6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .nk-video-wrap {\n    max-width: 420px; /* ajuste si besoin */\n    margin: 0 auto;\n  }\n  .nk-video-outer {\n    position: relative;\n    width: 100%;\n    /* Format mobile 9:16 */\n    aspect-ratio: 9 / 16;\n    border-radius: 16px;\n    overflow: hidden;\n    background: #000;\n  }\n  .nk-video-outer video {\n    width: 100%;\n    height: 100%;\n    object-fit: cover; /* remplissage propre */\n    display: block;\n  }\n  /* Optionnel: petite ombre soft */\n  .nk-video-outer { box-shadow: 0 8px 24px rgba(0,0,0,.12); }\n</style>\n\n<div class=\"nk-video-wrap\" role=\"region\" aria-label=\"Présentation vidéo\">\n  <div class=\"nk-video-outer\">\n    <video\n      src=\"{{ 'https://cdn.shopify.com/videos/c/o/v/e3dca7c1457845ffb88fb299253af856.mp4' | file_url }}\"\n      poster=\"{{ 'poster-novara.jpg' | file_url }}\"\n      playsinline\n      webkit-playsinline\n      muted\n      autoplay\n      loop\n      controls\n      preload=\"metadata\"\n      aria-label=\"Vidéo produit Novara Shampoing\"\n      controlslist=\"nodownload\"\n    ></video>\n  </div>\n</div>\n\n<script>\n  // Pause auto si la vidéo sort du viewport (meilleure perf/UX)\n  (function(){\n    const v = document.currentScript.previousElementSibling.querySelector('video');\n    if (!('IntersectionObserver' in window) || !v) return;\n    const io = new IntersectionObserver((entries)=>{\n      entries.forEach(e => {\n        if (e.isIntersecting) {\n          if (v.muted) v.play().catch(()=>{});\n        } else {\n          v.pause();\n        }\n      });\n    }, {threshold: 0.25});\n    io.observe(v);\n  })();\n</script>"
+          }
         }
       },
       "block_order": [
@@ -144,7 +150,8 @@
         "essential_trust_badges_app_block_WAiNbL",
         "collapsible_text_Yck8pz",
         "collapsible_text_GWC4cM",
-        "collapsible_text_aYXfPR"
+        "collapsible_text_aYXfPR",
+        "liquid_yzyJn6"
       ],
       "settings": {
         "full_width": true,
