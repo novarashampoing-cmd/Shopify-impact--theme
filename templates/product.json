@@ -164,6 +164,41 @@
         "input_text_color": ""
       }
     },
+    "media_with_text_FexRVY": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_jThwwi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/benefice_numero_1_Novara_Shampoing_8d4f569c-7dcf-4111-8a35-ef69b5286d23.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jThwwi"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "rich_text_V8R7G4": {
       "type": "rich-text",
       "blocks": {
@@ -190,7 +225,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "large",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
@@ -224,6 +259,7 @@
   },
   "order": [
     "main",
+    "media_with_text_FexRVY",
     "rich_text_V8R7G4",
     "video_m7mnir"
   ]
