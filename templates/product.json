@@ -701,7 +701,7 @@
       "name": "Text with icons",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
