@@ -200,8 +200,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Coloration en 10 minutes",
-            "content": "<p><strong>Une application simple</strong> : posez, laissez agir 10 minutes, puis rincez</p>",
+            "title": "",
+            "content": "<h3>Coloration en 10 minutes<br/></h3><p><strong>Une application simple</strong> : posez, laissez agir 10 minutes, puis rincez</p>",
             "link_text": "",
             "link_url": "",
             "background": "#dddee2",
@@ -222,8 +222,30 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Application facile",
-            "content": "<p>Le shampoing colorant Novara s'applique comme n'importe quel autre shampoing</p>",
+            "title": "",
+            "content": "<h3>Application facile<br/></h3><p>Le shampoing colorant Novara s'applique comme n'importe quel autre shampoing</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#dddee2",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_eHj3JQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/benefice_numero_3_Novara_Shampoing.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#dddee2",
@@ -237,7 +259,43 @@
       },
       "block_order": [
         "image_jThwwi",
-        "image_mbNdKd"
+        "image_mbNdKd",
+        "image_eHj3JQ"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "none"
+      }
+    },
+    "media_with_text_ehh7j4": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_3X9Xe7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/benefice_numero_2_Novara_Shampoing.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Application facile<br/></h3><p>Le shampoing colorant Novara s'applique comme n'importe quel autre shampoing</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3X9Xe7"
       ],
       "name": "Media with text",
       "settings": {
@@ -307,6 +365,7 @@
     "main",
     "rich_text_LN7fjy",
     "media_with_text_FexRVY",
+    "media_with_text_ehh7j4",
     "rich_text_V8R7G4",
     "video_m7mnir"
   ]
