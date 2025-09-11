@@ -394,7 +394,7 @@
         "table_row_bciXJT": {
           "type": "table_row",
           "settings": {
-            "row_heading": "À base de plantes",
+            "row_heading": "Rapide à appliquer",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -408,7 +408,7 @@
         "table_row_cpcx3A": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Faible en sucre",
+            "row_heading": "Longue tenue",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -422,7 +422,7 @@
         "table_row_mqRPU6": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Ingrédients simples",
+            "row_heading": "Sans produits agressifs",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -436,21 +436,7 @@
         "table_row_wHJrNW": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Testé par des tiers",
-            "first_column": "",
-            "first_column_icon": "check",
-            "second_column": "",
-            "second_column_icon": "cross",
-            "third_column": "",
-            "third_column_icon": "none",
-            "four_column": "",
-            "four_column_icon": "none"
-          }
-        },
-        "table_row_6UU9c4": {
-          "type": "table_row",
-          "settings": {
-            "row_heading": "Goût délicieux",
+            "row_heading": "Respecte vos cheveux",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -467,8 +453,7 @@
         "table_row_bciXJT",
         "table_row_cpcx3A",
         "table_row_mqRPU6",
-        "table_row_wHJrNW",
-        "table_row_6UU9c4"
+        "table_row_wHJrNW"
       ],
       "name": "Meditrust - Compare Table",
       "settings": {
