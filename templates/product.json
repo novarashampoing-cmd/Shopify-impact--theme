@@ -175,10 +175,17 @@
             "text_color": "",
             "gradient": ""
           }
+        },
+        "richtext_jt9MTN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Vous n'avez besoin que de 10 petites minutes pour appliquer le shampoing colorant Novara. Un vrai jeu d'enfant !</p>"
+          }
         }
       },
       "block_order": [
-        "heading_3jh7jX"
+        "heading_3jh7jX",
+        "richtext_jt9MTN"
       ],
       "name": "Rich text",
       "settings": {
