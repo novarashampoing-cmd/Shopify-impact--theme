@@ -325,7 +325,7 @@
           "settings": {
             "text": "Novara Shampoing en vidéo",
             "heading_tag": "h2",
-            "text_color": "",
+            "text_color": "#465069",
             "gradient": ""
           }
         },
@@ -347,7 +347,7 @@
         "text_position": "center",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#465069"
       }
     },
     "video_m7mnir": {
