@@ -459,7 +459,7 @@
       "settings": {
         "selected_theme": "standard",
         "body_gap": 32,
-        "body_gap_mobile": 32,
+        "body_gap_mobile": 0,
         "content_horizontal_align": "center",
         "content_horizontal_align_mobile": "center",
         "heading": "<h2><strong>Pourquoi choisir Novara Shampoing ?</strong></h2>",
