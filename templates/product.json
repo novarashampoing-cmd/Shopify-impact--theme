@@ -724,64 +724,32 @@
         "text_color": ""
       }
     },
-    "testimonials_MwVRCw": {
-      "type": "testimonials",
+    "175761911349a56d5f": {
+      "type": "apps",
       "blocks": {
-        "testimonial_YaPkRY": {
-          "type": "testimonial",
+        "judge_me_reviews_review_widget_Wjk7rq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "John S.",
-            "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_DV3tap": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Mary U.",
-            "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_JxhpPT": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "review_data": "sample_data",
+            "max_width": 1200
           }
         }
       },
       "block_order": [
-        "testimonial_YaPkRY",
-        "testimonial_DV3tap",
-        "testimonial_JxhpPT"
+        "judge_me_reviews_review_widget_Wjk7rq"
       ],
-      "name": "Testimonials",
       "settings": {
         "full_width": true,
-        "stack_testimonials": false,
-        "subheading": "Ce sont nos clients qui parlent le mieux de notre shampoing  !",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
         "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "testimonial_card_background": "",
-        "testimonial_card_text_color": ""
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
       }
     }
   },
@@ -798,6 +766,6 @@
     "meditrust_tableau_w6CdYa",
     "text_with_icons_gkLatW",
     "custom_liquid_KLPe3A",
-    "testimonials_MwVRCw"
+    "175761911349a56d5f"
   ]
 }
