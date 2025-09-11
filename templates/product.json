@@ -377,34 +377,10 @@
     "meditrust_tableau_w6CdYa": {
       "type": "meditrust-tableau",
       "blocks": {
-        "list_item_d4EKEk": {
-          "type": "list_item",
-          "settings": {
-            "text": "Endormez-vous plus rapidement"
-          }
-        },
-        "list_item_AnqPL7": {
-          "type": "list_item",
-          "settings": {
-            "text": "Relaxation & Sommeil réparateur"
-          }
-        },
-        "list_item_c9CEYH": {
-          "type": "list_item",
-          "settings": {
-            "text": "Réveillez-vous reposé"
-          }
-        },
-        "list_item_98cMVP": {
-          "type": "list_item",
-          "settings": {
-            "text": "À base de plantes"
-          }
-        },
         "table_row_r93djq": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Dosage optimisé",
+            "row_heading": "Prix",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -487,10 +463,6 @@
         }
       },
       "block_order": [
-        "list_item_d4EKEk",
-        "list_item_AnqPL7",
-        "list_item_c9CEYH",
-        "list_item_98cMVP",
         "table_row_r93djq",
         "table_row_bciXJT",
         "table_row_cpcx3A",
