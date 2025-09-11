@@ -383,7 +383,7 @@
             "logo": "shopify://shop_images/elle_300xlogo_1.png",
             "logo_width": 100,
             "author": "",
-            "content": "Enfin une coloration simple et naturelle qui couvre les cheveux blancs en un geste",
+            "content": "Enfin une coloration simple qui couvre les cheveux blancs en un geste",
             "show_rating": false,
             "rating": 4
           }
@@ -394,7 +394,7 @@
             "logo": "shopify://shop_images/Logo_Cosmopolitain.webp",
             "logo_width": 100,
             "author": "",
-            "content": "Write some content about what they says about your store.",
+            "content": "Le shampoing colorant qui change la routine. Rapide, sans effort respecte les cheveux",
             "show_rating": false,
             "rating": 4
           }
@@ -405,8 +405,8 @@
             "logo": "shopify://shop_images/LOGO-GENERIQUE_1.png",
             "logo_width": 100,
             "author": "",
-            "content": "Write some content about what they says about your store.",
-            "show_rating": true,
+            "content": "Parfait pour les hommes : la barbe retrouve sa couleur en 10 minutes",
+            "show_rating": false,
             "rating": 4
           }
         }
