@@ -374,6 +374,61 @@
         "overlay_opacity": 0
       }
     },
+    "press_MhJgKb": {
+      "type": "press",
+      "blocks": {
+        "quote_YwjN4w": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/elle_300xlogo_1.png",
+            "logo_width": 100,
+            "author": "",
+            "content": "Enfin une coloration simple et naturelle qui couvre les cheveux blancs en un geste",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_ihYhe7": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_Cosmopolitain.webp",
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_iGq3bf": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/LOGO-GENERIQUE_1.png",
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_YwjN4w",
+        "quote_ihYhe7",
+        "quote_iGq3bf"
+      ],
+      "name": "Press",
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
     "meditrust_tableau_w6CdYa": {
       "type": "meditrust-tableau",
       "blocks": {
@@ -590,6 +645,7 @@
     "before_after_image_Kn9fhC",
     "rich_text_V8R7G4",
     "video_m7mnir",
+    "press_MhJgKb",
     "meditrust_tableau_w6CdYa"
   ]
 }
