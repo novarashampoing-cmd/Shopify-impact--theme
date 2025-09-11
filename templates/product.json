@@ -505,7 +505,7 @@
         "body_gap_mobile": 32,
         "content_horizontal_align": "start",
         "content_horizontal_align_mobile": "center",
-        "heading": "<p><em>Nous</em> <strong>vs Autres Marques</strong></p>",
+        "heading": "<h2><strong>Pourquoi choisir Novara Shampoing ?</strong></h2>",
         "heading_custom": false,
         "heading_font": "josefin_sans_n4",
         "heading_size": 52,
