@@ -557,7 +557,7 @@
         "button_border_color": "#16142B",
         "button_border_hover_color": "#16142B",
         "table_border_color": "#465069",
-        "table_active_border_color": "#465069",
+        "table_active_border_color": "#000000",
         "table_heading_color": "#465069",
         "table_heading_active_color": "#FFFFFF",
         "table_heading_bg_active_color": "#465069",
