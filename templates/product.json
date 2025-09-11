@@ -606,21 +606,21 @@
         "text_color": "#465069",
         "icon_color": "#000000",
         "list_text_color": "#000000",
-        "button_color": "#FFFFFF",
+        "button_color": "#ffffff",
         "button_hover_color": "#dad0ff",
-        "button_bg_color": "#16142B",
-        "button_bg_hover_color": "#16142B",
-        "button_border_color": "#16142B",
-        "button_border_hover_color": "#16142B",
+        "button_bg_color": "#16142b",
+        "button_bg_hover_color": "#16142b",
+        "button_border_color": "#16142b",
+        "button_border_hover_color": "#16142b",
         "table_border_color": "#465069",
         "table_active_border_color": "#000000",
         "table_heading_color": "#465069",
-        "table_heading_active_color": "#FFFFFF",
+        "table_heading_active_color": "#ffffff",
         "table_heading_bg_active_color": "#465069",
         "table_column_active_bg_color": "#465069",
         "table_row_heading_color": "#465069",
         "table_row_text_color": "#465069",
-        "table_row_active_text_color": "#FFFFFF",
+        "table_row_active_text_color": "#ffffff",
         "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
@@ -724,10 +724,10 @@
         "text_color": ""
       }
     },
-    "175761911349a56d5f": {
+    "1757625303ff1b80a0": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_Wjk7rq": {
+        "judge_me_reviews_review_widget_jrj8mY": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
@@ -736,7 +736,7 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_Wjk7rq"
+        "judge_me_reviews_review_widget_jrj8mY"
       ],
       "settings": {
         "full_width": true,
@@ -766,6 +766,6 @@
     "meditrust_tableau_w6CdYa",
     "text_with_icons_gkLatW",
     "custom_liquid_KLPe3A",
-    "175761911349a56d5f"
+    "1757625303ff1b80a0"
   ]
 }
