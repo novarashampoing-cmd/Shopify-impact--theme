@@ -373,6 +373,255 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0
       }
+    },
+    "meditrust_tableau_w6CdYa": {
+      "type": "meditrust-tableau",
+      "blocks": {
+        "list_item_d4EKEk": {
+          "type": "list_item",
+          "settings": {
+            "text": "Endormez-vous plus rapidement"
+          }
+        },
+        "list_item_AnqPL7": {
+          "type": "list_item",
+          "settings": {
+            "text": "Relaxation & Sommeil réparateur"
+          }
+        },
+        "list_item_c9CEYH": {
+          "type": "list_item",
+          "settings": {
+            "text": "Réveillez-vous reposé"
+          }
+        },
+        "list_item_98cMVP": {
+          "type": "list_item",
+          "settings": {
+            "text": "À base de plantes"
+          }
+        },
+        "table_row_r93djq": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Dosage optimisé",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_bciXJT": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "À base de plantes",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_cpcx3A": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Faible en sucre",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_mqRPU6": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Ingrédients simples",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_wHJrNW": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Testé par des tiers",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_6UU9c4": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Goût délicieux",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_d4EKEk",
+        "list_item_AnqPL7",
+        "list_item_c9CEYH",
+        "list_item_98cMVP",
+        "table_row_r93djq",
+        "table_row_bciXJT",
+        "table_row_cpcx3A",
+        "table_row_mqRPU6",
+        "table_row_wHJrNW",
+        "table_row_6UU9c4"
+      ],
+      "name": "Meditrust - Compare Table",
+      "settings": {
+        "selected_theme": "standard",
+        "body_gap": 32,
+        "body_gap_mobile": 32,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "center",
+        "heading": "<p><em>Nous</em> <strong>vs Autres Marques</strong></p>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_height": 150,
+        "text": "<p>Nous sommes fiers de notre qualité et de notre focus sur le sommeil, nous ne pouvons pas en dire autant des autres.</p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 18,
+        "text_height": 150,
+        "text_mt": 4,
+        "list_mt": 50,
+        "list_mt_mobile": 32,
+        "list_gap": 30,
+        "list_gap_mobile": 30,
+        "list_hide_mobile": true,
+        "icon_size": 28,
+        "icon_size_mobile": 28,
+        "icon_margin_right": 16,
+        "list_text_custom": false,
+        "list_text_font": "josefin_sans_n4",
+        "list_text_size": 20,
+        "list_text_size_mobile": 18,
+        "list_text_height": 150,
+        "button": "ACHETER MAINTENANT",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 18,
+        "button_size_mobile": 18,
+        "button_height": 100,
+        "button_width": 305,
+        "button_mt": 50,
+        "button_mt_mobile": 32,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 48,
+        "button_padding_horizontal_mobile": 48,
+        "button_radius": 100,
+        "button_border_thickness": 0,
+        "button_style": "non_outline",
+        "button_position_mobile": "bottom",
+        "table_columns": 2,
+        "table_mt_mobile": 32,
+        "table_column_active": "1",
+        "table_radius": 16,
+        "table_border_thickness": 1,
+        "table_heading_image_size": 100,
+        "table_heading_image_size_mobile": 80,
+        "first_heading": "MEDITRUST",
+        "second_heading": "Autres Marques",
+        "third_heading": "Troisième",
+        "four_heading": "Quatrième",
+        "table_heading_custom": false,
+        "table_heading_font": "assistant_n4",
+        "table_heading_size": 20,
+        "table_heading_size_mobile": 16,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 18,
+        "table_heading_padding_horizontal_mobile": 18,
+        "table_heading_padding_vertical": 18,
+        "table_heading_padding_vertical_mobile": 18,
+        "table_row_padding_horizontal": 14,
+        "table_row_padding_horizontal_mobile": 14,
+        "table_row_padding_vertical": 16,
+        "table_row_padding_vertical_mobile": 16,
+        "table_row_heading_width_mobile": 66,
+        "table_row_heading_custom": false,
+        "table_row_heading_font": "assistant_n4",
+        "table_row_heading_size": 16,
+        "table_row_heading_size_mobile": 16,
+        "table_row_heading_height": 130,
+        "table_row_heading_align": "left",
+        "table_row_text_custom": false,
+        "table_row_text_font": "assistant_n4",
+        "table_row_text_size": 20,
+        "table_row_text_size_mobile": 16,
+        "table_row_text_height": 130,
+        "table_row_text_align": "center",
+        "table_row_image_size": 24,
+        "table_row_image_size_mobile": 24,
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "icon_color": "#000000",
+        "list_text_color": "#000000",
+        "button_color": "#FFFFFF",
+        "button_hover_color": "#dad0ff",
+        "button_bg_color": "#16142B",
+        "button_bg_hover_color": "#16142B",
+        "button_border_color": "#16142B",
+        "button_border_hover_color": "#16142B",
+        "table_border_color": "#2D2B43",
+        "table_active_border_color": "#DAD0FF",
+        "table_heading_color": "#1A192E",
+        "table_heading_active_color": "#FFFFFF",
+        "table_heading_bg_active_color": "#2D2B43",
+        "table_column_active_bg_color": "#2D2B43",
+        "table_row_heading_color": "#1A192E",
+        "table_row_text_color": "#1A192E",
+        "table_row_active_text_color": "#FFFFFF",
+        "background_color": "#F6F3FF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -383,6 +632,7 @@
     "media_with_text_DbfdJ8",
     "before_after_image_Kn9fhC",
     "rich_text_V8R7G4",
-    "video_m7mnir"
+    "video_m7mnir",
+    "meditrust_tableau_w6CdYa"
   ]
 }
