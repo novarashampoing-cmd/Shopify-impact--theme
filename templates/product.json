@@ -204,7 +204,7 @@
             "content": "<h3>Coloration en 10 minutes<br/></h3><p><strong>Une application simple</strong> : posez, laissez agir 10 minutes, puis rincez</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#dddee2",
+            "background": "#e9ebf0",
             "background_gradient": "",
             "text_color": "#000000",
             "text_gradient": "",
@@ -239,7 +239,7 @@
             "content": "<h3>Application facile<br/></h3><p>Le shampoing colorant Novara s'applique comme n'importe quel autre shampoing</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#dddee2",
+            "background": "#e9ebf0",
             "background_gradient": "",
             "text_color": "#000000",
             "text_gradient": "",
@@ -274,7 +274,7 @@
             "content": "<h3>Respecte les cheveux, la barbe et la peau</h3><p><br/>Une formule douce, sans ammoniaque, enrichie en actifs naturels pour nourrir, protéger et révéler une couleur éclatante en toute sérénité</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#dddee2",
+            "background": "#e9ebf0",
             "background_gradient": "",
             "text_color": "#000000",
             "text_gradient": "",
@@ -606,21 +606,21 @@
         "text_color": "#465069",
         "icon_color": "#000000",
         "list_text_color": "#000000",
-        "button_color": "#ffffff",
+        "button_color": "#FFFFFF",
         "button_hover_color": "#dad0ff",
-        "button_bg_color": "#16142b",
-        "button_bg_hover_color": "#16142b",
-        "button_border_color": "#16142b",
-        "button_border_hover_color": "#16142b",
+        "button_bg_color": "#16142B",
+        "button_bg_hover_color": "#16142B",
+        "button_border_color": "#16142B",
+        "button_border_hover_color": "#16142B",
         "table_border_color": "#465069",
         "table_active_border_color": "#000000",
         "table_heading_color": "#465069",
-        "table_heading_active_color": "#ffffff",
+        "table_heading_active_color": "#FFFFFF",
         "table_heading_bg_active_color": "#465069",
         "table_column_active_bg_color": "#465069",
         "table_row_heading_color": "#465069",
         "table_row_text_color": "#465069",
-        "table_row_active_text_color": "#ffffff",
+        "table_row_active_text_color": "#FFFFFF",
         "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
@@ -724,10 +724,10 @@
         "text_color": ""
       }
     },
-    "1757625303ff1b80a0": {
+    "175761911349a56d5f": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_jrj8mY": {
+        "judge_me_reviews_review_widget_Wjk7rq": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
@@ -736,7 +736,7 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_jrj8mY"
+        "judge_me_reviews_review_widget_Wjk7rq"
       ],
       "settings": {
         "full_width": true,
@@ -750,6 +750,59 @@
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
+      }
+    },
+    "faq_j9Uyhf": {
+      "type": "faq",
+      "blocks": {
+        "item_tcfkUK": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_pm4FQh": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_PVRjGz": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_tcfkUK",
+        "item_pm4FQh",
+        "item_PVRjGz"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#e9ebf0",
+        "accordion_text_color": ""
       }
     }
   },
@@ -766,6 +819,7 @@
     "meditrust_tableau_w6CdYa",
     "text_with_icons_gkLatW",
     "custom_liquid_KLPe3A",
-    "1757625303ff1b80a0"
+    "175761911349a56d5f",
+    "faq_j9Uyhf"
   ]
 }
