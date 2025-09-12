@@ -184,7 +184,7 @@
         "text_position": "center",
         "background": "",
         "background_gradient": "",
-        "text_color": "#465069"
+        "text_color": "#000000"
       }
     },
     "media_with_text_FexRVY": {
@@ -310,7 +310,7 @@
         "drag_initial_position": 50,
         "background": "",
         "background_gradient": "",
-        "text_color": "#465069",
+        "text_color": "#000000",
         "before_text_color": "#465069",
         "after_text_color": "#465069",
         "drag_cursor_background": "#ffffff",
@@ -325,7 +325,7 @@
           "settings": {
             "text": "Novara Shampoing en vidéo",
             "heading_tag": "h2",
-            "text_color": "#465069",
+            "text_color": "#000000",
             "gradient": ""
           }
         },
@@ -347,7 +347,7 @@
         "text_position": "center",
         "background": "",
         "background_gradient": "",
-        "text_color": "#465069"
+        "text_color": "#000000"
       }
     },
     "video_m7mnir": {
@@ -602,8 +602,8 @@
         "table_row_text_align": "center",
         "table_row_image_size": 24,
         "table_row_image_size_mobile": 24,
-        "heading_color": "#465069",
-        "text_color": "#465069",
+        "heading_color": "#000000",
+        "text_color": "#000000",
         "icon_color": "#000000",
         "list_text_color": "#000000",
         "button_color": "#ffffff",
@@ -845,7 +845,7 @@
         "background": "",
         "background_gradient": "",
         "text_color": "",
-        "heading_color": "#465069",
+        "heading_color": "#000000",
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
