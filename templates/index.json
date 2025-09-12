@@ -345,6 +345,39 @@
         "background_gradient": ""
       }
     },
+    "rich_text_BYmk3V": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7kdeN7": {
+          "type": "heading",
+          "settings": {
+            "text": "Novara Shampoing en vidéo",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_6YGAxC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Vous n'avez besoin que d'apeine 10 petites minutes pour appliquer le shampoing colorant Novara. Un vrai jeu d'enfant !</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7kdeN7",
+        "richtext_6YGAxC"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "before-after-image": {
       "type": "before-after-image",
       "settings": {
@@ -367,6 +400,30 @@
         "after_text_color": "#465069",
         "drag_cursor_background": "#ffffff",
         "drag_cursor_color": "#000000"
+      }
+    },
+    "video_z7k6Xa": {
+      "type": "video",
+      "blocks": {
+        "play_9f3Nhw": {
+          "type": "play",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "play_9f3Nhw"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "video": "shopify://files/videos/Vidéo démonstration Novara Shampoing.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "press": {
@@ -454,63 +511,6 @@
         "button_text_color": "#ffffff"
       }
     },
-    "rich_text_BYmk3V": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_7kdeN7": {
-          "type": "heading",
-          "settings": {
-            "text": "Novara Shampoing en vidéo",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_6YGAxC": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Vous n'avez besoin que d'apeine 10 petites minutes pour appliquer le shampoing colorant Novara. Un vrai jeu d'enfant !</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_7kdeN7",
-        "richtext_6YGAxC"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "video_z7k6Xa": {
-      "type": "video",
-      "blocks": {
-        "play_9f3Nhw": {
-          "type": "play",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "play_9f3Nhw"
-      ],
-      "name": "Video",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "autoplay": false,
-        "video_size": "auto",
-        "video": "shopify://files/videos/Vidéo démonstration Novara Shampoing.mp4",
-        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -570,11 +570,11 @@
     "impact-text",
     "featured-product",
     "media-grid",
+    "rich_text_BYmk3V",
+    "video_z7k6Xa",
     "before-after-image",
     "press",
     "multiple_images_with_text_PMKEiP",
-    "rich_text_BYmk3V",
-    "video_z7k6Xa",
     "faq"
   ]
 }
