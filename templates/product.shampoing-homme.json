@@ -42,6 +42,12 @@
             "show_taxes_notice": false
           }
         },
+        "text_3PaRRj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✔️ Couvre les cheveux en seulement 10 minutes<br/>✔️ Un résultat qui jusqu'à 6 semaines<br/>✔️ Application simple, propre et sans taches<br/>✔️ Une formule douce, sans ammoniaque</p>"
+          }
+        },
         "payment_terms": {
           "type": "payment_terms",
           "disabled": true,
@@ -133,6 +139,7 @@
         "liquid_Hd4aBb",
         "badges",
         "price",
+        "text_3PaRRj",
         "payment_terms",
         "description",
         "variant_picker",
