@@ -200,7 +200,7 @@
         "image_jThwwi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/benefice_numero_1_Novara_Shampoing_8d4f569c-7dcf-4111-8a35-ef69b5286d23.webp",
+            "image": "shopify://shop_images/benefice_numero_1_Novara_Shampoing_femme.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -270,7 +270,7 @@
         "image_RBKNUL": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/benefice_numero_3_Novara_Shampoing_294c26e6-a981-4581-9465-6a5b900c0621.webp",
+            "image": "shopify://shop_images/benefice_numero_Novara_Shampoing_femme.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
