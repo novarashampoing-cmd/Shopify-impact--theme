@@ -449,7 +449,7 @@
         "collage_images_alignment": "middle",
         "background": "",
         "background_gradient": "",
-        "text_color": "#465069",
+        "text_color": "",
         "button_background": "#465069",
         "button_text_color": "#ffffff"
       }
@@ -498,7 +498,7 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "heading_color": "#465069",
+        "heading_color": "#000000",
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
