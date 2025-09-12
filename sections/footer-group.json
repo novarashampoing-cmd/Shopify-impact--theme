@@ -83,17 +83,17 @@
             "content": "<h3>Inscrivez-vous à notre newsletter pour ne pas rater nos offres exclusives !</h3>"
           }
         },
-        "links": {
-          "type": "links",
-          "settings": {
-            "menu": "footer",
-            "show_menu_title": true
-          }
-        },
         "links_P7X6G6": {
           "type": "links",
           "settings": {
             "menu": "main-menu",
+            "show_menu_title": true
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
             "show_menu_title": true
           }
         },
@@ -108,8 +108,8 @@
       },
       "block_order": [
         "newsletter",
-        "links",
         "links_P7X6G6",
+        "links",
         "text"
       ],
       "settings": {
