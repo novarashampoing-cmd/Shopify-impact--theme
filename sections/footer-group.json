@@ -100,8 +100,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "title": "Notre engagement",
+            "content": "<p>Chez <strong>Novara Shampoing</strong>, nous avons créé une solution simple, rapide et respectueuse pour redonner à vos cheveux la couleur qu'ils méritent.</p>",
             "enable_follow_on_shop": true
           }
         }
