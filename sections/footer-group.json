@@ -22,7 +22,7 @@
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
-            "icon_color": "",
+            "icon_color": "#465069",
             "title": "Livraison offerte en ce moment !",
             "content": "<p>Envoi suivi et expédié dans les 24 à 48 h et livrée dans les 6 à 10 jours ouvrables</p>"
           }
@@ -35,7 +35,7 @@
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
-            "icon_color": "",
+            "icon_color": "#465069",
             "title": "Service client 24h/24h",
             "content": "<p>Notre équipe est à votre service 7j/7 pour vous répondre et vous aider</p>"
           }
@@ -48,7 +48,7 @@
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
-            "icon_color": "",
+            "icon_color": "#465069",
             "title": "Paiements sécurisés",
             "content": "<p>Les transactions passent par une connexion cryptée, garantissant la confidentialité de vos informations</p>"
           }
