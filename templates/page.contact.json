@@ -16,6 +16,29 @@
         "content_width": "80ch"
       }
     },
+    "rich_text_YNErdb": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_tCg6tq": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Adresse mail : contact@novarashampoing.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_tCg6tq"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "contact": {
       "type": "contact",
       "settings": {
@@ -39,6 +62,7 @@
   },
   "order": [
     "main",
+    "rich_text_YNErdb",
     "contact"
   ]
 }
