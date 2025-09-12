@@ -87,7 +87,7 @@
           "type": "item",
           "settings": {
             "title": "100%",
-            "subheading": "Showcase a benefit of your product",
+            "subheading": "d'efficacité",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -335,6 +335,7 @@
         "item-3",
         "29246d34-c6e0-4373-84f6-b15e57736a00"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -431,7 +432,7 @@
             "image": "shopify://shop_images/essayez_le_shampoing_colorant_novara.webp",
             "image_rotation_degrees": 0,
             "subheading": "",
-            "title": "Envie de redonner vie à votre couleur ?",
+            "title": "Envie de redonner de la couleur à vos cheveux ?",
             "content": "<p>Testez <strong>Novara Shampoing</strong> dès maintenant et profitez d’une solution douce, rapide et naturelle pour estomper vos cheveux blancs.</p>",
             "button_url": "shopify://products/shampoing-colorant-instantane-pour-femme",
             "button_text": "Essayer maintenant"
