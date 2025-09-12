@@ -835,8 +835,8 @@
         "item_VqDAxn": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Est-ce que le shampoing laisse des taches ?",
+            "content": "<p>Non 🙂 <strong>Novara Shampoing</strong> ne tache ni la peau ni le cuir chevelu et se rince facilement des surfaces comme l’évier ou la baignoire. Nous conseillons simplement d’éviter le contact avec des tissus pendant l’application.</p>"
           }
         },
         "item_rQwCjQ": {
