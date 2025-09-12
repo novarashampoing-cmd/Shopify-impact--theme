@@ -449,9 +449,9 @@
         "collage_images_alignment": "middle",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "text_color": "#465069",
+        "button_background": "#465069",
+        "button_text_color": "#ffffff"
       }
     },
     "faq": {
