@@ -821,8 +821,8 @@
         "item_aMc886": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Y a-t-il un risque pour les peaux sensibles ?",
+            "content": "<p>Notre shampoing colorant est conçu pour limiter au maximum les irritations : il ne contient ni PPD, ni ammoniaque, ni résorcinol, ni oxydants agressifs — des substances fréquemment responsables de réactions allergiques dans les colorations traditionnelles.</p><p>Grâce à cette composition plus douce, il est généralement bien toléré par les cuirs chevelus sensibles et constitue une alternative rassurante pour celles et ceux qui recherchent une solution plus respectueuse.</p><p>👉 Par précaution, nous conseillons toujours d’effectuer un <strong>test de tolérance 24h avant la première utilisation</strong> : appliquez une petite quantité de produit derrière l’oreille ou dans le pli du coude, laissez agir une dizaine de minutes, rincez puis surveillez la zone pendant 24 heures.</p>"
           }
         },
         "item_qaTCQt": {
