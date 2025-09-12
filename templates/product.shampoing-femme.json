@@ -856,8 +856,8 @@
         "item_hyJqfF": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Le produit abîme-t-il les cheveux ?",
+            "content": "<p>Non, la formule de <strong>Novara Shampoing</strong> est enrichie en ingrédients d’origine naturelle et exempte de composants agressifs. Elle respecte vos cheveux comme votre cuir chevelu, tout en apportant une protection douce.</p>"
           }
         }
       },
