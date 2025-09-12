@@ -299,6 +299,41 @@
         "spacing": "none"
       }
     },
+    "media_with_text_NzYqGQ": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_zCfDCd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Shampoing_Novara_solution_economique.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "90% plus économique",
+            "title": "",
+            "content": "<h3>Économique et pratique</h3><p><br/>Plus besoin de rendez-vous onéreux chez le coiffeur ! Nous avez une solution pro, rapide et abordable.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#e9ebf0",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_zCfDCd"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "none"
+      }
+    },
     "before_after_image_Kn9fhC": {
       "type": "before-after-image",
       "name": "Before/after image",
@@ -867,6 +902,7 @@
     "media_with_text_FexRVY",
     "media_with_text_ehh7j4",
     "media_with_text_DbfdJ8",
+    "media_with_text_NzYqGQ",
     "before_after_image_Kn9fhC",
     "rich_text_V8R7G4",
     "video_m7mnir",
