@@ -364,6 +364,27 @@
             "banner_display": "all",
             "banner_id": ""
           }
+        },
+        "collapsible_text_NWTwkm": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "🚚 Expédition rapide",
+            "content": "<p>L'équipe de <strong>Novara Shampoing</strong> veille à ce que chaque commande soit traitée et expédiée en 24 à 48h depuis notre entrepôt. Nos délais de livraison sont de 6 à 10 jours ouvrés en France, Belgique et Suisse.</p><p>Un numéro de suivi vous est communiqué dès l’expédition pour suivre votre colis. Et parce qu’un bon service ne s’arrête pas à la commande, notre équipe reste disponible pour répondre à vos questions et vous accompagner si besoin.</p>"
+          }
+        },
+        "collapsible_text_VdEc7x": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "🌿 Ingrédients et bienfaits de notre shampoing",
+            "content": "<p>Notre formule a été développée pour allier <strong>confort, efficacité et respect</strong> des cheveux comme de la peau.</p><h5>Les actifs phares de notre shampoing colorant</h5><p>💧 <strong>Eau</strong> : hydrate et facilite l’application</p><p>🍊 <strong>Vitamine C</strong> : antioxydante, elle protège et illumine</p><p>🌱 <strong>Squalane</strong> : restaure la barrière cutanée et hydrate en profondeur</p><p>🌿 <strong>Huile de jojoba</strong> : nourrit, apaise et équilibre</p><p>🥥 <strong>Huile de macadamia</strong> : riche en acides gras, elle régénère et protège</p><p>🍄 <strong>Extrait de Reishi</strong> : puissant antioxydant, il revitalise les cheveux</p><p>🌰 <strong>Huile de sésame noir</strong> : nourrit intensément et soutient la pigmentation naturelle</p><p>🌶 <strong>Extrait de gingembre</strong> : stimule la microcirculation et fortifie les racines</p><p>🌼 <strong>Racine d’angélique</strong> : apaise, renforce et contribue à la croissance capillaire<br/></p><h3>🧪 Sécurité & qualité</h3><p>✔ Testé dermatologiquement pour une tolérance optimale<br/>✔ Ingrédients d’origine naturelle, respectueux de l’environnement<br/>✔ Formule sans compromis : certains composants techniques (parfum, propylène glycol) sont utilisés en quantité maîtrisée pour garantir efficacité et innocuité</p><h3>📦 Informations pratiques</h3><ul><li><strong>Contenance</strong> : 200 ml</li><li><strong>Liste INCI</strong> : Eau, alcool cétylique, Pergaal, huile minérale, extrait de renouée à fleurs, extrait de ginseng Panax, extrait de racine d’angélique, dérivés de glucose, bétaïne de cocamidopropyle, parfum, colorants doux, régulateurs de pH, monoglycéride, activateur doux<br/></li></ul><h3>💬 Une question ?</h3><p>Notre équipe est disponible pour vous conseiller et vous accompagner</p>"
+          }
+        },
+        "collapsible_text_ebBKXy": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "🧴🫧 Comment appliquer notre shampoing ?",
+            "content": "<p>1️⃣ <strong>Mousser</strong> : Prélevez une dose dans vos mains et faites mousser le shampoing<br/><br/>2️⃣ <strong>Appliquer</strong> : Répartissez uniformément sur cheveux secs ou barbe, puis laissez agir 10 minutes<br/><br/>3️⃣ <strong>Rincer</strong> : Rincez abondamment et profitez d’une couleur éclatante et naturelle ✨💆‍♂️</p>"
+          }
         }
       },
       "block_order": [
@@ -376,7 +397,10 @@
         "buy-buttons",
         "liquid_4A8idQ",
         "liquid_itRyrU",
-        "essential_trust_badges_app_block_DTJXGG"
+        "essential_trust_badges_app_block_DTJXGG",
+        "collapsible_text_NWTwkm",
+        "collapsible_text_VdEc7x",
+        "collapsible_text_ebBKXy"
       ],
       "settings": {
         "full_width": false,
