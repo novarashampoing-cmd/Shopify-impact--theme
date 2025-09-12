@@ -80,6 +80,132 @@
         "button_text_color": ""
       }
     },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "liquid_YmpTHG": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- 🔢 Sélecteur de quantité - même largeur que le bouton ATC (Impact) -->\n<div class=\"nk-qty-wrapper\">\n  <label class=\"nk-qty-label\" for=\"nk-qty-input\">Quantité</label>\n  <div class=\"nk-qty\">\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-minus\" aria-label=\"Réduire\">−</button>\n    <input\n      id=\"nk-qty-input\"\n      type=\"number\"\n      name=\"quantity\"\n      value=\"1\"\n      min=\"1\"\n      class=\"nk-qty-input\"\n    >\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-plus\" aria-label=\"Augmenter\">+</button>\n  </div>\n</div>\n\n<style>\n  .nk-qty-wrapper { margin: 1rem 0; width: 100%; }\n  .nk-qty-label { display:block; margin-bottom:6px; font-size:14px; color:#222; }\n  .nk-qty { display:grid; grid-template-columns:40px 1fr 40px; align-items:center; background:#e2e6ea; border-radius:8px; overflow:hidden; width:100%; }\n  .nk-qty-btn { height:44px; border:none; background:transparent; font-size:20px; font-weight:500; color:#000; cursor:pointer; display:flex; align-items:center; justify-content:center; }\n  .nk-qty-input { border:none; background:transparent; text-align:center; font-size:16px; height:44px; width:100%; appearance:textfield; }\n  .nk-qty-input::-webkit-outer-spin-button,.nk-qty-input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }\n</style>\n\n<script>\n(function(){\n  const root = document.currentScript.closest('.nk-qty-wrapper') || document;\n  const input = root.querySelector('#nk-qty-input');\n  const minus = root.querySelector('.nk-qty-minus');\n  const plus  = root.querySelector('.nk-qty-plus');\n\n  const MIN = () => Number(input.min) || 1;\n  const MAX = () => Number(input.max) || 9999;\n  const clamp = v => Math.max(MIN(), Math.min(v, MAX()));\n\n  function setVal(v){\n    input.value = clamp(Number(v)||MIN());\n    syncAllForms();\n    toggleMinus();\n  }\n  function toggleMinus(){ minus.disabled = (Number(input.value)||1) <= MIN(); }\n\n  minus.addEventListener('click', ()=> setVal((Number(input.value)||1)-1));\n  plus.addEventListener('click',  ()=> setVal((Number(input.value)||1)+1));\n  input.addEventListener('input', ()=> setVal(input.value));\n\n  // === SYNC → pousse la valeur vers TOUS les formulaires add-to-cart visibles (Impact + sticky bar)\n  function getATCForms(){\n    return Array.from(document.querySelectorAll('form[action*=\"/cart/add\"]'))\n      .filter(f => f.offsetParent !== null);\n  }\n  function ensureHiddenQty(form){\n    // Certains thèmes n'ont pas d'input quantity dans le form → on le crée caché\n    let q = form.querySelector('input[name=\"quantity\"]');\n    if(!q){\n      q = document.createElement('input');\n      q.type = 'hidden';\n      q.name = 'quantity';\n      form.appendChild(q);\n    }\n    return q;\n  }\n  function syncAllForms(){\n    const val = String(clamp(Number(input.value)||1));\n    getATCForms().forEach(form=>{\n      // 1) Mettez à jour tout input[name=\"quantity\"] existant (visible ou non)\n      form.querySelectorAll('input[name=\"quantity\"]').forEach(el => el.value = val);\n      // 2) S’il n’y en a pas, créez le hidden qty (certaines implémentations JS lisent directement dans le form)\n      ensureHiddenQty(form).value = val;\n    });\n  }\n\n  // === HOOK SUBMIT → avant soumission (ou click ATC), on force la quantité\n  function hookForm(form){\n    if(form.__nkHooked) return;\n    form.__nkHooked = true;\n\n    // Sur submit classique\n    form.addEventListener('submit', (e)=>{\n      syncAllForms(); // s'assure que la valeur part bien\n    }, true);\n\n    // Sur clic du bouton d'ajout (certains thèmes lisent la valeur à ce moment)\n    const addBtn = form.querySelector('[type=\"submit\"][name=\"add\"], button[name=\"add\"]');\n    if(addBtn){\n      addBtn.addEventListener('click', ()=> syncAllForms(), true);\n    }\n  }\n\n  // Associer aussi l'input à un form (attribut \"form\") pour compatibilité large\n  (function associateToNearestForm(){\n    const firstForm = getATCForms()[0];\n    if(firstForm){\n      if(!firstForm.id) firstForm.id = 'product-form-' + Math.random().toString(36).slice(2);\n      input.setAttribute('form', firstForm.id);\n    }\n  })();\n\n  // Initial sync + hook\n  syncAllForms();\n  getATCForms().forEach(hookForm);\n  toggleMinus();\n\n  // Variante change → on peut remettre à 1 si souhaité et resync\n  document.addEventListener('variant:change', ()=>{\n    setVal(1);\n  });\n\n  // Si le thème remplace dynamiquement le form (AJAX sections), on re-hook/sync\n  const mo = new MutationObserver(()=>{\n    getATCForms().forEach(hookForm);\n    syncAllForms();\n  });\n  mo.observe(document.body, {childList:true, subtree:true});\n})();\n</script>"
+          }
+        },
+        "buy-buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#465069",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_4A8idQ": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"margin-top:14px; margin-bottom:0;\">\n  <style>\n    .nk-offer-banner{background:#E9EBF0;border-radius:12px;padding:16px;color:#333}\n    .nk-offer-banner__header{\n      background:#3E4D6B;color:#fff;border-radius:10px;padding:10px 16px;font-weight:700;\n      text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:8px;letter-spacing:.4px\n    }\n    .nk-offer-banner__header::before,.nk-offer-banner__header::after{\n      content:\"\";display:inline-block;width:34px;height:3px;border-radius:3px;background:currentColor;opacity:.9\n    }\n\n    /* GRID: [left | divider | right] */\n    .nk-offer-banner__body{\n      display:grid;grid-template-columns:minmax(0,1fr) 1px minmax(0,1fr);\n      align-items:center;gap:16px;padding:14px 10px 6px\n    }\n    .nk-offer-banner__left,.nk-offer-banner__right{\n      min-width:0;text-align:center;padding:0 8px; /* <-- espace près du séparateur */\n    }\n    /* Desktop: on autorise le wrap pour éviter le chevauchement */\n    @media (min-width: 481px){\n      .nk-offer-banner__left{white-space:normal;overflow-wrap:anywhere;font-weight:800;line-height:1.25}\n    }\n    /* Mobile: on garde une seule ligne à gauche */\n    @media (max-width: 480px){\n      .nk-offer-banner__left{white-space:nowrap;font-weight:800}\n    }\n    .nk-offer-banner__right{line-height:1.35}\n    .nk-offer-banner__divider{\n      width:1px;height:22px;background:rgba(0,0,0,.2);justify-self:center\n    }\n\n    /* Fallback mobile : stack propre */\n    @media (max-width: 480px){\n      .nk-offer-banner__body{grid-template-columns:1fr;gap:8px;padding:12px 10px 2px}\n      .nk-offer-banner__divider{display:none}\n      .nk-offer-banner__right{border-top:1px solid rgba(0,0,0,.12);padding-top:8px}\n    }\n  </style>\n\n  <div class=\"nk-offer-banner\">\n    <div class=\"nk-offer-banner__header\">🎁 OFFRE DE RENTRÉE</div>\n    <div class=\"nk-offer-banner__body\">\n      <div class=\"nk-offer-banner__left\">1 SHAMPOING ACHETÉ = LE 2ÈME À -50%</div>\n      <div class=\"nk-offer-banner__divider\" aria-hidden=\"true\"></div>\n      <div class=\"nk-offer-banner__right\">Ajoutez 2 produits à votre panier et la promotion s'applique automatiquement !</div>\n    </div>\n  </div>\n</div>"
+          }
+        },
+        "liquid_itRyrU": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% comment %}\nBannière alerte promo — Custom Liquid\nÉdite simplement les variables ci-dessous.\n{% endcomment %}\n\n{%- assign alert_title = \"Mise à jour du\" -%}\n{%- assign alert_date  = \"now\" | date: \"%d/%m/%Y\" -%} \n{%- assign alert_text  = \"La promotion sur la livraison suivie <strong>GRATUITE</strong> se termine ce soir à minuit&nbsp;! Profitez-en avant qu’il ne soit trop tard.\" -%}\n\n<div class=\"nk-alert\">\n  <style>\n    .nk-alert{\n      --alert-border: #e53935;\n      --alert-bg: #ffe9e9;\n      --alert-text: #d32f2f;\n      --alert-icon: #d32f2f;\n      border: 2px solid var(--alert-border);\n      background: var(--alert-bg);\n      color: var(--alert-text);\n      border-radius: 6px;\n      padding: 16px 18px;\n      margin: 18px 0;\n      font-family: inherit;\n    }\n    .nk-alert__row{\n      display: grid;\n      grid-template-columns: auto 1fr;\n      align-items: start;\n      gap: 12px;\n    }\n    .nk-alert__icon{\n      width: 22px; height: 22px; flex: 0 0 22px; color: var(--alert-icon);\n      margin-top: 2px;\n    }\n    .nk-alert__content{\n      font-size: clamp(14px, 1.5vw, 17px);\n      line-height: 1.5;\n    }\n    .nk-alert__content b, .nk-alert__content strong{ font-weight: 800; }\n    .nk-alert__title{ font-weight: 800; }\n    @media (max-width: 480px){\n      .nk-alert{ padding: 12px 14px; }\n      .nk-alert__icon{ width: 20px; height: 20px; }\n    }\n  </style>\n\n  <div class=\"nk-alert__row\">\n    <svg class=\"nk-alert__icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n      <path fill=\"currentColor\" d=\"M7.88 3.39 6.6 1.86 2 5.9l1.27 1.53 4.61-4.04zM22 5.9l-4.6-4.04-1.29 1.53 4.62 4.04L22 5.9zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm-.75 2.5v5.25l4.5 2.64.75-1.28-3.75-2.2V8.5h-1.5z\"/>\n    </svg>\n    <div class=\"nk-alert__content\">\n      <span class=\"nk-alert__title\">{{ alert_title }} {{ alert_date }}</span> : \n      {{ alert_text }}\n    </div>\n  </div>\n</div>"
+          }
+        },
+        "essential_trust_badges_app_block_DTJXGG": {
+          "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
+          "settings": {
+            "banner_display": "all",
+            "banner_id": ""
+          }
+        },
+        "collapsible_text_NWTwkm": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "🚚 Expédition rapide",
+            "content": "<p>L'équipe de <strong>Novara Shampoing</strong> veille à ce que chaque commande soit traitée et expédiée en 24 à 48h depuis notre entrepôt. Nos délais de livraison sont de 6 à 10 jours ouvrés en France, Belgique et Suisse.</p><p>Un numéro de suivi vous est communiqué dès l’expédition pour suivre votre colis. Et parce qu’un bon service ne s’arrête pas à la commande, notre équipe reste disponible pour répondre à vos questions et vous accompagner si besoin.</p>"
+          }
+        },
+        "collapsible_text_VdEc7x": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "🌿 Ingrédients et bienfaits de notre shampoing",
+            "content": "<p>Notre formule a été développée pour allier <strong>confort, efficacité et respect</strong> des cheveux comme de la peau.</p><h5>Les actifs phares de notre shampoing colorant</h5><p>💧 <strong>Eau</strong> : hydrate et facilite l’application</p><p>🍊 <strong>Vitamine C</strong> : antioxydante, elle protège et illumine</p><p>🌱 <strong>Squalane</strong> : restaure la barrière cutanée et hydrate en profondeur</p><p>🌿 <strong>Huile de jojoba</strong> : nourrit, apaise et équilibre</p><p>🥥 <strong>Huile de macadamia</strong> : riche en acides gras, elle régénère et protège</p><p>🍄 <strong>Extrait de Reishi</strong> : puissant antioxydant, il revitalise les cheveux</p><p>🌰 <strong>Huile de sésame noir</strong> : nourrit intensément et soutient la pigmentation naturelle</p><p>🌶 <strong>Extrait de gingembre</strong> : stimule la microcirculation et fortifie les racines</p><p>🌼 <strong>Racine d’angélique</strong> : apaise, renforce et contribue à la croissance capillaire<br/></p><h3>🧪 Sécurité & qualité</h3><p>✔ Testé dermatologiquement pour une tolérance optimale<br/>✔ Ingrédients d’origine naturelle, respectueux de l’environnement<br/>✔ Formule sans compromis : certains composants techniques (parfum, propylène glycol) sont utilisés en quantité maîtrisée pour garantir efficacité et innocuité</p><h3>📦 Informations pratiques</h3><ul><li><strong>Contenance</strong> : 200 ml</li><li><strong>Liste INCI</strong> : Eau, alcool cétylique, Pergaal, huile minérale, extrait de renouée à fleurs, extrait de ginseng Panax, extrait de racine d’angélique, dérivés de glucose, bétaïne de cocamidopropyle, parfum, colorants doux, régulateurs de pH, monoglycéride, activateur doux<br/></li></ul><h3>💬 Une question ?</h3><p>Notre équipe est disponible pour vous conseiller et vous accompagner</p>"
+          }
+        },
+        "collapsible_text_ebBKXy": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "🧴🫧 Comment appliquer notre shampoing ?",
+            "content": "<p>1️⃣ <strong>Mousser</strong> : Prélevez une dose dans vos mains et faites mousser le shampoing<br/><br/>2️⃣ <strong>Appliquer</strong> : Répartissez uniformément sur cheveux secs ou barbe, puis laissez agir 10 minutes<br/><br/>3️⃣ <strong>Rincer</strong> : Rincez abondamment et profitez d’une couleur éclatante et naturelle ✨💆‍♂️</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "variant-picker",
+        "liquid_YmpTHG",
+        "buy-buttons",
+        "liquid_4A8idQ",
+        "liquid_itRyrU",
+        "essential_trust_badges_app_block_DTJXGG",
+        "collapsible_text_NWTwkm",
+        "collapsible_text_VdEc7x",
+        "collapsible_text_ebBKXy"
+      ],
+      "settings": {
+        "full_width": false,
+        "product": "shampoing-colorant-instantane-pour-femme",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
     "impact-text": {
       "type": "impact-text",
       "blocks": {
@@ -294,132 +420,6 @@
         "logo_item_border": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "variant-picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
-        "liquid_YmpTHG": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!-- 🔢 Sélecteur de quantité - même largeur que le bouton ATC (Impact) -->\n<div class=\"nk-qty-wrapper\">\n  <label class=\"nk-qty-label\" for=\"nk-qty-input\">Quantité</label>\n  <div class=\"nk-qty\">\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-minus\" aria-label=\"Réduire\">−</button>\n    <input\n      id=\"nk-qty-input\"\n      type=\"number\"\n      name=\"quantity\"\n      value=\"1\"\n      min=\"1\"\n      class=\"nk-qty-input\"\n    >\n    <button type=\"button\" class=\"nk-qty-btn nk-qty-plus\" aria-label=\"Augmenter\">+</button>\n  </div>\n</div>\n\n<style>\n  .nk-qty-wrapper { margin: 1rem 0; width: 100%; }\n  .nk-qty-label { display:block; margin-bottom:6px; font-size:14px; color:#222; }\n  .nk-qty { display:grid; grid-template-columns:40px 1fr 40px; align-items:center; background:#e2e6ea; border-radius:8px; overflow:hidden; width:100%; }\n  .nk-qty-btn { height:44px; border:none; background:transparent; font-size:20px; font-weight:500; color:#000; cursor:pointer; display:flex; align-items:center; justify-content:center; }\n  .nk-qty-input { border:none; background:transparent; text-align:center; font-size:16px; height:44px; width:100%; appearance:textfield; }\n  .nk-qty-input::-webkit-outer-spin-button,.nk-qty-input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }\n</style>\n\n<script>\n(function(){\n  const root = document.currentScript.closest('.nk-qty-wrapper') || document;\n  const input = root.querySelector('#nk-qty-input');\n  const minus = root.querySelector('.nk-qty-minus');\n  const plus  = root.querySelector('.nk-qty-plus');\n\n  const MIN = () => Number(input.min) || 1;\n  const MAX = () => Number(input.max) || 9999;\n  const clamp = v => Math.max(MIN(), Math.min(v, MAX()));\n\n  function setVal(v){\n    input.value = clamp(Number(v)||MIN());\n    syncAllForms();\n    toggleMinus();\n  }\n  function toggleMinus(){ minus.disabled = (Number(input.value)||1) <= MIN(); }\n\n  minus.addEventListener('click', ()=> setVal((Number(input.value)||1)-1));\n  plus.addEventListener('click',  ()=> setVal((Number(input.value)||1)+1));\n  input.addEventListener('input', ()=> setVal(input.value));\n\n  // === SYNC → pousse la valeur vers TOUS les formulaires add-to-cart visibles (Impact + sticky bar)\n  function getATCForms(){\n    return Array.from(document.querySelectorAll('form[action*=\"/cart/add\"]'))\n      .filter(f => f.offsetParent !== null);\n  }\n  function ensureHiddenQty(form){\n    // Certains thèmes n'ont pas d'input quantity dans le form → on le crée caché\n    let q = form.querySelector('input[name=\"quantity\"]');\n    if(!q){\n      q = document.createElement('input');\n      q.type = 'hidden';\n      q.name = 'quantity';\n      form.appendChild(q);\n    }\n    return q;\n  }\n  function syncAllForms(){\n    const val = String(clamp(Number(input.value)||1));\n    getATCForms().forEach(form=>{\n      // 1) Mettez à jour tout input[name=\"quantity\"] existant (visible ou non)\n      form.querySelectorAll('input[name=\"quantity\"]').forEach(el => el.value = val);\n      // 2) S’il n’y en a pas, créez le hidden qty (certaines implémentations JS lisent directement dans le form)\n      ensureHiddenQty(form).value = val;\n    });\n  }\n\n  // === HOOK SUBMIT → avant soumission (ou click ATC), on force la quantité\n  function hookForm(form){\n    if(form.__nkHooked) return;\n    form.__nkHooked = true;\n\n    // Sur submit classique\n    form.addEventListener('submit', (e)=>{\n      syncAllForms(); // s'assure que la valeur part bien\n    }, true);\n\n    // Sur clic du bouton d'ajout (certains thèmes lisent la valeur à ce moment)\n    const addBtn = form.querySelector('[type=\"submit\"][name=\"add\"], button[name=\"add\"]');\n    if(addBtn){\n      addBtn.addEventListener('click', ()=> syncAllForms(), true);\n    }\n  }\n\n  // Associer aussi l'input à un form (attribut \"form\") pour compatibilité large\n  (function associateToNearestForm(){\n    const firstForm = getATCForms()[0];\n    if(firstForm){\n      if(!firstForm.id) firstForm.id = 'product-form-' + Math.random().toString(36).slice(2);\n      input.setAttribute('form', firstForm.id);\n    }\n  })();\n\n  // Initial sync + hook\n  syncAllForms();\n  getATCForms().forEach(hookForm);\n  toggleMinus();\n\n  // Variante change → on peut remettre à 1 si souhaité et resync\n  document.addEventListener('variant:change', ()=>{\n    setVal(1);\n  });\n\n  // Si le thème remplace dynamiquement le form (AJAX sections), on re-hook/sync\n  const mo = new MutationObserver(()=>{\n    getATCForms().forEach(hookForm);\n    syncAllForms();\n  });\n  mo.observe(document.body, {childList:true, subtree:true});\n})();\n</script>"
-          }
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "#465069",
-            "atc_button_text_color": "#ffffff",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "liquid_4A8idQ": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"margin-top:14px; margin-bottom:0;\">\n  <style>\n    .nk-offer-banner{background:#E9EBF0;border-radius:12px;padding:16px;color:#333}\n    .nk-offer-banner__header{\n      background:#3E4D6B;color:#fff;border-radius:10px;padding:10px 16px;font-weight:700;\n      text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:8px;letter-spacing:.4px\n    }\n    .nk-offer-banner__header::before,.nk-offer-banner__header::after{\n      content:\"\";display:inline-block;width:34px;height:3px;border-radius:3px;background:currentColor;opacity:.9\n    }\n\n    /* GRID: [left | divider | right] */\n    .nk-offer-banner__body{\n      display:grid;grid-template-columns:minmax(0,1fr) 1px minmax(0,1fr);\n      align-items:center;gap:16px;padding:14px 10px 6px\n    }\n    .nk-offer-banner__left,.nk-offer-banner__right{\n      min-width:0;text-align:center;padding:0 8px; /* <-- espace près du séparateur */\n    }\n    /* Desktop: on autorise le wrap pour éviter le chevauchement */\n    @media (min-width: 481px){\n      .nk-offer-banner__left{white-space:normal;overflow-wrap:anywhere;font-weight:800;line-height:1.25}\n    }\n    /* Mobile: on garde une seule ligne à gauche */\n    @media (max-width: 480px){\n      .nk-offer-banner__left{white-space:nowrap;font-weight:800}\n    }\n    .nk-offer-banner__right{line-height:1.35}\n    .nk-offer-banner__divider{\n      width:1px;height:22px;background:rgba(0,0,0,.2);justify-self:center\n    }\n\n    /* Fallback mobile : stack propre */\n    @media (max-width: 480px){\n      .nk-offer-banner__body{grid-template-columns:1fr;gap:8px;padding:12px 10px 2px}\n      .nk-offer-banner__divider{display:none}\n      .nk-offer-banner__right{border-top:1px solid rgba(0,0,0,.12);padding-top:8px}\n    }\n  </style>\n\n  <div class=\"nk-offer-banner\">\n    <div class=\"nk-offer-banner__header\">🎁 OFFRE DE RENTRÉE</div>\n    <div class=\"nk-offer-banner__body\">\n      <div class=\"nk-offer-banner__left\">1 SHAMPOING ACHETÉ = LE 2ÈME À -50%</div>\n      <div class=\"nk-offer-banner__divider\" aria-hidden=\"true\"></div>\n      <div class=\"nk-offer-banner__right\">Ajoutez 2 produits à votre panier et la promotion s'applique automatiquement !</div>\n    </div>\n  </div>\n</div>"
-          }
-        },
-        "liquid_itRyrU": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "{% comment %}\nBannière alerte promo — Custom Liquid\nÉdite simplement les variables ci-dessous.\n{% endcomment %}\n\n{%- assign alert_title = \"Mise à jour du\" -%}\n{%- assign alert_date  = \"now\" | date: \"%d/%m/%Y\" -%} \n{%- assign alert_text  = \"La promotion sur la livraison suivie <strong>GRATUITE</strong> se termine ce soir à minuit&nbsp;! Profitez-en avant qu’il ne soit trop tard.\" -%}\n\n<div class=\"nk-alert\">\n  <style>\n    .nk-alert{\n      --alert-border: #e53935;\n      --alert-bg: #ffe9e9;\n      --alert-text: #d32f2f;\n      --alert-icon: #d32f2f;\n      border: 2px solid var(--alert-border);\n      background: var(--alert-bg);\n      color: var(--alert-text);\n      border-radius: 6px;\n      padding: 16px 18px;\n      margin: 18px 0;\n      font-family: inherit;\n    }\n    .nk-alert__row{\n      display: grid;\n      grid-template-columns: auto 1fr;\n      align-items: start;\n      gap: 12px;\n    }\n    .nk-alert__icon{\n      width: 22px; height: 22px; flex: 0 0 22px; color: var(--alert-icon);\n      margin-top: 2px;\n    }\n    .nk-alert__content{\n      font-size: clamp(14px, 1.5vw, 17px);\n      line-height: 1.5;\n    }\n    .nk-alert__content b, .nk-alert__content strong{ font-weight: 800; }\n    .nk-alert__title{ font-weight: 800; }\n    @media (max-width: 480px){\n      .nk-alert{ padding: 12px 14px; }\n      .nk-alert__icon{ width: 20px; height: 20px; }\n    }\n  </style>\n\n  <div class=\"nk-alert__row\">\n    <svg class=\"nk-alert__icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n      <path fill=\"currentColor\" d=\"M7.88 3.39 6.6 1.86 2 5.9l1.27 1.53 4.61-4.04zM22 5.9l-4.6-4.04-1.29 1.53 4.62 4.04L22 5.9zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm-.75 2.5v5.25l4.5 2.64.75-1.28-3.75-2.2V8.5h-1.5z\"/>\n    </svg>\n    <div class=\"nk-alert__content\">\n      <span class=\"nk-alert__title\">{{ alert_title }} {{ alert_date }}</span> : \n      {{ alert_text }}\n    </div>\n  </div>\n</div>"
-          }
-        },
-        "essential_trust_badges_app_block_DTJXGG": {
-          "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
-          "settings": {
-            "banner_display": "all",
-            "banner_id": ""
-          }
-        },
-        "collapsible_text_NWTwkm": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "🚚 Expédition rapide",
-            "content": "<p>L'équipe de <strong>Novara Shampoing</strong> veille à ce que chaque commande soit traitée et expédiée en 24 à 48h depuis notre entrepôt. Nos délais de livraison sont de 6 à 10 jours ouvrés en France, Belgique et Suisse.</p><p>Un numéro de suivi vous est communiqué dès l’expédition pour suivre votre colis. Et parce qu’un bon service ne s’arrête pas à la commande, notre équipe reste disponible pour répondre à vos questions et vous accompagner si besoin.</p>"
-          }
-        },
-        "collapsible_text_VdEc7x": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "🌿 Ingrédients et bienfaits de notre shampoing",
-            "content": "<p>Notre formule a été développée pour allier <strong>confort, efficacité et respect</strong> des cheveux comme de la peau.</p><h5>Les actifs phares de notre shampoing colorant</h5><p>💧 <strong>Eau</strong> : hydrate et facilite l’application</p><p>🍊 <strong>Vitamine C</strong> : antioxydante, elle protège et illumine</p><p>🌱 <strong>Squalane</strong> : restaure la barrière cutanée et hydrate en profondeur</p><p>🌿 <strong>Huile de jojoba</strong> : nourrit, apaise et équilibre</p><p>🥥 <strong>Huile de macadamia</strong> : riche en acides gras, elle régénère et protège</p><p>🍄 <strong>Extrait de Reishi</strong> : puissant antioxydant, il revitalise les cheveux</p><p>🌰 <strong>Huile de sésame noir</strong> : nourrit intensément et soutient la pigmentation naturelle</p><p>🌶 <strong>Extrait de gingembre</strong> : stimule la microcirculation et fortifie les racines</p><p>🌼 <strong>Racine d’angélique</strong> : apaise, renforce et contribue à la croissance capillaire<br/></p><h3>🧪 Sécurité & qualité</h3><p>✔ Testé dermatologiquement pour une tolérance optimale<br/>✔ Ingrédients d’origine naturelle, respectueux de l’environnement<br/>✔ Formule sans compromis : certains composants techniques (parfum, propylène glycol) sont utilisés en quantité maîtrisée pour garantir efficacité et innocuité</p><h3>📦 Informations pratiques</h3><ul><li><strong>Contenance</strong> : 200 ml</li><li><strong>Liste INCI</strong> : Eau, alcool cétylique, Pergaal, huile minérale, extrait de renouée à fleurs, extrait de ginseng Panax, extrait de racine d’angélique, dérivés de glucose, bétaïne de cocamidopropyle, parfum, colorants doux, régulateurs de pH, monoglycéride, activateur doux<br/></li></ul><h3>💬 Une question ?</h3><p>Notre équipe est disponible pour vous conseiller et vous accompagner</p>"
-          }
-        },
-        "collapsible_text_ebBKXy": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "🧴🫧 Comment appliquer notre shampoing ?",
-            "content": "<p>1️⃣ <strong>Mousser</strong> : Prélevez une dose dans vos mains et faites mousser le shampoing<br/><br/>2️⃣ <strong>Appliquer</strong> : Répartissez uniformément sur cheveux secs ou barbe, puis laissez agir 10 minutes<br/><br/>3️⃣ <strong>Rincer</strong> : Rincez abondamment et profitez d’une couleur éclatante et naturelle ✨💆‍♂️</p>"
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "badges",
-        "price",
-        "rating",
-        "variant-picker",
-        "liquid_YmpTHG",
-        "buy-buttons",
-        "liquid_4A8idQ",
-        "liquid_itRyrU",
-        "essential_trust_badges_app_block_DTJXGG",
-        "collapsible_text_NWTwkm",
-        "collapsible_text_VdEc7x",
-        "collapsible_text_ebBKXy"
-      ],
-      "settings": {
-        "full_width": false,
-        "product": "shampoing-colorant-instantane-pour-femme",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
     "multiple_images_with_text_PMKEiP": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -508,10 +508,10 @@
     "slideshow",
     "multiple-images-with-text",
     "impact-text",
+    "featured-product",
     "media-grid",
     "before-after-image",
     "press",
-    "featured-product",
     "multiple_images_with_text_PMKEiP",
     "faq"
   ]
