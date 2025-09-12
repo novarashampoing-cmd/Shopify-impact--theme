@@ -264,11 +264,23 @@
             "show_rating": false,
             "rating": 4
           }
+        },
+        "quote_Hbefch": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/LOGO-GENERIQUE_1.png",
+            "logo_width": 100,
+            "author": "",
+            "content": "Parfait pour les hommes : la barbe est colorée en 10 minutes",
+            "show_rating": false,
+            "rating": 4
+          }
         }
       },
       "block_order": [
         "16644243327ba53d2a-0",
-        "16644243327ba53d2a-1"
+        "16644243327ba53d2a-1",
+        "quote_Hbefch"
       ],
       "settings": {
         "full_width": true,
