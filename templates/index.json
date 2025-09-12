@@ -246,9 +246,10 @@
         "16644243327ba53d2a-0": {
           "type": "quote",
           "settings": {
+            "logo": "shopify://shop_images/elle_300xlogo_1.png",
             "logo_width": 100,
             "author": "",
-            "content": "Share info about what your customers say about your products.",
+            "content": "Enfin une coloration qui couvre les cheveux blancs en un geste",
             "show_rating": false,
             "rating": 4
           }
