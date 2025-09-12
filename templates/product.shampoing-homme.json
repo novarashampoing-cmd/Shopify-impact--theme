@@ -766,63 +766,84 @@
           "type": "item",
           "settings": {
             "title": "Combien de temps tient la coloration ?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "content": "<p>La tenue varie selon la nature de vos cheveux et votre routine de lavage. En moyenne, la couleur obtenue avec <strong>Novara Shampoing</strong> reste visible entre <strong>4 et 6 semaines</strong>.</p>"
           }
         },
         "item_pm4FQh": {
           "type": "item",
           "settings": {
             "title": "Combien de temps dure une bouteille de shampoing ?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "content": "<p>Un flacon de <strong>Novara Shampoing</strong> permet généralement <strong>10 à 15 utilisations</strong>, en fonction de la longueur et de l’épaisseur de vos cheveux.</p>"
           }
         },
         "item_PVRjGz": {
           "type": "item",
           "settings": {
             "title": "Le shampoing colorant peut-il être appliqué sur tous types de cheveux ?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "content": "<p>Oui 👍 <strong>Novara Shampoing</strong> convient aussi bien aux cheveux fins qu’aux cheveux épais. Sa texture crémeuse facilite une application uniforme, des racines jusqu’aux pointes.</p>"
           }
         },
         "item_aMc886": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Y a-t-il un risque pour les peaux sensibles ?",
+            "content": "<p>Notre shampoing colorant est conçu pour limiter au maximum les irritations : il ne contient ni PPD, ni ammoniaque, ni résorcinol, ni oxydants agressifs — des substances fréquemment responsables de réactions allergiques dans les colorations traditionnelles.</p><p>Grâce à cette composition plus douce, il est généralement bien toléré par les cuirs chevelus sensibles et constitue une alternative rassurante pour celles et ceux qui recherchent une solution plus respectueuse.</p><p>👉 Par précaution, nous conseillons toujours d’effectuer un <strong>test de tolérance 24h avant la première utilisation</strong> : appliquez une petite quantité de produit derrière l’oreille ou dans le pli du coude, laissez agir une dizaine de minutes, rincez puis surveillez la zone pendant 24 heures.</p>"
           }
         },
         "item_qaTCQt": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Dois-je utiliser des gants ?",
+            "content": "<p>Pas besoin 👍 Le shampoing colorant <strong>Novara</strong> s’applique comme un shampoing classique, directement avec les mains, sans gants ni matériel supplémentaire.</p><p>Si vous ne souhaitez prendre absolument aucun risque, vous pouvez éventuellement vous servir de gants.</p>"
           }
         },
         "item_VqDAxn": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Est-ce que le shampoing laisse des taches ?",
+            "content": "<p>Non 🙂 <strong>Novara Shampoing</strong> ne tache ni la peau ni le cuir chevelu et se rince facilement des surfaces comme l’évier ou la baignoire. Nous conseillons simplement d’éviter le contact avec des tissus pendant l’application.</p>"
           }
         },
         "item_rQwCjQ": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Le shampoing colorant convient-il aussi pour la barbe ?",
+            "content": "<p>Absolument 👍 <strong>Novara Shampoing</strong> fonctionne aussi bien sur la barbe que sur les cheveux. Il apporte une couleur naturelle et homogène tout en respectant la fibre du poil.</p>"
           }
         },
         "item_U7pfJj": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Ce shampoing est-il compatible avec mes soins capillaires ?",
+            "content": "<p>Oui 👍 Vous pouvez continuer à utiliser vos shampooings et soins habituels entre deux applications de <strong>Novara Shampoing</strong>. Un après-shampoing peut même être appliqué juste après pour plus de douceur.</p>"
           }
         },
         "item_hyJqfF": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Le produit abîme-t-il les cheveux ?",
+            "content": "<p>Non, la formule de <strong>Novara Shampoing</strong> est enrichie en ingrédients d’origine naturelle et exempte de composants agressifs. Elle respecte vos cheveux comme votre cuir chevelu, tout en apportant une protection douce.</p>"
+          }
+        },
+        "item_aQMByG": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que le shampoing couvre les cheveux gris ?",
+            "content": "<p><strong>Novara Shampoing</strong> assure une couverture homogène et naturelle des cheveux gris. Avec des applications régulières, la couleur gagne en intensité et en tenue.</p>"
+          }
+        },
+        "item_B8GcHr": {
+          "type": "item",
+          "settings": {
+            "title": "Convient-il aux cheveux déjà colorés ?",
+            "content": "<p>Oui 👍 <strong>Novara Shampoing</strong> peut être appliqué sur des cheveux colorés ou ayant subi des traitements chimiques. En cas de doute, nous conseillons de réaliser un petit test préalable ou de demander l’avis d’un professionnel.</p>"
+          }
+        },
+        "item_zEgVxT": {
+          "type": "item",
+          "settings": {
+            "title": "Novara Shampoing est-il utilisable après une coloration au henné ?",
+            "content": "<p>Oui, <strong>Novara Shampoing</strong> peut être utilisé après une coloration au henné, à condition que celui-ci soit 100 % naturel et exempt de sels métalliques. Pour plus de sécurité, réalisez d’abord un test sur une petite mèche afin de vérifier le résultat.</p>"
           }
         }
       },
@@ -835,7 +856,10 @@
         "item_VqDAxn",
         "item_rQwCjQ",
         "item_U7pfJj",
-        "item_hyJqfF"
+        "item_hyJqfF",
+        "item_aQMByG",
+        "item_B8GcHr",
+        "item_zEgVxT"
       ],
       "name": "FAQ",
       "settings": {
