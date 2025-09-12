@@ -362,7 +362,7 @@
         "drag_initial_position": 50,
         "background": "",
         "background_gradient": "",
-        "text_color": "#465069",
+        "text_color": "#000000",
         "before_text_color": "#465069",
         "after_text_color": "#465069",
         "drag_cursor_background": "#ffffff",
