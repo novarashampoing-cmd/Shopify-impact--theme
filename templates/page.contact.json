@@ -22,7 +22,7 @@
         "richtext_tCg6tq": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Adresse mail : contact@novarashampoing.com</p>"
+            "content": "<p><strong>Adresse mail :</strong> contact@novarashampoing.com</p>"
           }
         }
       },
