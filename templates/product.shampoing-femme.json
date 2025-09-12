@@ -859,6 +859,27 @@
             "title": "Le produit abîme-t-il les cheveux ?",
             "content": "<p>Non, la formule de <strong>Novara Shampoing</strong> est enrichie en ingrédients d’origine naturelle et exempte de composants agressifs. Elle respecte vos cheveux comme votre cuir chevelu, tout en apportant une protection douce.</p>"
           }
+        },
+        "item_zdw434": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que le shampoing couvre les cheveux gris ?",
+            "content": "<p><strong>Novara Shampoing</strong> assure une couverture homogène et naturelle des cheveux gris. Avec des applications régulières, la couleur gagne en intensité et en tenue.</p>"
+          }
+        },
+        "item_j3HTNH": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_qwBCQD": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
         }
       },
       "block_order": [
@@ -870,7 +891,10 @@
         "item_VqDAxn",
         "item_rQwCjQ",
         "item_U7pfJj",
-        "item_hyJqfF"
+        "item_hyJqfF",
+        "item_zdw434",
+        "item_j3HTNH",
+        "item_qwBCQD"
       ],
       "name": "FAQ",
       "settings": {
