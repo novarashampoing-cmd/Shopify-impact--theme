@@ -92,7 +92,7 @@
             "button_text": "",
             "button_url": "",
             "animate_impact_text": false,
-            "animate_impact_text_duration": 2
+            "animate_impact_text_duration": 3.5
           }
         }
       },
@@ -109,8 +109,8 @@
         "background": "",
         "background_gradient": "",
         "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(70, 80, 105, 1) 2%, rgba(72, 76, 105, 0.77) 49%, rgba(26, 26, 26, 0) 100%)",
-        "text_color": "#465069",
+        "heading_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 20%, rgba(214, 214, 214, 1) 77%, rgba(26, 26, 26, 0) 100%)",
+        "text_color": "#000000ff",
         "button_background": "",
         "button_text_color": ""
       }
