@@ -389,6 +389,7 @@
       "block_order": [
         "play_9f3Nhw"
       ],
+      "disabled": true,
       "name": "Video",
       "settings": {
         "full_width": true,
