@@ -104,13 +104,22 @@
             "content": "<p>Chez <strong>Novara Shampoing</strong>, nous avons créé une solution simple, rapide et respectueuse pour redonner à vos cheveux la couleur qu'ils méritent.</p>",
             "enable_follow_on_shop": true
           }
+        },
+        "text_nFa9gL": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "content": "<p>contact@novarashampoing.com<br/>07 56 97 89 69</p>",
+            "enable_follow_on_shop": false
+          }
         }
       },
       "block_order": [
         "newsletter",
         "links_P7X6G6",
         "links",
-        "text"
+        "text",
+        "text_nFa9gL"
       ],
       "settings": {
         "show_social_media": false,
