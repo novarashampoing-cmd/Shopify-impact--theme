@@ -40,9 +40,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/Logo_Novara.png",
-        "logo_max_width": 250,
-        "logo_mobile_max_width": 130,
+        "logo": "shopify://shop_images/Logo_marque_Novara.png",
+        "logo_max_width": 200,
+        "logo_mobile_max_width": 160,
         "menu": "main-menu",
         "sidebar_menu": "main-menu",
         "secondary_menu": "",
