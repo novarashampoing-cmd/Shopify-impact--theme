@@ -53,6 +53,27 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17545581496"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17545581496');
+</script>
+
+<!-- Event snippet for Achat conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17545581496/EFacCI-i-ZobELinsa5B',
+      'value': 1.0,
+      'currency': 'EUR',
+      'transaction_id': ''
+  });
+</script>
+
+
   </head>
 
   <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
