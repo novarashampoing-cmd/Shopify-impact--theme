@@ -45,7 +45,7 @@
         "text_3PaRRj": {
           "type": "text",
           "settings": {
-            "text": "<p>✔️ Couvre les cheveux en seulement 10 minutes<br/>✔️ Un résultat qui jusqu'à 6 semaines<br/>✔️ Application simple, propre et sans taches<br/>✔️ Une formule douce, sans ammoniaque</p>"
+            "text": "<p>✔️ Couvre les cheveux en seulement 10 minutes<br/>✔️ Pour cheveux et barbe<br/>✔️ Un résultat qui jusqu'à 6 semaines<br/>✔️ Application simple, propre et sans taches<br/>✔️ Une formule douce, sans ammoniaque</p>"
           }
         },
         "payment_terms": {
@@ -62,7 +62,6 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "hide_sold_out_variants": false,
             "stack_blocks": false,
