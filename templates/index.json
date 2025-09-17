@@ -151,8 +151,8 @@
           "settings": {
             "hide_sold_out_variants": false,
             "stack_blocks": true,
-            "selector_mode": "dropdown",
-            "color_mode": "dropdown",
+            "selector_mode": "block",
+            "color_mode": "block",
             "size_chart_page": ""
           }
         },
