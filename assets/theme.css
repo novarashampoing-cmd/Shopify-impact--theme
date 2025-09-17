@@ -9878,3 +9878,24 @@ split-lines {
   display: -webkit-box;
   overflow: hidden;
 }
+/* === Fix thin Apple Pay button on Impact === */
+.product-form .shopify-payment-button__button--apple-pay,
+.shopify-payment-button__button--apple-pay {
+  display: block !important;
+  width: 100% !important;
+  height: var(--inputs-height, 56px) !important;     /* match Add to cart */
+  min-height: var(--inputs-height, 56px) !important;
+  border-radius: var(--buttons-radius, 9999px) !important;
+  padding: 0 !important;                              /* avoid collapsing */
+  transform: none !important;                         /* prevent scaling issues */
+}
+
+/* (optional) keep Google Pay the same height too */
+.product-form .shopify-payment-button__button--google-pay,
+.shopify-payment-button__button--google-pay {
+  height: var(--inputs-height, 56px) !important;
+  min-height: var(--inputs-height, 56px) !important;
+}
+
+/* tighten spacing if needed */
+.product-form .shopify-payment-button { margin-top: 8px; }
