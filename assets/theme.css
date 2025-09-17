@@ -9878,24 +9878,37 @@ split-lines {
   display: -webkit-box;
   overflow: hidden;
 }
-/* === Fix thin Apple Pay button on Impact === */
-.product-form .shopify-payment-button__button--apple-pay,
-.shopify-payment-button__button--apple-pay {
+/* --- FIX Apple Pay trop fin (Impact) --- */
+.buy-buttons,
+.product-form,
+.shopify-payment-button {
+  --wallet-height: 56px; /* ajuste pour matcher ton bouton "Ajouter au panier" */
+}
+
+.product-form .shopify-payment-button,
+.product-form .shopify-payment-button__button,
+.product-form .shopify-payment-button__button--unbranded,
+.product-form .shopify-payment-button__button--branded,
+.product-form .shopify-payment-button__button--apple-pay {
   display: block !important;
   width: 100% !important;
-  height: var(--inputs-height, 56px) !important;     /* match Add to cart */
-  min-height: var(--inputs-height, 56px) !important;
-  border-radius: var(--buttons-radius, 9999px) !important;
-  padding: 0 !important;                              /* avoid collapsing */
-  transform: none !important;                         /* prevent scaling issues */
+  height: var(--wallet-height) !important;
+  min-height: var(--wallet-height) !important;
+  line-height: var(--wallet-height) !important;   /* évite l’effet “barre” */
+  padding: 0 16px !important;
+  border-radius: 9999px !important;
+  transform: none !important;
 }
 
-/* (optional) keep Google Pay the same height too */
-.product-form .shopify-payment-button__button--google-pay,
-.shopify-payment-button__button--google-pay {
-  height: var(--inputs-height, 56px) !important;
-  min-height: var(--inputs-height, 56px) !important;
-}
+/* parfois Impact réduit le conteneur */
+.product-form .shopify-payment-button { min-height: var(--wallet-height) !important; }
 
-/* tighten spacing if needed */
-.product-form .shopify-payment-button { margin-top: 8px; }
+/* masque le bouton fantôme que Shopify insère parfois */
+.product-form .shopify-payment-button__button--hidden { display: none !important; }
+
+/* Google Pay / autres wallets au même gabarit */
+.product-form .shopify-payment-button__button--google-pay {
+  height: var(--wallet-height) !important;
+  min-height: var(--wallet-height) !important;
+  line-height: var(--wallet-height) !important;
+}
