@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Banniere_novara_shampoing_1200.jpg",
-            "mobile_image": "shopify://shop_images/Banniere_mobile_novara_shampoing.webp",
+            "mobile_image": "shopify://shop_images/Banniere_Novara_Shampoing_mobile.webp",
             "content_max_width": 780,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
