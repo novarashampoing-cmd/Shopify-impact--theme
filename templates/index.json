@@ -140,6 +140,12 @@
             "text": "<p>✔️ Couvre les cheveux en seulement 10 minutes<br/>✔️ Pour cheveux et barbe<br/>✔️ Un résultat qui jusqu'à 6 semaines<br/>✔️ Application simple, propre et sans taches<br/>✔️ Une formule douce, sans ammoniaque</p>"
           }
         },
+        "liquid_PgkUeM": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "variant-picker": {
           "type": "variant_picker",
           "settings": {
@@ -213,6 +219,7 @@
         "badges",
         "price",
         "text_z4jDkr",
+        "liquid_PgkUeM",
         "variant-picker",
         "liquid_YmpTHG",
         "buy-buttons",
