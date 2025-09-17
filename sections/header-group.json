@@ -47,7 +47,7 @@
         "sidebar_menu": "main-menu",
         "secondary_menu": "",
         "menu_open_trigger": "click",
-        "opening_from": "left",
+        "opening_from": "bottom",
         "layout": "drawer",
         "show_social_media": false,
         "show_locale_selector": false,
