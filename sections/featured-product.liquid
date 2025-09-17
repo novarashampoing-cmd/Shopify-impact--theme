@@ -42,39 +42,41 @@
 <div {% render 'section-properties', tight: true %}>
   <div class="product">
     {%- if section.settings.product != blank -%}
-  {%- assign featured_product = section.settings.product -%}
-  {%- capture product_form_id -%}featured-product-form-{{ section.id }}{%- endcapture -%}
+      {%- if section.settings.product.media.size > 0 -%}
+        {%- render 'product-gallery', product: section.settings.product -%}
+      {%- endif -%}
 
-  {%- if featured_product.media.size > 0 -%}
-    {%- render 'product-gallery', product: featured_product -%}
-  {%- endif -%}
+      {%- render 'product-info', product: section.settings.product, update_url: false -%}
+    {%- else -%}
+      <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
+        <div class="product-gallery__ar-wrapper">
+          <div class="product-gallery__media-list-wrapper">
 
-  <safe-sticky class="product-info">
-    <product-form id="{{ product_form_id }}" class="featured-product__form">
-      <form method="post" action="/cart/add" id="{{ product_form_id }}" accept-charset="UTF-8" enctype="multipart/form-data" novalidate>
-        <input type="hidden" name="form_type" value="product">
-        <input type="hidden" name="utf8" value="✓">
-        <input type="hidden" name="id" value="{{ featured_product.selected_or_first_available_variant.id }}">
+            <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
+              <div class="product-gallery__media {% if section.settings.mobile_carousel_control != 'free_scroll' %}snap-center{% endif %}">
+                {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}
+              </div>
+            </media-carousel>
+          </div>
+        </div>
+      </product-gallery>
+
+      <safe-sticky class="product-info">
+        {%- capture product_form_id -%}featured-product-form-{{ section.id }}{%- endcapture -%}
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-            {%- when '@app' -%}
-              {%- render block -%}
-
             {%- when 'vendor' -%}
-              <div class="product-info__vendor" {{ block.shopify_attributes }}>{{ featured_product.vendor }}</div>
+              <div class="product-info__vendor" {{ block.shopify_attributes }}>{{- 'general.on_boarding.product_vendor' | t -}}</div>
 
             {%- when 'title' -%}
-              <{{ block.settings.heading_tag }} class="product-info__title" {{ block.shopify_attributes }}>{{ featured_product.title }}</{{ block.settings.heading_tag }}>
+              <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ 'general.on_boarding.product_title' | t }}</h2>
 
             {%- when 'price' -%}
-              <div class="product-info__price" {{ block.shopify_attributes }}>
-                {%- render 'price-list', product: featured_product, variant: featured_product.selected_or_first_available_variant, form_id: product_form_id -%}
-              </div>
-
-            {%- when 'rating' -%}
-              <div class="product-info__rating" {{ block.shopify_attributes }}>
-                {%- render 'rating', product: featured_product, show_empty: block.settings.show_empty -%}
+              <div class="product-info__price">
+                <price-list class="price-list price-list--lg">
+                  <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
+                </price-list>
               </div>
 
             {%- when 'separator' -%}
@@ -82,28 +84,16 @@
 
             {%- when 'description' -%}
               <div class="product-info__description" {{ block.shopify_attributes }}>
-                <div class="prose">{{ featured_product.description }}</div>
-              </div>
-
-            {%- when 'variant_picker' -%}
-              <div class="product-info__variant-picker" {{ block.shopify_attributes }}>
-                {%- render 'variant-picker',
-                  product: featured_product,
-                  form_id: product_form_id,
-                  update_url: false,
-                  hide_sold_out_variants: block.settings.hide_sold_out_variants,
-                  stack_blocks: block.settings.stack_blocks,
-                  selector_mode: block.settings.selector_mode,
-                  color_mode: block.settings.color_mode,
-                  size_chart_page: block.settings.size_chart_page,
-                  block: block
-                -%}
+                <div class="prose">
+                  {{- 'general.on_boarding.product_description' | t -}}
+                </div>
               </div>
 
             {%- when 'quantity_selector' -%}
-              <div class="product-info__quantity-selector" {{ block.shopify_attributes }}>
+              <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
                 <div class="form-control">
                   <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
+
                   <quantity-selector class="quantity-selector">
                     <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
                     <input id="{{ product_form_id }}-quantity" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" size="2" value="1" autocomplete="off">
@@ -114,92 +104,15 @@
 
             {%- when 'buy_buttons' -%}
               <div class="product-info__buy-buttons" {{ block.shopify_attributes }}>
-                {%- render 'buy-buttons',
-                  product: featured_product,
-                  form_id: product_form_id,
-                  show_payment_button: block.settings.show_payment_button,
-                  atc_button_background: block.settings.atc_button_background,
-                  atc_button_text_color: block.settings.atc_button_text_color,
-                  payment_button_background: block.settings.payment_button_background,
-                  payment_button_text_color: block.settings.payment_button_text_color
-                -%}
-              </div>
-
-            {%- when 'pickup_availability' -%}
-              <div class="product-info__pickup" {{ block.shopify_attributes }}>
-                {%- render 'pickup-availability', product: featured_product -%}
-              </div>
-
-            {%- when 'inventory' -%}
-              <div class="product-info__inventory" {{ block.shopify_attributes }}>
-                {%- render 'inventory-status', product: featured_product, threshold: block.settings.low_inventory_threshold -%}
-              </div>
-
-            {%- when 'text' -%}
-              <div class="product-info__text" {{ block.shopify_attributes }}>
-                {{ block.settings.text }}
-              </div>
-
-            {%- when 'collapsible_text' -%}
-              <details class="product-info__collapsible" {{ block.shopify_attributes }}>
-                <summary>{{ block.settings.title }}</summary>
-                <div class="prose">{{ block.settings.content }}</div>
-              </details>
-
-            {%- when 'image' -%}
-              {%- if block.settings.image != blank -%}
-                <div class="product-info__image" style="max-width: {{ block.settings.max_width }}px; justify-self: {{ block.settings.alignment }};" {{ block.shopify_attributes }}>
-                  {{ block.settings.image | image_url: width: block.settings.max_width | image_tag: widths: '200,400,800,1200' }}
-                </div>
-              {%- endif -%}
-
-            {%- when 'button' -%}
-              <div class="product-info__button" {{ block.shopify_attributes }}>
-                {%- render 'button',
-                  href: block.settings.link,
-                  content: block.settings.text,
-                  size: block.settings.size,
-                  style: block.settings.style,
-                  stretch: block.settings.stretch,
-                  background: block.settings.background,
-                  text_color: block.settings.text_color
-                -%}
-              </div>
-
-            {%- when 'liquid' -%}
-              <div class="product-info__liquid" {{ block.shopify_attributes }}>
-                {{ block.settings.liquid }}
-              </div>
-
-            {%- when 'associated_products' -%}
-              <div class="product-info__associated" {{ block.shopify_attributes }}>
-                {%- render 'associated-products',
-                  title: block.settings.title,
-                  stack_products: block.settings.stack_products,
-                  products_count: block.settings.products_count,
-                  background: block.settings.background,
-                  text_color: block.settings.text_color
-                -%}
-              </div>
-
-            {%- when 'offer' -%}
-              <div class="product-info__offer" style="--offer-bg: {{ block.settings.background }}; --offer-color: {{ block.settings.text_color }};" {{ block.shopify_attributes }}>
-                {%- render 'offer', block: block -%}
-              </div>
-
-            {%- when 'share_buttons' -%}
-              <div class="product-info__share" {{ block.shopify_attributes }}>
-                {%- render 'share-buttons', alignment: block.settings.alignment -%}
+                <buy-buttons class="buy-buttons">
+                  {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+                  {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: block.settings.atc_button_background, text_color: block.settings.atc_button_text_color -%}
+                </buy-buttons>
               </div>
           {%- endcase -%}
         {%- endfor -%}
-      </form>
-    </product-form>
-  </safe-sticky>
-{%- else -%}
-  {# ... conserve ton placeholder, mais vois l’étape 2 ci-dessous ... #}
-{%- endif -%}
-
+      </safe-sticky>
+    {%- endif -%}
   </div>
 </div>
 
