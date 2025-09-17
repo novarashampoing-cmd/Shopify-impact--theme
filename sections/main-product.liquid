@@ -52,8 +52,7 @@
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
 
 {%- if section.settings.show_fixed_add_to_cart and product.available and buy_buttons_block != blank -%}
-  {%- capture product_form_id -%}product-form-{{ section.id }}{%- endcapture -%}
-
+  {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
 
   <product-quick-add form="{{ product_form_id }}" class="product-quick-add">
     {%- assign button_label = 'product.general.add_to_cart_button' | t -%}
@@ -97,8 +96,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
 {%- endcomment -%}
 <template id="quick-buy-content">
   {%- capture product_form_id -%}quick-buy-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
-
-
 
   <div class="quick-buy-drawer__variant text-start h-stack gap-6" slot="header">
     {%- assign image = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
