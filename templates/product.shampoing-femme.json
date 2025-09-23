@@ -946,6 +946,54 @@
         "accordion_background": "#e9ebf0",
         "accordion_text_color": ""
       }
+    },
+    "1758637805e0ea55bd": {
+      "type": "apps",
+      "blocks": {
+        "moast_carousel_Jmzid7": {
+          "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
+          "settings": {
+            "dynamic": false,
+            "feed": "",
+            "feed_usage": "back_up",
+            "sort": "video",
+            "header": "",
+            "slide_type": "cards",
+            "autoplay_mode": "all",
+            "slide_size": "250",
+            "border": 0,
+            "border_color": "linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)",
+            "slide_rounding": "20",
+            "slide_spacing": 16,
+            "padding_top": 40,
+            "pagination": "overlay",
+            "alignment": "center",
+            "product_cards": "none",
+            "show_captions": false,
+            "autoscroll_duration": 0,
+            "click_action": "fullscreen",
+            "float_location": "bottom_right",
+            "float_size": "medium",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "moast_carousel_Jmzid7"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -963,6 +1011,7 @@
     "text_with_icons_gkLatW",
     "custom_liquid_KLPe3A",
     "175761911349a56d5f",
-    "faq_j9Uyhf"
+    "faq_j9Uyhf",
+    "1758637805e0ea55bd"
   ]
 }
