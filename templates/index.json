@@ -526,7 +526,7 @@
           "type": "item",
           "settings": {
             "title": "Dois-je utiliser des gants ?",
-            "content": "<p>Pas besoin 👍 Le shampoing colorant <strong>Novara</strong> s’applique comme un shampoing classique, directement avec les mains, sans gants ni matériel supplémentaire.</p><p>Si vous ne souhaitez prendre absolument aucun risque, vous pouvez éventuellement vous servir de gants.</p>"
+            "content": "<p>Pas besoin 👍 Le shampoing colorant <strong>Novara</strong> s’applique comme un shampoing classique. <br/>Si vous ne souhaitez prendre absolument aucun risque, vous pouvez éventuellement vous servir de gants.</p>"
           }
         },
         "item_eWxixX": {
