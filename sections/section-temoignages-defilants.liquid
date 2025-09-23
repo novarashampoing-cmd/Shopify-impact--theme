@@ -1,23 +1,6 @@
 {% comment %}
-  Section: Témoignages défilants (style Trustpilot)
-  Thème: Impact (Shopify OS2.0)
-  Description: bandeau de témoignages qui défilent en continu (marquee) + en‑tête note moyenne
-  Aucune librairie externe requise.
-
-  Installation:
-  1) Enregistrez ce fichier en: sections/testimonials-marquee.liquid
-  2) Ajoutez la section dans l’éditeur de thème, paramétrez l’en‑tête et ajoutez des blocs “Témoignage”.
-  3) Vous pouvez dupliquer le contenu pour avoir assez de cartes (4+ recommandé).
-
-  Options:
-  - Titre, fond (couleur ou dégradé), marges verticales
-  - Note moyenne (texte, valeur, total d’avis)
-  - Vitesse du défilement (plus petit = plus rapide)
-  - Cartes: titre, texte, auteur
-
-  Accessibilité:
-  - Pause au survol et au focus clavier
-  - Rôle region + aria-label
+Section: Témoignages défilants (style Trustpilot)
+Thème: Impact (Shopify OS2.0)
 {% endcomment %}
 
 <section id="tmq-{{ section.id }}" class="tmq" aria-label="Témoignages clients">
@@ -26,7 +9,7 @@
     {% if section.settings.heading != blank or section.settings.rating_label != blank %}
       <div class="tmq-header">
         {% if section.settings.heading != blank %}
-          <h2 class=.tmq-heading { color: var(--heading); margin: 0; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; font-size: clamp(28px, 5vw, 56px);} }</h2>
+          <h2 class="tmq-heading" style="color: {{ section.settings.heading_color }}; font-size: {{ section.settings.heading_size }}px">{{ section.settings.heading }}</h2>
         {% endif %}
         <div class="tmq-rating">
           {% if section.settings.rating_label != blank %}
@@ -60,7 +43,7 @@
                   {% endfor %}
                 </div>
                 {% if block.settings.title != blank %}
-                  <h3 class="tmq-card-title">{{ block.settings.title }}</h3>
+                  <h3 class="tmq-card-title" style="color: {{ section.settings.card_title_color }}; font-size: {{ section.settings.card_title_size }}px">{{ block.settings.title }}</h3>
                 {% endif %}
               </div>
               {% if block.settings.text != blank %}
@@ -72,9 +55,6 @@
             </article>
           {% endfor %}
         </div>
-        {%- comment -%}
-          On duplique la liste pour créer un défilement sans rupture
-        {%- endcomment -%}
         <div class="tmq-list tmq-dup">
           {% for block in section.blocks %}
             <article class="tmq-card">
@@ -85,7 +65,7 @@
                   {% endfor %}
                 </div>
                 {% if block.settings.title != blank %}
-                  <h3 class="tmq-card-title">{{ block.settings.title }}</h3>
+                  <h3 class="tmq-card-title" style="color: {{ section.settings.card_title_color }}; font-size: {{ section.settings.card_title_size }}px">{{ block.settings.title }}</h3>
                 {% endif %}
               </div>
               {% if block.settings.text != blank %}
@@ -107,90 +87,27 @@
       --padY: {{ section.settings.pad_y }}px;
       --bg: {{ section.settings.bg }};
       --bg2: {{ section.settings.bg2 }};
-      --use-gradient: {{ section.settings.use_gradient | json }};
       --radius: {{ section.settings.card_radius }}px;
       --card-bg: {{ section.settings.card_bg }};
       --card-text: {{ section.settings.card_text }};
-      --heading: {{ section.settings.heading_color }};
       --muted: {{ section.settings.muted }};
       --star-bg: {{ section.settings.star_bg }};
       --gap: 28px;
       --card-w: 520px;
       --speed: {{ section.settings.speed }}s;
-    }}px;
-      --bg: {{ section.settings.bg }};
-      --bg2: {{ section.settings.bg2 }};
-      --use-gradient: {{ section.settings.use_gradient | json }};
-      --radius: {{ section.settings.card_radius }}px;
-      --card-bg: {{ section.settings.card_bg }};
-      --card-text: {{ section.settings.card_text }};
-      --heading: {{ section.settings.heading_color }};
-      --muted: {{ section.settings.muted }};
-      --star-bg: {{ section.settings.star_bg }};
-      --gap: 14px;
-      --card-w: 320px;
-      --speed: {{ section.settings.speed }}s;
+      background: var(--bg);
+      {% if section.settings.use_gradient %}
+        background: linear-gradient(106deg, var(--bg), var(--bg2) 100%);
+      {% endif %}
     }
-    #tmq-{{ section.id }} .tmq-bg { position: absolute; inset: 0; background: var(--bg); }
-    #tmq-{{ section.id }}[data-has-gradient] .tmq-bg { background: linear-gradient(106deg, var(--bg), var(--bg2) 100%); }
     #tmq-{{ section.id }} .tmq-inner { position: relative; padding: var(--padY) 0; }
-
-    /* Header */
-    #tmq-{{ section.id }} .tmq-header { display: grid; gap: 8px; justify-items: center; text-align: center; margin-bottom: 22px; }
-    #tmq-{{ section.id }} .tmq-heading { color: var(--heading); margin: 0; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; font-size: clamp(28px, 5vw, 56px);} 
-    #tmq-{{ section.id }} .tmq-rating { display: inline-flex; align-items: center; gap: 10px; margin-top: 8px; }
-    #tmq-{{ section.id }} .tmq-rating-text { color: var(--muted); margin: 0; }
-    #tmq-{{ section.id }} .tmq-rating-value { font-weight: 800; color: var(--heading); }
-    #tmq-{{ section.id }} .tmq-stars { display: inline-flex; gap: 6px; }
-    #tmq-{{ section.id }} .tmq-based-on { color: var(--muted); }
-    #tmq-{{ section.id }} .tmq-based-on strong { text-decoration: underline; text-underline-offset: 3px; }
-
-    /* Marquee */ */
-    #tmq-{{ section.id }} .tmq-marquee { position: relative; overflow: hidden; }
-    #tmq-{{ section.id }} .tmq-track { display: flex; width: max-content; }
-    #tmq-{{ section.id }} .tmq-list { display: inline-flex; gap: var(--gap); }
-
-    /* Cards */
-    #tmq-{{ section.id }} .tmq-card { width: var(--card-w); background: var(--card-bg); color: var(--card-text); border-radius: var(--radius); padding: 22px 26px; box-shadow: 0 10px 28px rgba(0,0,0,.12); border: 1px solid rgba(17,24,39,.08);} 
-    #tmq-{{ section.id }} .tmq-card-title { font-size: 26px; font-weight: 800; margin: 10px 0 10px; text-align: center; color: var(--heading);} 
-    #tmq-{{ section.id }} .tmq-card-text { margin: 0 0 14px; color: var(--card-text); line-height: 1.6; text-align: center;} 
-    #tmq-{{ section.id }} .tmq-card-author { margin: 0; font-weight: 600; color: var(--heading); text-align: center;} 
-
-    /* Animation */
-    #tmq-{{ section.id }} .tmq-track { animation: tmq-scroll-{{ section.id }} var(--speed) linear infinite; }
-    #tmq-{{ section.id }} .tmq-marquee:hover .tmq-track,
-    #tmq-{{ section.id }} .tmq-marquee:focus-within .tmq-track { animation-play-state: paused; }
-
-    @keyframes tmq-scroll-{{ section.id }} {
-      from { transform: translateX(0); }
-      to   { transform: translateX(calc(-100% / 2)); }
-    }
-
-    /* Responsive */
+    .tmq-card { width: var(--card-w); background: var(--card-bg); color: var(--card-text); border-radius: var(--radius); padding: 22px 26px; box-shadow: 0 10px 28px rgba(0,0,0,.12); border: 1px solid rgba(17,24,39,.08);} 
+    .tmq-card-text { margin: 0 0 14px; color: var(--card-text); line-height: 1.6; text-align: center;} 
+    .tmq-card-author { margin: 0; font-weight: 600; color: var(--heading); text-align: center;} 
     @media (max-width: 768px){
       #tmq-{{ section.id }} { --card-w: 320px; --gap: 16px; }
-      .tmq-card-title { font-size: 20px; }
-    }} { --card-w: 260px; }
     }
   </style>
-
-  <script>
-    (function(){
-      var root = document.getElementById('tmq-{{ section.id }}');
-      if(!root) return;
-      if({{ section.settings.use_gradient | json }}) root.setAttribute('data-has-gradient','');
-
-      // Ajuste automatiquement la durée pour que la vitesse perçue reste cohérente si peu de cartes
-      var track = root.querySelector('.tmq-track');
-      var list  = root.querySelector('.tmq-list');
-      if(track && list){
-        var cards = list.children.length;
-        if(cards < 4){
-          track.style.animationDuration = ({{ section.settings.speed }} / 2) + 's';
-        }
-      }
-    })();
-  </script>
 </section>
 
 {% schema %}
@@ -199,24 +116,26 @@
   "class": "section testimonials-marquee",
   "settings": [
     { "type": "text", "id": "heading", "label": "Titre", "default": "Nos clients le disent mieux que nous !" },
+    { "type": "color", "id": "heading_color", "label": "Couleur du titre principal", "default": "#111111" },
+    { "type": "range", "id": "heading_size", "label": "Taille du titre principal (px)", "min": 20, "max": 80, "step": 1, "default": 40 },
+    { "type": "color", "id": "card_title_color", "label": "Couleur des titres cartes", "default": "#111111" },
+    { "type": "range", "id": "card_title_size", "label": "Taille titres cartes (px)", "min": 14, "max": 40, "step": 1, "default": 24 },
+
     { "type": "text", "id": "rating_label", "label": "Libellé note (ex: Excellent)", "default": "Excellent" },
     { "type": "text", "id": "rating_value", "label": "Note (ex: 4.7)", "default": "4.7" },
     { "type": "text", "id": "rating_count", "label": "Nombre d'avis (ex: 1 067)", "default": "1 067" },
 
     { "type": "color", "id": "star_bg", "label": "Couleur carré étoile", "default": "#00b67a" },
-
-    { "type": "color", "id": "heading_color", "label": "Couleur titres", "default": "#111111" },
     { "type": "color", "id": "card_bg", "label": "Fond des cartes", "default": "#ffffff" },
     { "type": "color", "id": "card_text", "label": "Texte des cartes", "default": "#333333" },
     { "type": "color", "id": "muted", "label": "Texte secondaire", "default": "#4b5563" },
 
     { "type": "checkbox", "id": "use_gradient", "label": "Utiliser un dégradé de fond", "default": true },
-    { "type": "color", "id": "bg", "label": "Couleur/debut dégradé", "default": "#ffffff" },
+    { "type": "color", "id": "bg", "label": "Couleur/debut dégradé", "default": "#9AA4BC" },
     { "type": "color", "id": "bg2", "label": "Fin dégradé", "default": "#ffffff" },
 
     { "type": "range", "id": "pad_y", "label": "Marge verticale", "min": 0, "max": 100, "step": 2, "unit": "px", "default": 32 },
-    { "type": "range", "id": "card_radius", "label": "Arrondi des cartes", "min": 0, "max": 28, "step": 1, "unit": "px", "default": 12 },
-
+    { "type": "range", "id": "card_radius", "label": "Arrondi des cartes", "min": 0, "max": 28, "step": 1, "unit": "px", "default": 18 },
     { "type": "range", "id": "speed", "label": "Vitesse (secondes – plus petit = plus rapide)", "min": 10, "max": 120, "step": 5, "default": 45 }
   ],
   "blocks": [
