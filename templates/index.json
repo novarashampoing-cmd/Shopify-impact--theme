@@ -614,6 +614,89 @@
         "accordion_background": "#e9ebf0",
         "accordion_text_color": ""
       }
+    },
+    "section_temoignages_defilants_bbjbMd": {
+      "type": "section-temoignages-defilants",
+      "blocks": {
+        "testimonial_z8rKzd": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Je recommande à 100 % 💪",
+            "text": "Ce shampoing m’a totalement convaincu. L'application est rapide, je peux l’intégrer facilement dans ma routine, et le résultat est au-dessus de mes attentes. Mes cheveux paraissent plus jeunes et en pleine santé !",
+            "author": "Thomas"
+          }
+        },
+        "testimonial_8LgqrT": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Un vrai gain de temps ! ⏱️",
+            "text": "Je n’ai jamais eu une routine capillaire aussi simple. En quelques minutes, mes cheveux retrouvent leur couleur et leur éclat. Fini les rendez-vous interminables chez le coiffeur, je gère tout moi-même à la maison",
+            "author": "Élodie"
+          }
+        },
+        "testimonial_tP6Ufi": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat très naturel 🌿",
+            "text": "J’avais peur que la couleur fasse “faux”, mais le rendu est tellement subtil que même mes proches n’ont rien remarqué. Mes cheveux sont brillants et doux, comme après un soin. Je suis ravie !",
+            "author": "Camille"
+          }
+        },
+        "testimonial_qJ9VmR": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Enfin une solution fiable !",
+            "text": "J’ai longtemps cherché un produit qui couvre vraiment mes cheveux blancs sans abîmer ma fibre capillaire. Celui-ci est efficace dès la première application, et le résultat tient vraiment dans le temps",
+            "author": "Isabelle"
+          }
+        },
+        "testimonial_NEDw8K": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Mes cheveux n’ont jamais été aussi beaux ✨",
+            "text": "Dès la première utilisation, j’ai senti la différence. La texture est agréable, le parfum discret, et surtout le rendu est homogène. Je me sens plus confiante et féminine au quotidien",
+            "author": "Aurélie"
+          }
+        },
+        "testimonial_4TE6i8": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Un vrai allié au quotidien",
+            "text": "Je suis bluffé par la simplicité d’application. En dix minutes, j’obtiens un résultat impeccable. Le rendu est naturel, sans démarcation, et je gagne un temps fou le matin",
+            "author": "David"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_z8rKzd",
+        "testimonial_8LgqrT",
+        "testimonial_tP6Ufi",
+        "testimonial_qJ9VmR",
+        "testimonial_NEDw8K",
+        "testimonial_4TE6i8"
+      ],
+      "name": "Témoignages défilants",
+      "settings": {
+        "heading": "Nos clients en parlent mieux que nous !",
+        "heading_color": "#000000",
+        "heading_size": 30,
+        "heading_bold": true,
+        "card_title_color": "#000000",
+        "card_title_size": 20,
+        "rating_label": "Excellent",
+        "rating_value": "4.7",
+        "rating_count": "1 067",
+        "star_bg": "#00b67a",
+        "card_bg": "#ffffff",
+        "card_text": "#333333",
+        "muted": "#000000",
+        "use_gradient": true,
+        "bg": "#6a748e",
+        "bg2": "#ffffff",
+        "pad_y": 32,
+        "card_radius": 12,
+        "speed": 50
+      }
     }
   },
   "order": [
@@ -628,6 +711,7 @@
     "press",
     "175866428924e87e3c",
     "multiple_images_with_text_PMKEiP",
-    "faq"
+    "faq",
+    "section_temoignages_defilants_bbjbMd"
   ]
 }
