@@ -1,12 +1,13 @@
 {% comment %}
 Section: Témoignages défilants (style Trustpilot)
 Thème: Impact (Shopify OS 2.0)
+- Fond 100% largeur via section full-bleed (100vw + marges négatives)
+- Contenu centré via .page-width
+- Titres configurables (taille, couleur, gras)
+- Cartes plus étroites
 {% endcomment %}
 
 <section id="tmq-{{ section.id }}" class="tmq" aria-label="Témoignages clients">
-  <!-- Calque de fond pleine largeur -->
-  <div class="tmq-bg" aria-hidden="true"></div>
-
   <div class="tmq-inner page-width">
     {% if section.settings.heading != blank or section.settings.rating_label != blank %}
       <div class="tmq-header">
@@ -109,8 +110,8 @@ Thème: Impact (Shopify OS 2.0)
   </div>
 
   <style>
-    /* ====== Variables ====== */
-    #tmq-{{ section.id }} {
+    /* ====== Variables & full-bleed ====== */
+    #tmq-{{ section.id }}{
       --padY: {{ section.settings.pad_y }}px;
       --bg: {{ section.settings.bg }};
       --bg2: {{ section.settings.bg2 }};
@@ -120,27 +121,22 @@ Thème: Impact (Shopify OS 2.0)
       --muted: {{ section.settings.muted }};
       --star-bg: {{ section.settings.star_bg }};
       --gap: 28px;
-      --card-w: 420px; /* largeur cartes desktop */
+      --card-w: 420px; /* cartes un peu plus étroites */
       --speed: {{ section.settings.speed }}s;
-      position: relative;
-      overflow: clip; /* évite scroll horizontal du calque plein écran */
-      font-family: inherit; /* reprend la police Impact */
-    }
 
-    /* ====== Fond full-bleed ====== */
-    #tmq-{{ section.id }} .tmq-bg{
-      position: absolute;
-      inset: 0;             /* top/right/bottom/left:0 pour couvrir la hauteur de la section */
+      position: relative;
+      width: 100vw;              /* pleine largeur d’écran */
       left: 50%;
-      width: 100vw;         /* pleine largeur d’écran */
-      transform: translateX(-50%);
-      z-index: 0;
+      right: 50%;
+      margin-left: -50vw;        /* “full-bleed” quel que soit le conteneur parent */
+      margin-right: -50vw;
+      /* Fond directement sur la section */
       background: {% if section.settings.use_gradient %}linear-gradient(106deg, var(--bg), var(--bg2) 100%){% else %}var(--bg){% endif %};
+      font-family: inherit;      /* reprend la police Impact du thème */
     }
 
+    /* Contrainte du contenu */
     #tmq-{{ section.id }} .tmq-inner{
-      position: relative;
-      z-index: 1;           /* au-dessus du calque de fond */
       padding: var(--padY) 0;
     }
 
@@ -188,7 +184,7 @@ Thème: Impact (Shopify OS 2.0)
     { "type": "checkbox", "id": "heading_bold", "label": "Titre en gras", "default": true },
 
     { "type": "color", "id": "card_title_color", "label": "Couleur des titres cartes", "default": "#111111" },
-    { "type": "range", "id": "card_title_size", "label": "Taille titres cartes (px)", "min": 14, "max": 40, "step": 1, "default": 24 },
+    { "type": "range", "id": "card_title_size", "label": "Taille titres cartes (px)", "min": 14, "max": 40, "step": 1, "default": 22 },
 
     { "type": "text", "id": "rating_label", "label": "Libellé note (ex: Excellent)", "default": "Excellent" },
     { "type": "text", "id": "rating_value", "label": "Note (ex: 4.7)", "default": "4.7" },
