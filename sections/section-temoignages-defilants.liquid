@@ -175,6 +175,26 @@ Thème: Impact (Shopify OS 2.0)
   font-family: inherit;
   line-height: 1; /* ✅ resserre l’interligne */
 }
+/* Supprime l'espace blanc ajouté par le thème autour de CETTE section */
+#shopify-section-{{ section.id }}{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  /* Sur certains thèmes (dont Impact), ceci coupe aussi l'espacement par variable */
+  --section-spacing: 0;
+}
+
+/* Empêche le thème d'ajouter un marge-top au début de la section suivante */
+#shopify-section-{{ section.id }} + .shopify-section{
+  margin-top: 0 !important;
+}
+
+/* (optionnel) Si Impact applique un padding via un conteneur interne nommé .section */
+#shopify-section-{{ section.id }} .section{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 
   </style>
 </section>
