@@ -431,20 +431,20 @@
         "logo_item_border": ""
       }
     },
-    "175794614230f334b4": {
+    "175866428924e87e3c": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_homepage_4fMqak": {
+        "judge_me_reviews_review_widget_homepage_eDXdXk": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "product": "",
-            "review_data": "real_data",
+            "product": "shampoing-colorant-instantane",
+            "review_data": "sample_data",
             "max_width": 1200
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_homepage_4fMqak"
+        "judge_me_reviews_review_widget_homepage_eDXdXk"
       ],
       "settings": {
         "full_width": true,
@@ -674,7 +674,7 @@
     "video_z7k6Xa",
     "before-after-image",
     "press",
-    "175794614230f334b4",
+    "175866428924e87e3c",
     "multiple_images_with_text_PMKEiP",
     "faq",
     "17586364680db09649"
