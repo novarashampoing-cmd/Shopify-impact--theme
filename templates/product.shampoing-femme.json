@@ -199,32 +199,6 @@
         "input_text_color": ""
       }
     },
-    "ugc_video_carousel_7hjtcn": {
-      "type": "ugc-video-carousel",
-      "blocks": {
-        "video_K4NtL4": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/eca2963b01854de9b46f83f103c0c556.mp4",
-            "caption": "Vidéo client"
-          }
-        }
-      },
-      "block_order": [
-        "video_K4NtL4"
-      ],
-      "name": "Carousel Vidéos UGC",
-      "settings": {
-        "title": "Avis en vidéo",
-        "title_color": "#111111",
-        "title_size": 26,
-        "background_color": "#f4f7fc",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "thumbnail_width": 220,
-        "show_arrows": true
-      }
-    },
     "rich_text_LN7fjy": {
       "type": "rich-text",
       "blocks": {
@@ -1051,7 +1025,6 @@
   },
   "order": [
     "main",
-    "ugc_video_carousel_7hjtcn",
     "rich_text_LN7fjy",
     "media_with_text_FexRVY",
     "media_with_text_ehh7j4",
