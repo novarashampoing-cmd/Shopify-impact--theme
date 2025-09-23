@@ -152,7 +152,16 @@ Thème: Impact (Shopify OS 2.0)
     /* ====== Marquee ====== */
     #tmq-{{ section.id }} .tmq-marquee{overflow:hidden}
     #tmq-{{ section.id }} .tmq-track{display:flex;width:max-content;animation: tmq-scroll var(--speed) linear infinite}
-    #tmq-{{ section.id }} .tmq-list{display:flex;align-items:stretch;gap:var(--gap);padding:0 var(--gap)}
+    #tmq-{{ section.id }} .tmq-list{
+  display: flex;
+  align-items: stretch;
+  gap: 0;                /* on neutralise gap */
+  padding: 0 var(--gap);
+}
+.tmq-card{
+  margin: 0 calc(var(--gap) / 2); /* on recrée l’espace via la marge des cartes */
+}
+
     #tmq-{{ section.id }} .tmq-list > *{margin:0!important}
 
     @keyframes tmq-scroll{
