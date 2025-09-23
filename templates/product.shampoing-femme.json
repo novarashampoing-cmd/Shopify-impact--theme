@@ -1000,14 +1000,12 @@
       "blocks": {
         "klaviyo_reviews_product_reviews_THcyCH": {
           "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "disabled": true,
           "settings": {}
         }
       },
       "block_order": [
         "klaviyo_reviews_product_reviews_THcyCH"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
