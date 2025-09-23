@@ -947,16 +947,16 @@
         "accordion_text_color": ""
       }
     },
-    "17586355711a0c5511": {
+    "175863563023d0fb8f": {
       "type": "apps",
       "blocks": {
-        "moast_carousel_xrANRn": {
+        "moast_carousel_BACxrp": {
           "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
           "settings": {
-            "dynamic": false,
+            "dynamic": true,
             "feed": "",
             "feed_usage": "back_up",
-            "sort": "video",
+            "sort": "latest",
             "header": "",
             "slide_type": "cards",
             "autoplay_mode": "all",
@@ -979,7 +979,7 @@
         }
       },
       "block_order": [
-        "moast_carousel_xrANRn"
+        "moast_carousel_BACxrp"
       ],
       "settings": {
         "full_width": true,
@@ -1012,6 +1012,6 @@
     "custom_liquid_KLPe3A",
     "175761911349a56d5f",
     "faq_j9Uyhf",
-    "17586355711a0c5511"
+    "175863563023d0fb8f"
   ]
 }
