@@ -83,6 +83,7 @@ Thème: Impact (Shopify OS2.0)
   </div>
 
   <style>
+    /* ====== Variables & fond ====== */
     #tmq-{{ section.id }} {
       --padY: {{ section.settings.pad_y }}px;
       --bg: {{ section.settings.bg }};
@@ -95,15 +96,40 @@ Thème: Impact (Shopify OS2.0)
       --gap: 28px;
       --card-w: 520px;
       --speed: {{ section.settings.speed }}s;
-      background: var(--bg);
       {% if section.settings.use_gradient %}
         background: linear-gradient(106deg, var(--bg), var(--bg2) 100%);
+      {% else %}
+        background: var(--bg);
       {% endif %}
     }
     #tmq-{{ section.id }} .tmq-inner { position: relative; padding: var(--padY) 0; }
-    .tmq-card { width: var(--card-w); background: var(--card-bg); color: var(--card-text); border-radius: var(--radius); padding: 22px 26px; box-shadow: 0 10px 28px rgba(0,0,0,.12); border: 1px solid rgba(17,24,39,.08);} 
-    .tmq-card-text { margin: 0 0 14px; color: var(--card-text); line-height: 1.6; text-align: center;} 
-    .tmq-card-author { margin: 0; font-weight: 600; color: var(--heading); text-align: center;} 
+
+    /* ====== Header ====== */
+    #tmq-{{ section.id }} .tmq-header{display:grid;gap:8px;justify-items:center;text-align:center;margin-bottom:22px}
+    #tmq-{{ section.id }} .tmq-rating{display:inline-flex;align-items:center;gap:10px}
+    #tmq-{{ section.id }} .tmq-rating-text{color:var(--muted);margin:0}
+    #tmq-{{ section.id }} .tmq-rating-value{font-weight:800}
+    #tmq-{{ section.id }} .tmq-stars{display:inline-flex;gap:6px}
+    #tmq-{{ section.id }} .tmq-based-on{color:var(--muted)}
+
+    /* ====== Marquee ====== */
+    #tmq-{{ section.id }} .tmq-marquee{overflow:hidden}
+    #tmq-{{ section.id }} .tmq-track{display:flex;width:max-content;animation: tmq-scroll var(--speed) linear infinite}
+    #tmq-{{ section.id }} .tmq-list{display:flex;align-items:stretch;gap:var(--gap);padding:0 var(--gap)}
+    #tmq-{{ section.id }} .tmq-list > *{margin:0!important}
+
+    @keyframes tmq-scroll{
+      0%{transform:translateX(0)}
+      100%{transform:translateX(calc(-50% - var(--gap)))}
+    }
+
+    /* ====== Cartes ====== */
+    .tmq-card{flex:0 0 auto;width:var(--card-w);background:var(--card-bg);color:var(--card-text);border-radius:var(--radius);padding:22px 26px;box-shadow:0 10px 28px rgba(0,0,0,.12);border:1px solid rgba(17,24,39,.08)}
+    .tmq-card-top{display:grid;gap:10px;justify-items:center;margin-bottom:4px}
+    .tmq-card-title{font-weight:800;margin:0;text-align:center}
+    .tmq-card-text{margin:0 0 14px;line-height:1.6;text-align:center}
+    .tmq-card-author{margin:0;font-weight:600;text-align:center}
+
     @media (max-width: 768px){
       #tmq-{{ section.id }} { --card-w: 320px; --gap: 16px; }
     }
