@@ -103,6 +103,33 @@
             "liquid": "{% comment %}\nBannière alerte promo — Custom Liquid\nÉdite simplement les variables ci-dessous.\n{% endcomment %}\n\n{%- assign alert_title = \"Mise à jour du\" -%}\n{%- assign alert_date  = \"now\" | date: \"%d/%m/%Y\" -%} \n{%- assign alert_text  = \"La promotion sur la livraison suivie <strong>GRATUITE</strong> se termine ce soir à minuit&nbsp;! Profitez-en avant qu’il ne soit trop tard.\" -%}\n\n<div class=\"nk-alert\">\n  <style>\n    .nk-alert{\n      --alert-border: #e53935;\n      --alert-bg: #ffe9e9;\n      --alert-text: #d32f2f;\n      --alert-icon: #d32f2f;\n      border: 2px solid var(--alert-border);\n      background: var(--alert-bg);\n      color: var(--alert-text);\n      border-radius: 6px;\n      padding: 16px 18px;\n      margin: 18px 0;\n      font-family: inherit;\n    }\n    .nk-alert__row{\n      display: grid;\n      grid-template-columns: auto 1fr;\n      align-items: start;\n      gap: 12px;\n    }\n    .nk-alert__icon{\n      width: 22px; height: 22px; flex: 0 0 22px; color: var(--alert-icon);\n      margin-top: 2px;\n    }\n    .nk-alert__content{\n      font-size: clamp(14px, 1.5vw, 17px);\n      line-height: 1.5;\n    }\n    .nk-alert__content b, .nk-alert__content strong{ font-weight: 800; }\n    .nk-alert__title{ font-weight: 800; }\n    @media (max-width: 480px){\n      .nk-alert{ padding: 12px 14px; }\n      .nk-alert__icon{ width: 20px; height: 20px; }\n    }\n  </style>\n\n  <div class=\"nk-alert__row\">\n    <svg class=\"nk-alert__icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n      <path fill=\"currentColor\" d=\"M7.88 3.39 6.6 1.86 2 5.9l1.27 1.53 4.61-4.04zM22 5.9l-4.6-4.04-1.29 1.53 4.62 4.04L22 5.9zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm-.75 2.5v5.25l4.5 2.64.75-1.28-3.75-2.2V8.5h-1.5z\"/>\n    </svg>\n    <div class=\"nk-alert__content\">\n      <span class=\"nk-alert__title\">{{ alert_title }} {{ alert_date }}</span> : \n      {{ alert_text }}\n    </div>\n  </div>\n</div>"
           }
         },
+        "moast_carousel_6wKMqL": {
+          "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
+          "settings": {
+            "dynamic": false,
+            "feed": "",
+            "feed_usage": "back_up",
+            "sort": "video",
+            "header": "",
+            "slide_type": "cards",
+            "autoplay_mode": "all",
+            "slide_size": "250",
+            "border": 0,
+            "border_color": "linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)",
+            "slide_rounding": "20",
+            "slide_spacing": 16,
+            "padding_top": 40,
+            "pagination": "overlay",
+            "alignment": "center",
+            "product_cards": "none",
+            "show_captions": false,
+            "autoscroll_duration": 0,
+            "click_action": "fullscreen",
+            "float_location": "bottom_right",
+            "float_size": "medium",
+            "custom_css": ""
+          }
+        },
         "essential_trust_badges_app_block_WAiNbL": {
           "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
           "settings": {
@@ -147,6 +174,7 @@
         "buy_buttons",
         "liquid_MF6By4",
         "liquid_8r73t4",
+        "moast_carousel_6wKMqL",
         "essential_trust_badges_app_block_WAiNbL",
         "collapsible_text_Yck8pz",
         "collapsible_text_GWC4cM",
