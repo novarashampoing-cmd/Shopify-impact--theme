@@ -827,7 +827,8 @@
       "settings": {
         "heading": "Nos clients le disent mieux que nous !",
         "heading_color": "#111111",
-        "heading_size": 40,
+        "heading_size": 35,
+        "heading_bold": true,
         "card_title_color": "#111111",
         "card_title_size": 24,
         "rating_label": "Excellent",
@@ -836,7 +837,7 @@
         "star_bg": "#00b67a",
         "card_bg": "#ffffff",
         "card_text": "#333333",
-        "muted": "#4b5563",
+        "muted": "#000000",
         "use_gradient": true,
         "bg": "#465069",
         "bg2": "#ffffff",
