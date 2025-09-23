@@ -1,122 +1,152 @@
 {% comment %}
 Section: Témoignages défilants (style Trustpilot)
-Thème: Impact (Shopify OS2.0)
+Thème: Impact (Shopify OS 2.0)
 {% endcomment %}
 
 <section id="tmq-{{ section.id }}" class="tmq" aria-label="Témoignages clients">
-  <div class="tmq-bg">
-    <div class="tmq-inner page-width">
-      {% if section.settings.heading != blank or section.settings.rating_label != blank %}
-        <div class="tmq-header">
-          {% if section.settings.heading != blank %}
-            <h2 class="tmq-heading" style="color: {{ section.settings.heading_color }}; font-size: {{ section.settings.heading_size }}px; font-weight:{% if section.settings.heading_bold %}700{% else %}400{% endif %}">{{ section.settings.heading }}</h2>
-          {% endif %}
-          <div class="tmq-rating">
-            {% if section.settings.rating_label != blank %}
-              <p class="tmq-rating-text">{{ section.settings.rating_label }}</p>
-            {% endif %}
-            {% if section.settings.rating_value != blank %}
-              <span class="tmq-rating-value">{{ section.settings.rating_value }}</span>
-              <p class="tmq-rating-text"><strong>/ 5</strong></p>
-            {% endif %}
-            <div class="tmq-stars" aria-hidden="true">
-              {% for i in (1..5) %}
-                <svg width="28" height="28" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="tmq-star"><rect width="32" height="32" fill="{{ section.settings.star_bg }}"></rect><path d="M9.2 27L16 21.8 22.8 27 20.2 18.6 27 13.4h-8.4L16 5l-2.6 8.4H5l6.8 5.2L9.2 27z" fill="#ffffff"/></svg>
-              {% endfor %}
-            </div>
-          </div>
-          {% if section.settings.rating_count != blank %}
-            <div class="tmq-based-on"><p>basé sur <strong>{{ section.settings.rating_count }}</strong> avis</p></div>
-          {% endif %}
-        </div>
-      {% endif %}
+  <!-- Calque de fond pleine largeur -->
+  <div class="tmq-bg" aria-hidden="true"></div>
 
-      <div class="tmq-marquee" data-speed="{{ section.settings.speed }}">
-        <div class="tmq-track">
-          <div class="tmq-list">
-            {% for block in section.blocks %}
-              <article class="tmq-card" {{ block.shopify_attributes }}>
-                <div class="tmq-card-top">
-                  <div class="tmq-stars small" aria-hidden="true">
-                    {% for i in (1..5) %}
-                      <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="tmq-star"><rect width="32" height="32" fill="{{ section.settings.star_bg }}"></rect><path d="M9.2 27L16 21.8 22.8 27 20.2 18.6 27 13.4h-8.4L16 5l-2.6 8.4H5l6.8 5.2L9.2 27z" fill="#ffffff"/></svg>
-                    {% endfor %}
-                  </div>
-                  {% if block.settings.title != blank %}
-                    <h3 class="tmq-card-title" style="color: {{ section.settings.card_title_color }}; font-size: {{ section.settings.card_title_size }}px">{{ block.settings.title }}</h3>
-                  {% endif %}
-                </div>
-                {% if block.settings.text != blank %}
-                  <p class="tmq-card-text">{{ block.settings.text }}</p>
-                {% endif %}
-                {% if block.settings.author != blank %}
-                  <p class="tmq-card-author">{{ block.settings.author }}</p>
-                {% endif %}
-              </article>
+  <div class="tmq-inner page-width">
+    {% if section.settings.heading != blank or section.settings.rating_label != blank %}
+      <div class="tmq-header">
+        {% if section.settings.heading != blank %}
+          <h2 class="tmq-heading"
+              style="color: {{ section.settings.heading_color }}; font-size: {{ section.settings.heading_size }}px; font-weight:{% if section.settings.heading_bold %}700{% else %}400{% endif %}">
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+
+        <div class="tmq-rating">
+          {% if section.settings.rating_label != blank %}
+            <p class="tmq-rating-text">{{ section.settings.rating_label }}</p>
+          {% endif %}
+          {% if section.settings.rating_value != blank %}
+            <span class="tmq-rating-value">{{ section.settings.rating_value }}</span>
+            <p class="tmq-rating-text"><strong>/ 5</strong></p>
+          {% endif %}
+          <div class="tmq-stars" aria-hidden="true">
+            {% for i in (1..5) %}
+              <svg width="28" height="28" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="tmq-star">
+                <rect width="32" height="32" fill="{{ section.settings.star_bg }}"></rect>
+                <path d="M9.2 27L16 21.8 22.8 27 20.2 18.6 27 13.4h-8.4L16 5l-2.6 8.4H5l6.8 5.2L9.2 27z" fill="#ffffff"/>
+              </svg>
             {% endfor %}
           </div>
-          <div class="tmq-list tmq-dup">
-            {% for block in section.blocks %}
-              <article class="tmq-card">
-                <div class="tmq-card-top">
-                  <div class="tmq-stars small" aria-hidden="true">
-                    {% for i in (1..5) %}
-                      <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="tmq-star"><rect width="32" height="32" fill="{{ section.settings.star_bg }}"></rect><path d="M9.2 27L16 21.8 22.8 27 20.2 18.6 27 13.4h-8.4L16 5l-2.6 8.4H5l6.8 5.2L9.2 27z" fill="#ffffff"/></svg>
-                    {% endfor %}
-                  </div>
-                  {% if block.settings.title != blank %}
-                    <h3 class="tmq-card-title" style="color: {{ section.settings.card_title_color }}; font-size: {{ section.settings.card_title_size }}px">{{ block.settings.title }}</h3>
-                  {% endif %}
+        </div>
+
+        {% if section.settings.rating_count != blank %}
+          <div class="tmq-based-on"><p>basé sur <strong>{{ section.settings.rating_count }}</strong> avis</p></div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="tmq-marquee" data-speed="{{ section.settings.speed }}">
+      <div class="tmq-track">
+        <div class="tmq-list">
+          {% for block in section.blocks %}
+            <article class="tmq-card" {{ block.shopify_attributes }}>
+              <div class="tmq-card-top">
+                <div class="tmq-stars small" aria-hidden="true">
+                  {% for i in (1..5) %}
+                    <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="tmq-star">
+                      <rect width="32" height="32" fill="{{ section.settings.star_bg }}"></rect>
+                      <path d="M9.2 27L16 21.8 22.8 27 20.2 18.6 27 13.4h-8.4L16 5l-2.6 8.4H5l6.8 5.2L9.2 27z" fill="#ffffff"/>
+                    </svg>
+                  {% endfor %}
                 </div>
-                {% if block.settings.text != blank %}
-                  <p class="tmq-card-text">{{ block.settings.text }}</p>
+                {% if block.settings.title != blank %}
+                  <h3 class="tmq-card-title"
+                      style="color: {{ section.settings.card_title_color }}; font-size: {{ section.settings.card_title_size }}px">
+                    {{ block.settings.title }}
+                  </h3>
                 {% endif %}
-                {% if block.settings.author != blank %}
-                  <p class="tmq-card-author">{{ block.settings.author }}</p>
+              </div>
+
+              {% if block.settings.text != blank %}
+                <p class="tmq-card-text">{{ block.settings.text }}</p>
+              {% endif %}
+              {% if block.settings.author != blank %}
+                <p class="tmq-card-author">{{ block.settings.author }}</p>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+
+        <!-- duplication pour effet de défilement continu -->
+        <div class="tmq-list tmq-dup">
+          {% for block in section.blocks %}
+            <article class="tmq-card">
+              <div class="tmq-card-top">
+                <div class="tmq-stars small" aria-hidden="true">
+                  {% for i in (1..5) %}
+                    <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="tmq-star">
+                      <rect width="32" height="32" fill="{{ section.settings.star_bg }}"></rect>
+                      <path d="M9.2 27L16 21.8 22.8 27 20.2 18.6 27 13.4h-8.4L16 5l-2.6 8.4H5l6.8 5.2L9.2 27z" fill="#ffffff"/>
+                    </svg>
+                  {% endfor %}
+                </div>
+                {% if block.settings.title != blank %}
+                  <h3 class="tmq-card-title"
+                      style="color: {{ section.settings.card_title_color }}; font-size: {{ section.settings.card_title_size }}px">
+                    {{ block.settings.title }}
+                  </h3>
                 {% endif %}
-              </article>
-            {% endfor %}
-          </div>
+              </div>
+
+              {% if block.settings.text != blank %}
+                <p class="tmq-card-text">{{ block.settings.text }}</p>
+              {% endif %}
+              {% if block.settings.author != blank %}
+                <p class="tmq-card-author">{{ block.settings.author }}</p>
+              {% endif %}
+            </article>
+          {% endfor %}
         </div>
       </div>
-
     </div>
+
   </div>
 
   <style>
-    /* ====== Variables & fond ====== */
+    /* ====== Variables ====== */
     #tmq-{{ section.id }} {
       --padY: {{ section.settings.pad_y }}px;
       --bg: {{ section.settings.bg }};
       --bg2: {{ section.settings.bg2 }};
       --radius: {{ section.settings.card_radius }}px;
       --card-bg: {{ section.settings.card_bg }};
-      --card-text: {{ section.settings.card_text }}px;
+      --card-text: {{ section.settings.card_text }};
       --muted: {{ section.settings.muted }};
       --star-bg: {{ section.settings.star_bg }};
       --gap: 28px;
-      --card-w: 520px;
+      --card-w: 420px; /* largeur cartes desktop */
       --speed: {{ section.settings.speed }}s;
-
-      /* ✅ évite un scroll horizontal dû au full-bleed */
-      overflow: hidden;
-    }
-    /* ✅ Full-bleed (fond pleine largeur) */
-    #tmq-{{ section.id }} .tmq-bg {
       position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      width: 100vw;
+      overflow: clip; /* évite scroll horizontal du calque plein écran */
+      font-family: inherit; /* reprend la police Impact */
+    }
 
+    /* ====== Fond full-bleed ====== */
+    #tmq-{{ section.id }} .tmq-bg{
+      position: absolute;
+      inset: 0;             /* top/right/bottom/left:0 pour couvrir la hauteur de la section */
+      left: 50%;
+      width: 100vw;         /* pleine largeur d’écran */
+      transform: translateX(-50%);
+      z-index: 0;
       background: {% if section.settings.use_gradient %}linear-gradient(106deg, var(--bg), var(--bg2) 100%){% else %}var(--bg){% endif %};
     }
-    #tmq-{{ section.id }} .tmq-inner { position: relative; padding: var(--padY) 0; }
+
+    #tmq-{{ section.id }} .tmq-inner{
+      position: relative;
+      z-index: 1;           /* au-dessus du calque de fond */
+      padding: var(--padY) 0;
+    }
 
     /* ====== Header ====== */
-    #tmq-{{ section.id }} .tmq-header{display:grid;gap:8px;justify-items:center;text-align:center;font-family:inherit;margin:0 0 22px}
-    #tmq-{{ section.id }} .tmq-heading{font-family:inherit;margin:0} /* ✅ police du thème + toggle gras depuis inline style */
+    #tmq-{{ section.id }} .tmq-header{display:grid;gap:8px;justify-items:center;text-align:center;margin:0 0 22px}
+    #tmq-{{ section.id }} .tmq-heading{margin:0}
     #tmq-{{ section.id }} .tmq-rating{display:inline-flex;align-items:center;gap:10px}
     #tmq-{{ section.id }} .tmq-rating-text{color:var(--muted);margin:0}
     #tmq-{{ section.id }} .tmq-rating-value{font-weight:800}
@@ -127,7 +157,7 @@ Thème: Impact (Shopify OS2.0)
     #tmq-{{ section.id }} .tmq-marquee{overflow:hidden}
     #tmq-{{ section.id }} .tmq-track{display:flex;width:max-content;animation: tmq-scroll var(--speed) linear infinite}
     #tmq-{{ section.id }} .tmq-list{display:flex;align-items:stretch;gap:var(--gap);padding:0 var(--gap)}
-    #tmq-{{ section.id }} .tmq-list > *{margin:0!important} /* ✅ évite les marges parasites qui collent/espacent */
+    #tmq-{{ section.id }} .tmq-list > *{margin:0!important}
 
     @keyframes tmq-scroll{
       0%{transform:translateX(0)}
@@ -135,14 +165,14 @@ Thème: Impact (Shopify OS2.0)
     }
 
     /* ====== Cartes ====== */
-    .tmq-card{flex:0 0 auto;width:var(--card-w);background:var(--card-bg);color:var(--card-text);border-radius:var(--radius);padding:22px 26px;box-shadow:0 10px 28px rgba(0,0,0,.12);border:1px solid rgba(17,24,39,.08);font-family:inherit}
+    .tmq-card{flex:0 0 auto;width:var(--card-w);background:var(--card-bg);color:var(--card-text);border-radius:var(--radius);padding:22px 26px;box-shadow:0 10px 28px rgba(0,0,0,.12);border:1px solid rgba(17,24,39,.08)}
     .tmq-card-top{display:grid;gap:10px;justify-items:center;margin-bottom:4px}
-    .tmq-card-title{font-weight:800;margin:0;text-align:center;font-family:inherit}
-    .tmq-card-text{margin:0 0 14px;line-height:1.6;text-align:center;font-family:inherit}
-    .tmq-card-author{margin:0;font-weight:600;text-align:center;font-family:inherit}
+    .tmq-card-title{font-weight:800;margin:0;text-align:center}
+    .tmq-card-text{margin:0 0 14px;line-height:1.6;text-align:center}
+    .tmq-card-author{margin:0;font-weight:600;text-align:center}
 
     @media (max-width: 768px){
-      #tmq-{{ section.id }} { --card-w: 320px; --gap: 16px; }
+      #tmq-{{ section.id }} { --card-w: 300px; --gap: 16px; }
     }
   </style>
 </section>
@@ -170,7 +200,7 @@ Thème: Impact (Shopify OS2.0)
     { "type": "color", "id": "muted", "label": "Texte secondaire", "default": "#4b5563" },
 
     { "type": "checkbox", "id": "use_gradient", "label": "Utiliser un dégradé de fond", "default": true },
-    { "type": "color", "id": "bg", "label": "Couleur/debut dégradé", "default": "#9AA4BC" },
+    { "type": "color", "id": "bg", "label": "Couleur/début dégradé", "default": "#9AA4BC" },
     { "type": "color", "id": "bg2", "label": "Fin dégradé", "default": "#ffffff" },
 
     { "type": "range", "id": "pad_y", "label": "Marge verticale", "min": 0, "max": 100, "step": 2, "unit": "px", "default": 32 },
@@ -190,7 +220,16 @@ Thème: Impact (Shopify OS2.0)
   ],
   "max_blocks": 24,
   "presets": [
-    { "name": "Témoignages défilants", "category": "Témoignages", "blocks": [ {"type": "testimonial"}, {"type": "testimonial"}, {"type": "testimonial"}, {"type": "testimonial"} ] }
+    {
+      "name": "Témoignages défilants",
+      "category": "Témoignages",
+      "blocks": [
+        { "type": "testimonial" },
+        { "type": "testimonial" },
+        { "type": "testimonial" },
+        { "type": "testimonial" }
+      ]
+    }
   ]
 }
 {% endschema %}
