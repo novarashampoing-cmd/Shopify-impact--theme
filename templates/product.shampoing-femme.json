@@ -826,7 +826,7 @@
       "name": "Témoignages défilants",
       "settings": {
         "heading": "Nos clients en parlent mieux que nous !",
-        "heading_color": "#111111",
+        "heading_color": "#000000",
         "heading_size": 30,
         "heading_bold": true,
         "card_title_color": "#111111",
