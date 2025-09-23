@@ -745,6 +745,71 @@
         "text_color": ""
       }
     },
+    "section_temoignages_defilants_gCLaPY": {
+      "type": "section-temoignages-defilants",
+      "blocks": {
+        "testimonial_kwgM7z": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        },
+        "testimonial_yKqiDC": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        },
+        "testimonial_CKCRKn": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        },
+        "testimonial_iFKci3": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_kwgM7z",
+        "testimonial_yKqiDC",
+        "testimonial_CKCRKn",
+        "testimonial_iFKci3"
+      ],
+      "name": "Témoignages défilants",
+      "settings": {
+        "heading": "Nos clients en parlent mieux que nous !",
+        "heading_color": "#000000",
+        "heading_size": 30,
+        "heading_bold": true,
+        "card_title_color": "#000000",
+        "card_title_size": 20,
+        "rating_label": "Excellent",
+        "rating_value": "4.9",
+        "rating_count": "1 126",
+        "star_bg": "#00b67a",
+        "card_bg": "#ffffff",
+        "card_text": "#333333",
+        "muted": "#000000",
+        "use_gradient": true,
+        "bg": "#6a748e",
+        "bg2": "#ffffff",
+        "pad_y": 32,
+        "card_radius": 12,
+        "speed": 45
+      }
+    },
     "custom_liquid_KLPe3A": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -924,6 +989,7 @@
     "press_MhJgKb",
     "meditrust_tableau_w6CdYa",
     "text_with_icons_gkLatW",
+    "section_temoignages_defilants_gCLaPY",
     "custom_liquid_KLPe3A",
     "175761911349a56d5f",
     "faq_j9Uyhf"
