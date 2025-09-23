@@ -500,6 +500,67 @@
         "logo_item_border": ""
       }
     },
+    "section_temoignages_defilants_KGGGF8": {
+      "type": "section-temoignages-defilants",
+      "blocks": {
+        "testimonial_EzijA8": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        },
+        "testimonial_gwaQrQ": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        },
+        "testimonial_xLmgpy": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        },
+        "testimonial_WA6DER": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat bluffant dès la première utilisation. ✨",
+            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
+            "author": "Sophie M."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_EzijA8",
+        "testimonial_gwaQrQ",
+        "testimonial_xLmgpy",
+        "testimonial_WA6DER"
+      ],
+      "name": "Témoignages défilants",
+      "settings": {
+        "heading": "Nos clients le disent mieux que nous !",
+        "rating_label": "Excellent",
+        "rating_value": "4.9",
+        "rating_count": "1 126",
+        "star_bg": "#00b67a",
+        "heading_color": "#111111",
+        "card_bg": "#ffffff",
+        "card_text": "#333333",
+        "muted": "#4b5563",
+        "use_gradient": true,
+        "bg": "#465069",
+        "bg2": "#ffffff",
+        "pad_y": 32,
+        "card_radius": 12,
+        "speed": 45
+      }
+    },
     "meditrust_tableau_w6CdYa": {
       "type": "meditrust-tableau",
       "blocks": {
@@ -973,67 +1034,6 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
-    },
-    "section_temoignages_defilants_KGGGF8": {
-      "type": "section-temoignages-defilants",
-      "blocks": {
-        "testimonial_EzijA8": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Résultat bluffant dès la première utilisation. ✨",
-            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
-            "author": "Sophie M."
-          }
-        },
-        "testimonial_gwaQrQ": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Résultat bluffant dès la première utilisation. ✨",
-            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
-            "author": "Sophie M."
-          }
-        },
-        "testimonial_xLmgpy": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Résultat bluffant dès la première utilisation. ✨",
-            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
-            "author": "Sophie M."
-          }
-        },
-        "testimonial_WA6DER": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Résultat bluffant dès la première utilisation. ✨",
-            "text": "Ce shampoing est tout simplement incroyable. Dès la première application, mes cheveux blancs étaient complètement couverts, et personne ne peut dire que j'utilise un produit colorant.",
-            "author": "Sophie M."
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_EzijA8",
-        "testimonial_gwaQrQ",
-        "testimonial_xLmgpy",
-        "testimonial_WA6DER"
-      ],
-      "name": "Témoignages défilants",
-      "settings": {
-        "heading": "Nos clients le disent mieux que nous !",
-        "rating_label": "Excellent",
-        "rating_value": "4.9",
-        "rating_count": "1 126",
-        "star_bg": "#00b67a",
-        "heading_color": "#111111",
-        "card_bg": "#ffffff",
-        "card_text": "#333333",
-        "muted": "#4b5563",
-        "use_gradient": true,
-        "bg": "#465069",
-        "bg2": "#ffffff",
-        "pad_y": 32,
-        "card_radius": 12,
-        "speed": 45
-      }
     }
   },
   "order": [
@@ -1049,10 +1049,10 @@
     "press_MhJgKb",
     "meditrust_tableau_w6CdYa",
     "text_with_icons_gkLatW",
+    "section_temoignages_defilants_KGGGF8",
     "custom_liquid_KLPe3A",
     "175761911349a56d5f",
     "faq_j9Uyhf",
-    "175864034462228732",
-    "section_temoignages_defilants_KGGGF8"
+    "175864034462228732"
   ]
 }
