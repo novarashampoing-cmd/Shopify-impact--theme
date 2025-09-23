@@ -115,6 +115,54 @@
         "button_text_color": ""
       }
     },
+    "1758642819b3741ef2": {
+      "type": "apps",
+      "blocks": {
+        "moast_carousel_rtGFRi": {
+          "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
+          "settings": {
+            "dynamic": false,
+            "feed": "",
+            "feed_usage": "back_up",
+            "sort": "video",
+            "header": "",
+            "slide_type": "cards",
+            "autoplay_mode": "all",
+            "slide_size": "200",
+            "border": 0,
+            "border_color": "linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)",
+            "slide_rounding": "20",
+            "slide_spacing": 7,
+            "padding_top": 0,
+            "pagination": "below",
+            "alignment": "center",
+            "product_cards": "none",
+            "show_captions": false,
+            "autoscroll_duration": 0,
+            "click_action": "fullscreen",
+            "float_location": "bottom_right",
+            "float_size": "medium",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "moast_carousel_rtGFRi"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "featured-product": {
       "type": "featured-product",
       "blocks": {
@@ -620,6 +668,7 @@
     "slideshow",
     "multiple-images-with-text",
     "impact-text",
+    "1758642819b3741ef2",
     "featured-product",
     "rich_text_BYmk3V",
     "video_z7k6Xa",
