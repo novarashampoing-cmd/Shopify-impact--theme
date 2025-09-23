@@ -994,6 +994,33 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "175864034462228732": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_THcyCH": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_THcyCH"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -1012,6 +1039,7 @@
     "custom_liquid_KLPe3A",
     "175761911349a56d5f",
     "faq_j9Uyhf",
-    "1758637805e0ea55bd"
+    "1758637805e0ea55bd",
+    "175864034462228732"
   ]
 }
