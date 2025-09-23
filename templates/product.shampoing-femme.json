@@ -847,7 +847,7 @@
         "heading_color": "#000000",
         "heading_size": 30,
         "heading_bold": true,
-        "card_title_color": "#111111",
+        "card_title_color": "#000000",
         "card_title_size": 20,
         "rating_label": "Excellent",
         "rating_value": "4.9",
