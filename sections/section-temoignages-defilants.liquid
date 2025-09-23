@@ -136,14 +136,16 @@
     #tmq-{{ section.id }} .tmq-inner { position: relative; padding: var(--padY) 0; }
 
     /* Header */
-    #tmq-{{ section.id }} .tmq-header { display: grid; gap: 8px; justify-items: center; text-align: center; margin-bottom: 18px; }
-    #tmq-{{ section.id }} .tmq-heading { color: var(--heading); margin: 0; }
+    #tmq-{{ section.id }} .tmq-header { display: grid; gap: 8px; justify-items: center; text-align: center; margin-bottom: 22px; }
+    #tmq-{{ section.id }} .tmq-heading { color: var(--heading); margin: 0; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; font-size: clamp(28px, 5vw, 56px);} 
     #tmq-{{ section.id }} .tmq-rating { display: inline-flex; align-items: center; gap: 10px; margin-top: 8px; }
     #tmq-{{ section.id }} .tmq-rating-text { color: var(--muted); margin: 0; }
-    #tmq-{{ section.id }} .tmq-rating-value { font-weight: 700; color: var(--heading); }
+    #tmq-{{ section.id }} .tmq-rating-value { font-weight: 800; color: var(--heading); }
     #tmq-{{ section.id }} .tmq-stars { display: inline-flex; gap: 6px; }
+    #tmq-{{ section.id }} .tmq-based-on { color: var(--muted); }
+    #tmq-{{ section.id }} .tmq-based-on strong { text-decoration: underline; text-underline-offset: 3px; }
 
-    /* Marquee */
+    /* Marquee */ */
     #tmq-{{ section.id }} .tmq-marquee { position: relative; overflow: hidden; }
     #tmq-{{ section.id }} .tmq-track { display: flex; width: max-content; }
     #tmq-{{ section.id }} .tmq-list { display: inline-flex; gap: var(--gap); }
@@ -209,11 +211,11 @@
     { "type": "color", "id": "muted", "label": "Texte secondaire", "default": "#4b5563" },
 
     { "type": "checkbox", "id": "use_gradient", "label": "Utiliser un dégradé de fond", "default": true },
-    { "type": "color", "id": "bg", "label": "Couleur/debut dégradé", "default": "#ffffff" },
+    { "type": "color", "id": "bg", "label": "Couleur/debut dégradé", "default": "#9AA4BC" },
     { "type": "color", "id": "bg2", "label": "Fin dégradé", "default": "#ffffff" },
 
     { "type": "range", "id": "pad_y", "label": "Marge verticale", "min": 0, "max": 100, "step": 2, "unit": "px", "default": 32 },
-    { "type": "range", "id": "card_radius", "label": "Arrondi des cartes", "min": 0, "max": 28, "step": 1, "unit": "px", "default": 12 },
+    { "type": "range", "id": "card_radius", "label": "Arrondi des cartes", "min": 0, "max": 28, "step": 1, "unit": "px", "default": 18 },
 
     { "type": "range", "id": "speed", "label": "Vitesse (secondes – plus petit = plus rapide)", "min": 10, "max": 120, "step": 5, "default": 45 }
   ],
