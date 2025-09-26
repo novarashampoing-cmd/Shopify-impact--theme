@@ -106,7 +106,7 @@
         "moast_carousel_e4F8yF": {
           "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
           "settings": {
-            "dynamic": false,
+            "dynamic": true,
             "feed": "75ef28f9-93be-43eb-bea8-ffb934db5c45",
             "feed_usage": "back_up",
             "sort": "latest",
