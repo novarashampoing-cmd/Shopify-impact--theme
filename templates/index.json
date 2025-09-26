@@ -38,7 +38,6 @@
       "block_order": [
         "slide-1"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -70,7 +69,6 @@
       "block_order": [
         "1664424486a2b084ab-0"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "images_layout": "scattered",
@@ -151,7 +149,6 @@
       "block_order": [
         "moast_carousel_rtGFRi"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -281,7 +278,6 @@
         "collapsible_text_VdEc7x",
         "collapsible_text_ebBKXy"
       ],
-      "disabled": true,
       "settings": {
         "full_width": false,
         "product": "shampoing-colorant-instantane-novara",
@@ -344,7 +340,6 @@
       "block_order": [
         "play_9f3Nhw"
       ],
-      "disabled": true,
       "name": "Video",
       "settings": {
         "full_width": true,
@@ -360,7 +355,6 @@
     },
     "before-after-image": {
       "type": "before-after-image",
-      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -485,7 +479,6 @@
       "block_order": [
         "item_QMdify"
       ],
-      "disabled": true,
       "name": "Multiple images with text",
       "settings": {
         "full_width": true,
