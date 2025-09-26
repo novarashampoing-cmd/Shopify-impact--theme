@@ -740,7 +740,7 @@
         "table_row_bciXJT": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Rapide à appliquer",
+            "row_heading": "Praticité",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -754,7 +754,7 @@
         "table_row_cpcx3A": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Longue tenue",
+            "row_heading": "Résultats",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -768,7 +768,7 @@
         "table_row_mqRPU6": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Sans produits agressifs",
+            "row_heading": "Plusieurs modes",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
