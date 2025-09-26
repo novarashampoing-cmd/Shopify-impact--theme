@@ -206,174 +206,6 @@
         "input_text_color": ""
       }
     },
-    "rich_text_LN7fjy": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_HwdrGK": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h2>Les avantages de Novara Shampoing</h2>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_HwdrGK"
-      ],
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "#000000"
-      }
-    },
-    "media_with_text_FexRVY": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_jThwwi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/benefice_numero_1_Novara_Shampoing_femme_ff911509-641d-49c2-a493-4e1ff7fcf8d0.webp",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "Efficace à 100%",
-            "title": "",
-            "content": "<h3>Coloration en 10 minutes<br/></h3><p><strong>Une application simple</strong> : posez, laissez agir 10 minutes, puis rincez</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#e9ebf0",
-            "background_gradient": "",
-            "text_color": "#000000",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_jThwwi"
-      ],
-      "disabled": true,
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "spacing": "none"
-      }
-    },
-    "media_with_text_ehh7j4": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_3X9Xe7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/benefice_numero_2_Novara_Shampoing.webp",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "98% de clients satisfaits",
-            "title": "",
-            "content": "<h3>Application facile<br/></h3><p>Le shampoing colorant Novara s'applique comme n'importe quel autre shampoing sur tous les types de cheveux : <strong>fins, épais, raides ou bouclés</strong></p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#e9ebf0",
-            "background_gradient": "",
-            "text_color": "#000000",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_3X9Xe7"
-      ],
-      "disabled": true,
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "spacing": "none"
-      }
-    },
-    "media_with_text_DbfdJ8": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_RBKNUL": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/benefice_numero_Novara_Shampoing_femme.webp",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "Jusqu’à 6 semaines de tenue",
-            "title": "",
-            "content": "<h3>Respecte les cheveux et la peau</h3><p><br/>Une formule <strong>douce, sans ammoniaque</strong>, enrichie en actifs naturels pour nourrir, protéger et révéler une couleur éclatante en toute sérénité</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#e9ebf0",
-            "background_gradient": "",
-            "text_color": "#000000",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_RBKNUL"
-      ],
-      "disabled": true,
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "spacing": "none"
-      }
-    },
-    "media_with_text_NzYqGQ": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_zCfDCd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Shampoing_Novara_solution_economique.webp",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "90% plus économique",
-            "title": "",
-            "content": "<h3>Économique et pratique</h3><p><br/>Plus besoin de rendez-vous onéreux chez le coiffeur ! Nous avez une <strong>solution pro, rapide et abordable</strong>.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#e9ebf0",
-            "background_gradient": "",
-            "text_color": "#000000",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_zCfDCd"
-      ],
-      "disabled": true,
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "spacing": "none"
-      }
-    },
     "before_after_image_Kn9fhC": {
       "type": "before-after-image",
       "name": "Before/after image",
@@ -509,64 +341,32 @@
         "spacing": "none"
       }
     },
-    "rich_text_V8R7G4": {
-      "type": "rich-text",
+    "175761911349a56d5f": {
+      "type": "apps",
       "blocks": {
-        "heading_3jh7jX": {
-          "type": "heading",
+        "judge_me_reviews_review_widget_Wjk7rq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "text": "Novara Shampoing en vidéo",
-            "heading_tag": "h2",
-            "text_color": "#000000",
-            "gradient": ""
-          }
-        },
-        "richtext_jt9MTN": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Vous n'avez besoin que d'apeine 10 petites minutes pour appliquer le shampoing colorant Novara. Un vrai jeu d'enfant !</p>"
+            "review_data": "real_data",
+            "max_width": 1200
           }
         }
       },
       "block_order": [
-        "heading_3jh7jX",
-        "richtext_jt9MTN"
+        "judge_me_reviews_review_widget_Wjk7rq"
       ],
-      "disabled": true,
-      "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "text_color": "#000000"
-      }
-    },
-    "video_m7mnir": {
-      "type": "video",
-      "blocks": {
-        "play_U8W6FB": {
-          "type": "play",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "play_U8W6FB"
-      ],
-      "disabled": true,
-      "name": "Video",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "autoplay": false,
-        "video_size": "auto",
-        "video": "shopify://files/videos/Vidéo démonstration Novara Shampoing.mp4",
-        "external_video_url": "",
-        "poster": "shopify://shop_images/Miniature_video_d_application_du_shampoing_colorant_novara.webp",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
       }
     },
     "press_MhJgKb": {
@@ -623,34 +423,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "175761911349a56d5f": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_Wjk7rq": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_Wjk7rq"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
       }
     },
     "section_temoignages_defilants_KGGGF8": {
@@ -1032,19 +804,12 @@
   },
   "order": [
     "main",
-    "rich_text_LN7fjy",
-    "media_with_text_FexRVY",
-    "media_with_text_ehh7j4",
-    "media_with_text_DbfdJ8",
-    "media_with_text_NzYqGQ",
     "before_after_image_Kn9fhC",
     "text_with_icons_gkLatW",
     "media_with_text_WjdipQ",
-    "rich_text_V8R7G4",
-    "video_m7mnir",
+    "175761911349a56d5f",
     "press_MhJgKb",
     "custom_liquid_KLPe3A",
-    "175761911349a56d5f",
     "section_temoignages_defilants_KGGGF8",
     "meditrust_tableau_w6CdYa",
     "faq_j9Uyhf",
