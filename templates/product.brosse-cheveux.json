@@ -391,6 +391,41 @@
         "drag_cursor_color": "#000000"
       }
     },
+    "media_with_text_WjdipQ": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_xMeRFa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Brosse_en_utilisation.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xMeRFa"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "rich_text_V8R7G4": {
       "type": "rich-text",
       "blocks": {
@@ -1070,6 +1105,7 @@
     "media_with_text_DbfdJ8",
     "media_with_text_NzYqGQ",
     "before_after_image_Kn9fhC",
+    "media_with_text_WjdipQ",
     "rich_text_V8R7G4",
     "video_m7mnir",
     "press_MhJgKb",
