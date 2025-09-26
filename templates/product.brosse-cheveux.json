@@ -144,6 +144,13 @@
             "content": "<p>L'équipe de <strong>Novara Shampoing</strong> veille à ce que chaque commande soit traitée et expédiée en 24 à 48h depuis notre entrepôt. Nos délais de livraison sont de 6 à 10 jours ouvrés en France, Belgique et Suisse.</p><p>Un numéro de suivi vous est communiqué dès l’expédition pour suivre votre colis. Et parce qu’un bon service ne s’arrête pas à la commande, notre équipe reste disponible pour répondre à vos questions et vous accompagner si besoin.</p>"
           }
         },
+        "collapsible_text_YgwxRP": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "💆‍♀️ Comment utiliser la brosse HairBloom ?",
+            "content": "<p>Il suffit de l’allumer, de choisir le mode souhaité (lumière rouge, bleue, massage ou diffusion d’huiles), puis de brosser doucement vos cheveux pendant une dizaine de minutes. Une utilisation régulière, chaque jour, favorise des résultats visibles en quelques semaines.</p>"
+          }
+        },
         "collapsible_text_GWC4cM": {
           "type": "collapsible_text",
           "settings": {
@@ -177,6 +184,7 @@
         "moast_carousel_e4F8yF",
         "essential_trust_badges_app_block_WAiNbL",
         "collapsible_text_Yck8pz",
+        "collapsible_text_YgwxRP",
         "collapsible_text_GWC4cM",
         "collapsible_text_aYXfPR"
       ],
