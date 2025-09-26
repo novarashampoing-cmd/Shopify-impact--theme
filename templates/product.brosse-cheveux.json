@@ -155,7 +155,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "✨ Les atouts de la brosse HairBloom",
-            "content": "<p>La brosse HairBloom réinvente le soin des cheveux grâce à ses <strong>4 modes thérapeutiques exclusifs</strong> :</p><p>🔴 <strong>Lumière rouge</strong> : active la croissance et donne plus d’épaisseur à la chevelure.<br/><br/>🔵 <strong>Lumière bleue</strong> : assainit et apaise le cuir chevelu.<br/><br/>🌿 <strong>Diffusion d’huiles essentielles</strong> : nourrit et hydrate en profondeur.<br/><br/>💆‍♀️ <strong>Massage intégré</strong> : relaxe tout en stimulant les follicules.</p><p>Des cheveux <strong>plus forts, plus sains et lumineux</strong>, sans quitter le confort de votre maison ✨</p>"
+            "content": "<p>La brosse HairBloom réinvente le soin des cheveux grâce à ses <strong>4 modes thérapeutiques exclusifs</strong> :</p><p>🔴 <strong>Lumière rouge</strong> : stimule la croissance et donne plus d’épaisseur à la chevelure<br/>🔵 <strong>Lumière bleue</strong> : assainit et apaise le cuir chevelu<br/>🌿 <strong>Diffusion d’huiles essentielles</strong> : nourrit et hydrate en profondeur<br/>💆‍♀️ <strong>Massage intégré</strong> : relaxe tout en stimulant les follicules</p><p>Des cheveux <strong>plus forts, plus sains et lumineux</strong>, sans quitter le confort de votre maison ✨</p>"
           }
         },
         "collapsible_text_aYXfPR": {
@@ -399,6 +399,81 @@
         "drag_cursor_color": "#000000"
       }
     },
+    "text_with_icons_gkLatW": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_P9Tweq": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "",
+            "title": "Stimule la croissance des cheveux",
+            "content": "<p>Enrichi en extraits végétaux qui nourrissent, renforcent et révèlent la beauté de vos cheveux</p>"
+          }
+        },
+        "item_BCyA4f": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-recycle",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "",
+            "title": "Assainit et apaise le cuir chevelu",
+            "content": "<p>Coloration sans ammoniaque, sans peroxyde et sans sulfates, respecte le cuir chevelu et la fibre capillaire</p>"
+          }
+        },
+        "item_XndHkC": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "",
+            "title": "Application facile",
+            "content": "<p>Il suffit de l’appliquer comme un shampoing classique. Pas de préparation et pas de taches<br/><br/></p>"
+          }
+        },
+        "item_peg6dT": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "#000000",
+            "title": "Couverture rapide des cheveux",
+            "content": "<p>En 10 minutes seulement, vos cheveux retrouvent leur couleur naturelle<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_P9Tweq",
+        "item_BCyA4f",
+        "item_XndHkC",
+        "item_peg6dT"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "media_with_text_WjdipQ": {
       "type": "media-with-text",
       "blocks": {
@@ -535,82 +610,6 @@
         "heading_gradient": "",
         "logo_item_background": "",
         "logo_item_border": ""
-      }
-    },
-    "text_with_icons_gkLatW": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item_P9Tweq": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-leaf",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "",
-            "title": "Ingrédients naturels",
-            "content": "<p>Enrichi en extraits végétaux qui nourrissent, renforcent et révèlent la beauté de vos cheveux</p>"
-          }
-        },
-        "item_BCyA4f": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-recycle",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "",
-            "title": "Formule sans produits chimiques",
-            "content": "<p>Coloration sans ammoniaque, sans peroxyde et sans sulfates, respecte le cuir chevelu et la fibre capillaire</p>"
-          }
-        },
-        "item_XndHkC": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-shield",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "",
-            "title": "Application facile",
-            "content": "<p>Il suffit de l’appliquer comme un shampoing classique. Pas de préparation et pas de taches<br/><br/></p>"
-          }
-        },
-        "item_peg6dT": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-timer",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "#000000",
-            "title": "Couverture rapide des cheveux",
-            "content": "<p>En 10 minutes seulement, vos cheveux retrouvent leur couleur naturelle<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_P9Tweq",
-        "item_BCyA4f",
-        "item_XndHkC",
-        "item_peg6dT"
-      ],
-      "disabled": true,
-      "name": "Text with icons",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "custom_liquid_KLPe3A": {
@@ -1039,11 +1038,11 @@
     "media_with_text_DbfdJ8",
     "media_with_text_NzYqGQ",
     "before_after_image_Kn9fhC",
+    "text_with_icons_gkLatW",
     "media_with_text_WjdipQ",
     "rich_text_V8R7G4",
     "video_m7mnir",
     "press_MhJgKb",
-    "text_with_icons_gkLatW",
     "custom_liquid_KLPe3A",
     "175761911349a56d5f",
     "section_temoignages_defilants_KGGGF8",
