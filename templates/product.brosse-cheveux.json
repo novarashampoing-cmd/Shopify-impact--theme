@@ -726,7 +726,7 @@
         "table_row_r93djq": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Prix",
+            "row_heading": "Stimule la pousse",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -814,7 +814,7 @@
         "heading_size": 52,
         "heading_size_mobile": 32,
         "heading_height": 150,
-        "text": "<p>Novara propose shampoing colorant efficace et doux pour une couleur naturelle en 10 minutes. Une qualité que beaucoup de produits concurrents n’offrent pas<br/><br/></p>",
+        "text": "",
         "text_custom": false,
         "text_font": "josefin_sans_n4",
         "text_size": 18,
@@ -860,7 +860,7 @@
         "table_heading_image_size": 100,
         "table_heading_image_size_mobile": 80,
         "first_heading": "Novara",
-        "second_heading": "Autres produits ou coiffeur",
+        "second_heading": "Soins en salon",
         "third_heading": "",
         "four_heading": "",
         "table_heading_custom": false,
