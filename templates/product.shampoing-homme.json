@@ -106,8 +106,8 @@
         "moast_carousel_6wKMqL": {
           "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
           "settings": {
-            "dynamic": false,
-            "feed": "b87ac2cf-5ef1-49d7-bd60-06ed877230bb",
+            "dynamic": true,
+            "feed": "75ef28f9-93be-43eb-bea8-ffb934db5c45",
             "feed_usage": "back_up",
             "sort": "latest",
             "header": "",
@@ -464,6 +464,205 @@
         "logo_item_border": ""
       }
     },
+    "text_with_icons_gkLatW": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_P9Tweq": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "",
+            "title": "Ingrédients naturels",
+            "content": "<p>Enrichi en extraits végétaux qui nourrissent, renforcent et révèlent la beauté de vos cheveux</p>"
+          }
+        },
+        "item_BCyA4f": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-recycle",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "",
+            "title": "Formule sans produits chimiques",
+            "content": "<p>Coloration sans ammoniaque, sans peroxyde et sans sulfates, respecte le cuir chevelu et la fibre capillaire</p>"
+          }
+        },
+        "item_XndHkC": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "",
+            "title": "Application facile",
+            "content": "<p>Il suffit de l’appliquer comme un shampoing classique. Pas de préparation et pas de taches<br/><br/></p>"
+          }
+        },
+        "item_peg6dT": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#cfd8ed",
+            "icon_color": "#000000",
+            "title": "Couverture rapide des cheveux",
+            "content": "<p>En 10 minutes seulement, vos cheveux retrouvent leur couleur naturelle<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_P9Tweq",
+        "item_BCyA4f",
+        "item_XndHkC",
+        "item_peg6dT"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "175761911349a56d5f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Wjk7rq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Wjk7rq"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_KLPe3A": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"nk-expert\">\n  <style>\n    .nk-expert{\n      --bg:#E9EBF0;--card:#fff;--border:#e6e8ec;--text:#111;--muted:#6b7280\n    }\n    .nk-expert{\n      background:var(--bg);\n      padding:28px 18px;\n      border-radius:8px;\n      color:var(--text)\n    }\n    .nk-expert__header{\n      max-width:1200px; /* élargi */\n      margin:0 auto 20px;\n      text-align:center\n    }\n    .nk-expert__title{\n      font-weight:800;\n      font-size:clamp(24px,2.8vw,36px);\n      line-height:1.2;\n      margin:0 0 6px\n    }\n    .nk-expert__subtitle{\n      color:var(--muted);\n      font-size:clamp(14px,1.5vw,16px);\n      margin:0\n    }\n    .nk-expert__divider{\n      height:1px;\n      background:var(--border);\n      max-width:1200px; /* élargi */\n      margin:18px auto 24px\n    }\n    .nk-expert__card{\n      max-width:1200px; /* élargi */\n      margin:0 auto;\n      background:var(--card);\n      border:1px solid var(--border);\n      border-radius:12px;\n      padding:26px;\n      box-shadow:0 2px 10px rgba(17,24,39,.06)\n    }\n    .nk-expert__top{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:16px;\n      margin-bottom:12px\n    }\n    .nk-expert__avatar{\n      width:72px;\n      height:72px;\n      border-radius:999px;\n      overflow:hidden;\n      flex:0 0 72px;\n      background:#fff;\n      border:1px solid var(--border)\n    }\n    .nk-expert__avatar img{\n      width:100%;\n      height:100%;\n      object-fit:cover;\n      display:block\n    }\n    .nk-expert__quote{\n      text-align:center;\n      padding:8px 10px 0;\n      font-size:clamp(14px,1.3vw,16px);\n      line-height:1.4;\n      color:#262626;\n      max-width:100%; /* prend toute la largeur disponible */\n      margin:0 auto;\n    }\n    .nk-expert__signature{\n      text-align:center;\n      margin-top:16px;\n      color:#4b5563;\n      font-style:italic;\n      font-size:15px\n    }\n  </style>\n\n  <div class=\"nk-expert__header\">\n    <h2 class=\"nk-expert__title\">Approuvé par les dermatologues</h2>\n    <p class=\"nk-expert__subtitle\">✓ Dermatologue</p>\n  </div>\n\n  <div class=\"nk-expert__divider\" aria-hidden=\"true\"></div>\n\n  <div class=\"nk-expert__card\">\n    <div class=\"nk-expert__top\">\n      <span class=\"nk-expert__avatar\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0943/6079/7559/files/Avis_d_un_expert_en_medecine_capillaire.webp?v=1757624459\" alt=\"Photo de l'expert\">\n      </span>\n    </div>\n\n    <div class=\"nk-expert__quote\">\n      \"La formule de Novara Shampoing respecte toutes mes attentes dermatologiques. Elle permet de couvrir les cheveux en toute sécurité, sans irritation, et constitue la meilleure alternative pour celles et ceux qui recherchent un résultat durable sans les inconvénients des colorations classiques\"\n    </div>\n\n    <div class=\"nk-expert__signature\"> Dr. Hervé Gridaud</div>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section_temoignages_defilants_gCLaPY": {
+      "type": "section-temoignages-defilants",
+      "blocks": {
+        "testimonial_kwgM7z": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Je recommande à 100 % 💪",
+            "text": "Ce shampoing m’a totalement convaincu. L'application est rapide, je peux l’intégrer facilement dans ma routine, et le résultat est au-dessus de mes attentes. Mes cheveux paraissent plus jeunes et en pleine santé !",
+            "author": "Thomas"
+          }
+        },
+        "testimonial_yKqiDC": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Un vrai gain de temps ! ⏱️",
+            "text": "Je n’ai jamais eu une routine capillaire aussi simple. En quelques minutes, mes cheveux retrouvent leur couleur et leur éclat. Fini les rendez-vous interminables chez le coiffeur, je gère tout moi-même à la maison",
+            "author": "Élodie"
+          }
+        },
+        "testimonial_CKCRKn": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Résultat très naturel 🌿",
+            "text": "J’avais peur que la couleur fasse “faux”, mais le rendu est tellement subtil que même mes proches n’ont rien remarqué. Mes cheveux sont brillants et doux, comme après un soin. Je suis ravie !",
+            "author": "Camille"
+          }
+        },
+        "testimonial_iFKci3": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Enfin une solution fiable !",
+            "text": "J’ai longtemps cherché un produit qui couvre vraiment mes cheveux blancs sans abîmer ma fibre capillaire. Celui-ci est efficace dès la première application, et le résultat tient vraiment dans le temps",
+            "author": "Isabelle"
+          }
+        },
+        "testimonial_UVR4qG": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Un vrai allié au quotidien",
+            "text": "Je suis bluffé par la simplicité d’application. En dix minutes, j’obtiens un résultat impeccable. Le rendu est naturel, sans démarcation, et je gagne un temps fou le matin",
+            "author": "David"
+          }
+        },
+        "testimonial_ifVPfR": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Mes cheveux n’ont jamais été aussi beaux ✨",
+            "text": "Dès la première utilisation, j’ai senti la différence. La texture est agréable, le parfum discret, et surtout le rendu est homogène. Je me sens plus confiante et féminine au quotidien",
+            "author": "Aurélie"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_kwgM7z",
+        "testimonial_yKqiDC",
+        "testimonial_CKCRKn",
+        "testimonial_iFKci3",
+        "testimonial_UVR4qG",
+        "testimonial_ifVPfR"
+      ],
+      "name": "Témoignages défilants",
+      "settings": {
+        "heading": "Nos clients en parlent mieux que nous !",
+        "heading_color": "#000000",
+        "heading_size": 30,
+        "heading_bold": true,
+        "card_title_color": "#000000",
+        "card_title_size": 20,
+        "rating_label": "Excellent",
+        "rating_value": "4.9",
+        "rating_count": "1 126",
+        "star_bg": "#00b67a",
+        "card_bg": "#ffffff",
+        "card_text": "#333333",
+        "muted": "#000000",
+        "use_gradient": true,
+        "bg": "#6a748e",
+        "bg2": "#ffffff",
+        "pad_y": 32,
+        "card_radius": 12,
+        "speed": 50
+      }
+    },
     "meditrust_tableau_w6CdYa": {
       "type": "meditrust-tableau",
       "blocks": {
@@ -668,205 +867,6 @@
         "content_width": 130,
         "border_thickness": 0,
         "lazy": true
-      }
-    },
-    "text_with_icons_gkLatW": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item_P9Tweq": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-leaf",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "",
-            "title": "Ingrédients naturels",
-            "content": "<p>Enrichi en extraits végétaux qui nourrissent, renforcent et révèlent la beauté de vos cheveux</p>"
-          }
-        },
-        "item_BCyA4f": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-recycle",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "",
-            "title": "Formule sans produits chimiques",
-            "content": "<p>Coloration sans ammoniaque, sans peroxyde et sans sulfates, respecte le cuir chevelu et la fibre capillaire</p>"
-          }
-        },
-        "item_XndHkC": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-shield",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "",
-            "title": "Application facile",
-            "content": "<p>Il suffit de l’appliquer comme un shampoing classique. Pas de préparation et pas de taches<br/><br/></p>"
-          }
-        },
-        "item_peg6dT": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-timer",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#cfd8ed",
-            "icon_color": "#000000",
-            "title": "Couverture rapide des cheveux",
-            "content": "<p>En 10 minutes seulement, vos cheveux retrouvent leur couleur naturelle<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_P9Tweq",
-        "item_BCyA4f",
-        "item_XndHkC",
-        "item_peg6dT"
-      ],
-      "name": "Text with icons",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "custom_liquid_KLPe3A": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div class=\"nk-expert\">\n  <style>\n    .nk-expert{\n      --bg:#E9EBF0;--card:#fff;--border:#e6e8ec;--text:#111;--muted:#6b7280\n    }\n    .nk-expert{\n      background:var(--bg);\n      padding:28px 18px;\n      border-radius:8px;\n      color:var(--text)\n    }\n    .nk-expert__header{\n      max-width:1200px; /* élargi */\n      margin:0 auto 20px;\n      text-align:center\n    }\n    .nk-expert__title{\n      font-weight:800;\n      font-size:clamp(24px,2.8vw,36px);\n      line-height:1.2;\n      margin:0 0 6px\n    }\n    .nk-expert__subtitle{\n      color:var(--muted);\n      font-size:clamp(14px,1.5vw,16px);\n      margin:0\n    }\n    .nk-expert__divider{\n      height:1px;\n      background:var(--border);\n      max-width:1200px; /* élargi */\n      margin:18px auto 24px\n    }\n    .nk-expert__card{\n      max-width:1200px; /* élargi */\n      margin:0 auto;\n      background:var(--card);\n      border:1px solid var(--border);\n      border-radius:12px;\n      padding:26px;\n      box-shadow:0 2px 10px rgba(17,24,39,.06)\n    }\n    .nk-expert__top{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:16px;\n      margin-bottom:12px\n    }\n    .nk-expert__avatar{\n      width:72px;\n      height:72px;\n      border-radius:999px;\n      overflow:hidden;\n      flex:0 0 72px;\n      background:#fff;\n      border:1px solid var(--border)\n    }\n    .nk-expert__avatar img{\n      width:100%;\n      height:100%;\n      object-fit:cover;\n      display:block\n    }\n    .nk-expert__quote{\n      text-align:center;\n      padding:8px 10px 0;\n      font-size:clamp(14px,1.3vw,16px);\n      line-height:1.4;\n      color:#262626;\n      max-width:100%; /* prend toute la largeur disponible */\n      margin:0 auto;\n    }\n    .nk-expert__signature{\n      text-align:center;\n      margin-top:16px;\n      color:#4b5563;\n      font-style:italic;\n      font-size:15px\n    }\n  </style>\n\n  <div class=\"nk-expert__header\">\n    <h2 class=\"nk-expert__title\">Approuvé par les dermatologues</h2>\n    <p class=\"nk-expert__subtitle\">✓ Dermatologue</p>\n  </div>\n\n  <div class=\"nk-expert__divider\" aria-hidden=\"true\"></div>\n\n  <div class=\"nk-expert__card\">\n    <div class=\"nk-expert__top\">\n      <span class=\"nk-expert__avatar\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0943/6079/7559/files/Avis_d_un_expert_en_medecine_capillaire.webp?v=1757624459\" alt=\"Photo de l'expert\">\n      </span>\n    </div>\n\n    <div class=\"nk-expert__quote\">\n      \"La formule de Novara Shampoing respecte toutes mes attentes dermatologiques. Elle permet de couvrir les cheveux en toute sécurité, sans irritation, et constitue la meilleure alternative pour celles et ceux qui recherchent un résultat durable sans les inconvénients des colorations classiques\"\n    </div>\n\n    <div class=\"nk-expert__signature\"> Dr. Hervé Gridaud</div>\n  </div>\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "section_temoignages_defilants_gCLaPY": {
-      "type": "section-temoignages-defilants",
-      "blocks": {
-        "testimonial_kwgM7z": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Je recommande à 100 % 💪",
-            "text": "Ce shampoing m’a totalement convaincu. L'application est rapide, je peux l’intégrer facilement dans ma routine, et le résultat est au-dessus de mes attentes. Mes cheveux paraissent plus jeunes et en pleine santé !",
-            "author": "Thomas"
-          }
-        },
-        "testimonial_yKqiDC": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Un vrai gain de temps ! ⏱️",
-            "text": "Je n’ai jamais eu une routine capillaire aussi simple. En quelques minutes, mes cheveux retrouvent leur couleur et leur éclat. Fini les rendez-vous interminables chez le coiffeur, je gère tout moi-même à la maison",
-            "author": "Élodie"
-          }
-        },
-        "testimonial_CKCRKn": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Résultat très naturel 🌿",
-            "text": "J’avais peur que la couleur fasse “faux”, mais le rendu est tellement subtil que même mes proches n’ont rien remarqué. Mes cheveux sont brillants et doux, comme après un soin. Je suis ravie !",
-            "author": "Camille"
-          }
-        },
-        "testimonial_iFKci3": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Enfin une solution fiable !",
-            "text": "J’ai longtemps cherché un produit qui couvre vraiment mes cheveux blancs sans abîmer ma fibre capillaire. Celui-ci est efficace dès la première application, et le résultat tient vraiment dans le temps",
-            "author": "Isabelle"
-          }
-        },
-        "testimonial_UVR4qG": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Un vrai allié au quotidien",
-            "text": "Je suis bluffé par la simplicité d’application. En dix minutes, j’obtiens un résultat impeccable. Le rendu est naturel, sans démarcation, et je gagne un temps fou le matin",
-            "author": "David"
-          }
-        },
-        "testimonial_ifVPfR": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Mes cheveux n’ont jamais été aussi beaux ✨",
-            "text": "Dès la première utilisation, j’ai senti la différence. La texture est agréable, le parfum discret, et surtout le rendu est homogène. Je me sens plus confiante et féminine au quotidien",
-            "author": "Aurélie"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_kwgM7z",
-        "testimonial_yKqiDC",
-        "testimonial_CKCRKn",
-        "testimonial_iFKci3",
-        "testimonial_UVR4qG",
-        "testimonial_ifVPfR"
-      ],
-      "name": "Témoignages défilants",
-      "settings": {
-        "heading": "Nos clients en parlent mieux que nous !",
-        "heading_color": "#000000",
-        "heading_size": 30,
-        "heading_bold": true,
-        "card_title_color": "#000000",
-        "card_title_size": 20,
-        "rating_label": "Excellent",
-        "rating_value": "4.9",
-        "rating_count": "1 126",
-        "star_bg": "#00b67a",
-        "card_bg": "#ffffff",
-        "card_text": "#333333",
-        "muted": "#000000",
-        "use_gradient": true,
-        "bg": "#6a748e",
-        "bg2": "#ffffff",
-        "pad_y": 32,
-        "card_radius": 12,
-        "speed": 50
-      }
-    },
-    "175761911349a56d5f": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_Wjk7rq": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_Wjk7rq"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
       }
     },
     "faq_j9Uyhf": {
