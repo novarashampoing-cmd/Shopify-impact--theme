@@ -147,7 +147,7 @@
         "collapsible_text_GWC4cM": {
           "type": "collapsible_text",
           "settings": {
-            "title": "✨ Les atouts de la brosse Hairbloom",
+            "title": "✨ Les atouts de la brosse HairBloom",
             "content": "<p>La brosse HairBloom réinvente le soin des cheveux grâce à ses <strong>4 modes thérapeutiques exclusifs</strong> :</p><p>🔴 <strong>Lumière rouge</strong> : active la croissance et donne plus d’épaisseur à la chevelure.<br/><br/>🔵 <strong>Lumière bleue</strong> : assainit et apaise le cuir chevelu.<br/><br/>🌿 <strong>Diffusion d’huiles essentielles</strong> : nourrit et hydrate en profondeur.<br/><br/>💆‍♀️ <strong>Massage intégré</strong> : relaxe tout en stimulant les follicules.</p><p>Des cheveux <strong>plus forts, plus sains et lumineux</strong>, sans quitter le confort de votre maison ✨</p>"
           }
         },
@@ -211,6 +211,7 @@
       "block_order": [
         "richtext_HwdrGK"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -250,6 +251,7 @@
       "block_order": [
         "image_jThwwi"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -285,6 +287,7 @@
       "block_order": [
         "image_3X9Xe7"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -320,6 +323,7 @@
       "block_order": [
         "image_RBKNUL"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -355,6 +359,7 @@
       "block_order": [
         "image_zCfDCd"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
