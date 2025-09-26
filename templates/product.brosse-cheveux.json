@@ -680,19 +680,11 @@
             "author": "Isabelle"
           }
         },
-        "testimonial_feqMjg": {
-          "type": "testimonial",
-          "settings": {
-            "title": "Un vrai allié au quotidien",
-            "text": "Je suis bluffé par la simplicité d’application. En dix minutes, j’obtiens un résultat impeccable. Le rendu est naturel, sans démarcation, et je gagne un temps fou le matin",
-            "author": "David"
-          }
-        },
         "testimonial_WA6DER": {
           "type": "testimonial",
           "settings": {
-            "title": "Mes cheveux n’ont jamais été aussi beaux ✨",
-            "text": "Dès la première utilisation, j’ai senti la différence. La texture est agréable, le parfum discret, et surtout le rendu est homogène. Je me sens plus confiante et féminine au quotidien",
+            "title": "Une innovation qui tient ses promesses",
+            "text": "J’étais sceptique au début, mais les résultats sont là. Mon cuir chevelu est apaisé, mes cheveux sont plus résistants et je perds beaucoup moins de mèches au quotidien. Je suis convaincue",
             "author": "Aurélie"
           }
         }
@@ -702,7 +694,6 @@
         "testimonial_EzijA8",
         "testimonial_gwaQrQ",
         "testimonial_xLmgpy",
-        "testimonial_feqMjg",
         "testimonial_WA6DER"
       ],
       "name": "Témoignages défilants",
