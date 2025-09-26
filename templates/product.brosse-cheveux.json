@@ -107,7 +107,7 @@
           "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
           "settings": {
             "dynamic": false,
-            "feed": "",
+            "feed": "75ef28f9-93be-43eb-bea8-ffb934db5c45",
             "feed_usage": "back_up",
             "sort": "video",
             "header": "",
