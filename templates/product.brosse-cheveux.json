@@ -341,34 +341,6 @@
         "spacing": "none"
       }
     },
-    "175761911349a56d5f": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_Wjk7rq": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_Wjk7rq"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
     "press_MhJgKb": {
       "type": "press",
       "blocks": {
@@ -410,6 +382,34 @@
         "heading_gradient": "",
         "logo_item_background": "",
         "logo_item_border": ""
+      }
+    },
+    "175761911349a56d5f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Wjk7rq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Wjk7rq"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
       }
     },
     "custom_liquid_KLPe3A": {
@@ -807,8 +807,8 @@
     "before_after_image_Kn9fhC",
     "text_with_icons_gkLatW",
     "media_with_text_WjdipQ",
-    "175761911349a56d5f",
     "press_MhJgKb",
+    "175761911349a56d5f",
     "custom_liquid_KLPe3A",
     "section_temoignages_defilants_KGGGF8",
     "meditrust_tableau_w6CdYa",
