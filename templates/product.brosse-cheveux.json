@@ -591,6 +591,7 @@
         "item_XndHkC",
         "item_peg6dT"
       ],
+      "disabled": true,
       "name": "Text with icons",
       "settings": {
         "full_width": true,
