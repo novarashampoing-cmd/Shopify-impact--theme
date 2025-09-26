@@ -449,6 +449,7 @@
         "heading_3jh7jX",
         "richtext_jt9MTN"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -470,6 +471,7 @@
       "block_order": [
         "play_U8W6FB"
       ],
+      "disabled": true,
       "name": "Video",
       "settings": {
         "full_width": true,
@@ -504,18 +506,7 @@
             "logo": "shopify://shop_images/Logo_Cosmopolitain.webp",
             "logo_width": 100,
             "author": "",
-            "content": "Une application facile pour un rendu naturel",
-            "show_rating": false,
-            "rating": 4
-          }
-        },
-        "quote_iGq3bf": {
-          "type": "quote",
-          "settings": {
-            "logo": "shopify://shop_images/LOGO-GENERIQUE_1.png",
-            "logo_width": 100,
-            "author": "",
-            "content": "Parfait pour les hommes : la barbe est colorée en 10 minutes",
+            "content": "Un vrai plus pour la santé de son cuir chevelu",
             "show_rating": false,
             "rating": 4
           }
@@ -523,8 +514,7 @@
       },
       "block_order": [
         "quote_YwjN4w",
-        "quote_ihYhe7",
-        "quote_iGq3bf"
+        "quote_ihYhe7"
       ],
       "name": "Press",
       "settings": {
