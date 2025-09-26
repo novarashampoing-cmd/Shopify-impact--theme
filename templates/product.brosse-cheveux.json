@@ -109,7 +109,7 @@
             "dynamic": false,
             "feed": "75ef28f9-93be-43eb-bea8-ffb934db5c45",
             "feed_usage": "back_up",
-            "sort": "video",
+            "sort": "latest",
             "header": "",
             "slide_type": "cards",
             "autoplay_mode": "all",
