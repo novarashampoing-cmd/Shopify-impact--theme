@@ -22,7 +22,7 @@
         "richtext_tCg6tq": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Adresse mail :</strong> contact@novarashampoing.com</p>"
+            "content": "<p><strong>Adresse mail :</strong> <a href=\"mailto:contact@novara-shampoing.com\"><strong>contact@novara-shampoing.com</strong></a></p>"
           }
         }
       },
